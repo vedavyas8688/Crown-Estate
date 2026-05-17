@@ -1,10 +1,10 @@
-import { useRef } from 'react'
-import { useScrollReveal } from '../hooks/useScrollReveal'
-import { instagramImages } from '../data/content'
+import { useRef } from "react";
+import { useScrollReveal } from "../hooks/useScrollReveal";
+import { instagramImages } from "../data/content";
 
 export default function Footer() {
-  const ref = useRef(null)
-  useScrollReveal(ref)
+  const ref = useRef(null);
+  useScrollReveal(ref);
 
   return (
     <div ref={ref} className="section-footer">
@@ -19,11 +19,16 @@ export default function Footer() {
               href=" "
               target="_blank"
               rel="noopener noreferrer"
-              className={`overflow-instagram ${i % 2 === 0 ? 'margin' : ''} w-inline-block`}
+              className={`overflow-instagram ${i % 2 === 0 ? "margin" : ""} w-inline-block`}
               key={src}
               data-reveal-child
             >
-              <img src={src} loading="lazy" alt="" className="image-instagram" />
+              <img
+                src={src}
+                loading="lazy"
+                alt=""
+                className="image-instagram"
+              />
             </a>
           ))}
         </div>
@@ -57,36 +62,25 @@ export default function Footer() {
           </div>
           <div className="block-footer border">
             <h5 className="heading-footer">Quick Links</h5>
-            <a
-              href="/about"
-              className="link-footer"
-              onClick={(e) => e.preventDefault()}
-            >
+            <a href="/about" className="link-footer">
               About
             </a>
-            <a
-              href="/services"
-              className="link-footer"
-              onClick={(e) => e.preventDefault()}
-            >
+            <a href="/services" className="link-footer">
               Services
             </a>
-            <a
-              href="/contact"
-              className="link-footer"
-              onClick={(e) => e.preventDefault()}
-            >
+            <a href="/contact" className="link-footer">
               Contact
             </a>
           </div>
         </div>
         <div className="block-footer">
-          <img src="/CE-logo.png" loading="lazy" alt="Lovio" className="logo-footer" />
-          <a
-            href="/"
-            rel="noopener noreferrer"
-            className="link-footer"
-          >
+          <img
+            src="/CE-logo.png"
+            loading="lazy"
+            alt="Lovio"
+            className="logo-footer"
+          />
+          <a href="/" rel="noopener noreferrer" className="link-footer">
             © 2026. All rights reserved by Crown Estate
           </a>
           <a
@@ -100,5 +94,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  )
+  );
 }
