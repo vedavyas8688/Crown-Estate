@@ -1,0 +1,625 @@
+
+@tailwind components;
+@tailwind utilities;
+
+/* GSAP fade-in primitives (also available as a CSS-only fallback class) */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: opacity, transform;
+}
+
+/* Lock body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Cart cleanup */
+ul.w-commerce-commercecartoptionlist {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Swiper sizing inside the testimonials wrapper */
+.swiper-testimonials { width: 100%; }
+.swiper-testimonials .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero flower — no base rotation */
+@keyframes lovio-sway-hero {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  25%      { transform: translate3d(-3px, -8px, 0) rotate(-1.2deg); }
+  50%      { transform: translate3d(0, -12px, 0) rotate(0deg); }
+  75%      { transform: translate3d(3px, -6px, 0) rotate(1.2deg); }
+}
+.flower-hero---a {
+  animation: lovio-sway-hero 7s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+/* Postcard A flower — no base rotation in CSS */
+@keyframes lovio-sway-a {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50%      { transform: translate3d(0, -10px, 0) rotate(2deg); }
+}
+.flower-postcard---a {
+  animation: lovio-sway-a 6s ease-in-out infinite;
+}
+
+/* Postcard B flower — base rotation: 37deg */
+@keyframes lovio-sway-b {
+  0%, 100% { transform: rotate(37deg) translate3d(0, 0, 0); }
+  50%      { transform: rotate(40deg) translate3d(0, -8px, 0); }
+}
+.flower-postcard---b {
+  animation: lovio-sway-b 7.5s ease-in-out infinite;
+}
+
+/* Postcard C flower — no base rotation */
+@keyframes lovio-sway-c {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50%      { transform: translate3d(0, -10px, 0) rotate(-2deg); }
+}
+.flower-postcard---c {
+  animation: lovio-sway-c 6.5s ease-in-out infinite;
+}
+
+/* Postcard D flower — base rotation: -26deg */
+@keyframes lovio-sway-d {
+  0%, 100% { transform: rotate(-26deg) translate3d(0, 0, 0); }
+  50%      { transform: rotate(-23deg) translate3d(0, -10px, 0); }
+}
+.flower-postcard---d {
+  animation: lovio-sway-d 8s ease-in-out infinite;
+}
+
+/* Subtle drift on the testimonial flower icons */
+@keyframes lovio-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -4px, 0); }
+}
+.image-testimonial {
+  animation: lovio-drift 5s ease-in-out infinite;
+}
+
+/* ============================================================
+   SERVICE PAGE flowers — base transforms must be preserved
+   in the keyframes so they don't snap on animation start.
+   ============================================================ */
+
+/* .flower---a (Weddings + Branding inner) — base: rotate(-23deg) */
+@keyframes lovio-sway-service-a {
+  0%, 100% { transform: rotate(-23deg) translate3d(0, 0, 0); }
+  50%      { transform: rotate(-20deg) translate3d(0, -8px, 0); }
+}
+.flower---a {
+  animation: lovio-sway-service-a 7s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* .flower---b (Event Design) — no base rotation */
+@keyframes lovio-sway-service-b {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50%      { transform: translate3d(0, -10px, 0) rotate(2deg); }
+}
+.flower---b {
+  animation: lovio-sway-service-b 6.5s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* ============================================================
+   CONTACT PAGE flowers
+   ============================================================ */
+
+/* .flower-contact---a (top-left, flower_1) — no base rotation */
+@keyframes lovio-sway-contact-a {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50%      { transform: translate3d(-4px, -8px, 0) rotate(-1.5deg); }
+}
+.flower-contact---a {
+  animation: lovio-sway-contact-a 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* .flower-contact---b (bottom-right, flower_6) — base: rotate(37deg) */
+@keyframes lovio-sway-contact-b {
+  0%, 100% { transform: rotate(37deg) translate3d(0, 0, 0); }
+  50%      { transform: rotate(40deg) translate3d(0, -8px, 0); }
+}
+.flower-contact---b {
+  animation: lovio-sway-contact-b 7.5s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* ============================================================
+   POLISH — hover-zoom on service & about images.
+   .overflow-image already clips overflow, so the inner img
+   scales gently inside the frame without jumping the layout.
+   ============================================================ */
+.overflow-image {
+  overflow: hidden;
+}
+.overflow-image .image,
+.overflow-image .image.about,
+.block-image .overflow-image .image {
+  transition: transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.overflow-image:hover .image,
+.overflow-image:hover .image.about,
+.block-image:hover .overflow-image .image {
+  transform: scale(1.04);
+}
+
+/* Press logos — gentle desaturation that lifts on hover */
+.press-logo {
+  transition: opacity 400ms ease, transform 400ms ease;
+  opacity: 0.65;
+}
+.press:hover .press-logo {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Respect users who don't want motion */
+@media (prefers-reduced-motion: reduce) {
+  .flower-hero---a,
+  .flower-postcard---a,
+  .flower-postcard---b,
+  .flower-postcard---c,
+  .flower-postcard---d,
+  .flower---a,
+  .flower---b,
+  .flower-contact---a,
+  .flower-contact---b,
+  .image-testimonial {
+    animation: none;
+  }
+  .overflow-image .image,
+  .overflow-image .image.about,
+  .block-image .overflow-image .image,
+  .press-logo {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   SERVICE DETAIL PAGE — custom sections (process, pricing,
+   FAQ, CTA, related). All built on Lovio's tokens so palette
+   and type scale stay perfectly on-brand.
+   ============================================================ */
+
+/* ---- INCLUSION CHECKLIST (used inside .block-text) ---- */
+.inclusion-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.inclusion-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--paragraphs);
+}
+.inclusion-list li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+/* ---- PROCESS — 4 numbered steps ---- */
+.grid-process {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 50px;
+}
+.process-step {
+  padding: 18px 32px;
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.process-step:first-child { border-left: none; padding-left: 0; }
+.process-step:last-child  { padding-right: 0; }
+
+.process-number {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 42px;
+  line-height: 1;
+  color: var(--accent);
+}
+.process-title {
+  font-family: Marcellus, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--heading);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.process-step .paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--paragraphs);
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .grid-process { grid-template-columns: 1fr 1fr; gap: 40px 0; }
+  .process-step:nth-child(odd)  { border-left: none; padding-left: 0; }
+  .process-step:nth-child(even) { border-left: 1px solid var(--border); }
+}
+@media (max-width: 767px) {
+  .grid-process { grid-template-columns: 1fr; gap: 36px 0; }
+  .process-step,
+  .process-step:nth-child(even) {
+    border-left: none;
+    padding-left: 0;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+  .process-step:last-child { border-bottom: none; padding-bottom: 0; }
+}
+
+/* ---- FEATURED TESTIMONIAL (single, centered, no slider) ---- */
+.featured-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 56px 32px;
+  background-color: white;
+}
+.featured-testimonial img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 18px;
+}
+.featured-testimonial .quote {
+  font-family: Marcellus, serif;
+  font-size: 26px;
+  line-height: 1.55;
+  color: var(--heading);
+  margin: 0 0 28px 0;
+}
+.featured-testimonial .author {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 28px;
+  color: var(--accent);
+}
+
+/* ---- PRICING — 3 packages ---- */
+.grid-pricing {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+  align-items: stretch;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 48px 36px;
+  position: relative;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 600ms ease;
+}
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -28px rgba(84, 87, 72, 0.18);
+}
+.pricing-card.featured {
+  border: 1px solid var(--accent);
+  background-color: var(--preload);
+}
+.pricing-eyebrow {
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--subtitle);
+  margin-bottom: 14px;
+}
+.pricing-card.featured .pricing-eyebrow { color: var(--accent); }
+.pricing-name {
+  font-family: Marcellus, serif;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--heading);
+  margin: 0 0 14px 0;
+}
+.pricing-description {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--paragraphs);
+  margin: 0 0 26px 0;
+  min-height: 78px;
+}
+.pricing-price {
+  font-family: Marcellus, serif;
+  font-size: 22px;
+  color: var(--heading);
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+.pricing-features li {
+  font-family: Montserrat, sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--paragraphs);
+  padding-left: 24px;
+  position: relative;
+}
+.pricing-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 1px;
+  background-color: var(--accent);
+}
+.pricing-card .button {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .grid-pricing { grid-template-columns: 1fr; gap: 24px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .pricing-description { min-height: 0; }
+}
+
+/* ---- FAQ — accordion ---- */
+.faq-list {
+  width: 100%;
+  margin-top: 50px;
+  border-top: 1px solid var(--border);
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-toggle {
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+  text-align: left;
+  font-family: Marcellus, serif;
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--heading);
+  transition: color 200ms ease;
+}
+.faq-toggle:hover { color: var(--accent); }
+.faq-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent);
+  top: 50%;
+  left: 50%;
+  border-radius: 1px;
+}
+.faq-icon::before { width: 18px; height: 1px; transform: translate(-50%, -50%); }
+.faq-icon::after  { width: 1px; height: 18px; transform: translate(-50%, -50%); }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 400ms ease,
+              padding 400ms ease;
+  opacity: 0;
+}
+.faq-item.open .faq-answer {
+  max-height: 600px;
+  opacity: 1;
+  padding-bottom: 28px;
+}
+.faq-answer p {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--paragraphs);
+  margin: 0;
+  max-width: 720px;
+}
+
+/* ---- CTA — split section, image on left, script + text + button on right ---- */
+.section-cta {
+  background-color: var(--preload);
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.grid-cta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.cta-image-wrap {
+  position: relative;
+  overflow: visible;
+}
+.cta-image-wrap .overflow-image {
+  border: 1px solid var(--border);
+}
+.cta-image-wrap .cta-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+.cta-flower {
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  width: 200px;
+  z-index: 5;
+  pointer-events: none;
+  animation: lovio-sway-service-b 7s ease-in-out infinite;
+}
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cta-script {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 36px;
+  color: var(--accent);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.cta-text h2 {
+  font-family: Marcellus, serif;
+  font-size: 48px;
+  line-height: 1.15;
+  color: var(--heading);
+  margin: 0 0 12px 0;
+}
+.cta-text .paragraph { margin: 0 0 20px 0; max-width: 480px; }
+.cta-text .button { align-self: flex-start; }
+
+@media (max-width: 991px) {
+  .grid-cta { grid-template-columns: 1fr; gap: 56px; }
+  .cta-text h2 { font-size: 38px; }
+  .cta-flower { width: 140px; right: -20px; bottom: -30px; }
+}
+
+/* ---- RELATED SERVICES — 2 cards ---- */
+.grid-related {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 50px;
+}
+.related-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.related-card .overflow-image {
+  position: relative;
+  aspect-ratio: 16 / 11;
+}
+.related-card .overflow-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(20, 20, 16, 0.55) 100%);
+  pointer-events: none;
+  transition: opacity 400ms ease;
+}
+.related-card:hover .overflow-image::after { opacity: 0.85; }
+.related-card .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.related-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  z-index: 2;
+  color: white;
+}
+.related-content .subtitle {
+  color: white;
+  opacity: 0.85;
+  letter-spacing: 2.5px;
+  margin-bottom: 6px;
+}
+.related-content h3 {
+  font-family: Marcellus, serif;
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+@media (max-width: 767px) {
+  .grid-related { grid-template-columns: 1fr; }
+}
+
+/* ---- SQUARE LOGO BADGE — fixed top-right placeholder ---- */
+.square-logo-badge {
+  position: fixed;
+  top: 110px;
+  right: 28px;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 12px 24px -16px rgba(84, 87, 72, 0.2);
+  transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.square-logo-badge:hover {
+  transform: translateY(-2px);
+}
+.square-logo-badge img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .square-logo-badge { display: none; }
+}
