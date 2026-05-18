@@ -48,7 +48,7 @@ export default function Hero() {
                 <a
                   href="/contact"
                   className="link"
-                  onClick={(e) => e.preventDefault()}
+                  // onClick={(e) => e.preventDefault()}
                 >
                   Book A Consult
                 </a>

@@ -8,7 +8,8 @@ export const serviceDetails = {
       "Host your dream destination wedding or grand reception at Crown Estate, a luxury 4-acre wedding venue on Airport Road, Bangalore with lawns, AC rooms, hall area, stage setup and guest accommodation.",
 
     seo: {
-      metaTitle: "Destination Wedding Venue in Bangalore | Crown Estate Airport Road",
+      metaTitle:
+        "Destination Wedding Venue in Bangalore | Crown Estate Airport Road",
       metaDescription:
         "Book Crown Estate, a luxury destination wedding and reception venue on Airport Road, Bangalore with 20 AC rooms, lawns, hall, stage setup and space for 500 to 800 guests.",
       keywords:
@@ -22,16 +23,14 @@ export const serviceDetails = {
     intro: {
       icon: "/images/service_icon_1.png",
       heading: "A grand estate for weddings that feel truly unforgettable",
-      body:
-        "Your wedding deserves a setting that feels spacious, elegant and personal. Crown Estate offers the perfect destination wedding experience in Bangalore with open lawns, a hall area, guest stay facilities, multiple kitchens, swimming pool, children’s play area and beautifully planned event spaces. From intimate ceremonies to large receptions, every celebration finds its perfect backdrop here.",
+      body: "Your wedding deserves a setting that feels spacious, elegant and personal. Crown Estate offers the perfect destination wedding experience in Bangalore with open lawns, a hall area, guest stay facilities, multiple kitchens, swimming pool, children’s play area and beautifully planned event spaces. From intimate ceremonies to large receptions, every celebration finds its perfect backdrop here.",
     },
 
     inclusions: {
       icon: "/images/service_icon_1.png",
       heading: "What is included",
-      body:
-        "Our wedding venue package is designed to support both stay and celebration requirements, making Crown Estate ideal for families planning a smooth, premium wedding experience in Bangalore.",
-      image: "/images/portfolio_2.jpg",
+      body: "Our wedding venue package is designed to support both stay and celebration requirements, making Crown Estate ideal for families planning a smooth, premium wedding experience in Bangalore.",
+      image: "/eventimages/23.webp",
       flower: "/images/flower_5.png",
       flowerClass: "flower---a",
       list: [
@@ -50,36 +49,32 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Enquiry",
-        text:
-          "Share your wedding date, guest count, stay requirement and preferred event format with our team.",
+        text: "Share your wedding date, guest count, stay requirement and preferred event format with our team.",
       },
       {
         number: "02",
         title: "Venue Visit",
-        text:
-          "Explore the lawns, hall area, rooms, poolside spaces and setup possibilities at Crown Estate.",
+        text: "Explore the lawns, hall area, rooms, poolside spaces and setup possibilities at Crown Estate.",
       },
       {
         number: "03",
         title: "Planning",
-        text:
-          "Finalize your event flow, room allocation, stage requirement, seating arrangement and vendor coordination.",
+        text: "Finalize your event flow, room allocation, stage requirement, seating arrangement and vendor coordination.",
       },
       {
         number: "04",
         title: "Celebrate",
-        text:
-          "Host your wedding, reception or nikah ceremony in a premium estate setting while your guests enjoy a comfortable stay.",
+        text: "Host your wedding, reception or nikah ceremony in a premium estate setting while your guests enjoy a comfortable stay.",
       },
     ],
 
     gallery: [
-      "/images/img_5.jpg",
-      "/images/portfolio_1.jpg",
-      "/images/img_2.jpg",
-      "/images/portfolio_2.jpg",
-      "/images/instagram_1.jpg",
-      "/images/instagram_2.jpg",
+      "/eventimages/24.webp",
+      "/eventimages/31.png",
+      "/eventimages/25.webp",
+      "/eventimages/26.webp",
+      "/eventimages/28.png",
+      "/eventimages/22.webp",
     ],
 
     testimonial: {
@@ -137,37 +132,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Is Crown Estate suitable for destination weddings in Bangalore?",
-        a:
-          "Yes. Crown Estate is ideal for destination weddings in Bangalore with 20 AC rooms, lawns, hall area, stage setup, guest seating and a private 4-acre estate environment.",
+        a: "Yes. Crown Estate is ideal for destination weddings in Bangalore with 20 AC rooms, lawns, hall area, stage setup, guest seating and a private 4-acre estate environment.",
       },
       {
         q: "How many guests can stay at the property?",
-        a:
-          "The property can accommodate up to 100 stay guests across 20 luxury AC rooms on quadruple occupancy.",
+        a: "The property can accommodate up to 100 stay guests across 20 luxury AC rooms on quadruple occupancy.",
       },
       {
         q: "Can the venue handle large receptions?",
-        a:
-          "Yes. Crown Estate offers seating support for approximately 500 to 800 guests depending on the event layout and setup.",
+        a: "Yes. Crown Estate offers seating support for approximately 500 to 800 guests depending on the event layout and setup.",
       },
       {
         q: "Is stage setup included?",
-        a:
-          "The 24-hour package includes a complimentary reception or nikah stage with entrance gate. An optional complimentary mantap is also available.",
+        a: "The 24-hour package includes a complimentary reception or nikah stage with entrance gate. An optional complimentary mantap is also available.",
       },
       {
         q: "Where is Crown Estate located?",
-        a:
-          "Crown Estate is located on Airport Road, Bangalore, making it convenient for local families and outstation guests.",
+        a: "Crown Estate is located on Airport Road, Bangalore, making it convenient for local families and outstation guests.",
       },
     ],
 
     cta: {
       script: "Begin your celebration",
       heading: "Book a luxury wedding venue on Airport Road, Bangalore",
-      body:
-        "Plan your destination wedding, nikah ceremony or grand reception at Crown Estate. Share your date and guest count with us to check availability.",
-      image: "/images/img_5.jpg",
+      body: "Plan your destination wedding, nikah ceremony or grand reception at Crown Estate. Share your date and guest count with us to check availability.",
+      image: "/eventimages/39.jpg",
       flower: "/images/flower_2.png",
     },
   },
@@ -195,16 +184,14 @@ export const serviceDetails = {
     intro: {
       icon: "/images/service_icon_2.png",
       heading: "Celebrate life’s milestones in a private luxury estate",
-      body:
-        "Whether you are planning a 1st birthday, 50th birthday, silver anniversary, golden jubilee or an intimate family celebration, Crown Estate gives you the space and ambience to host it beautifully. With open lawns, comfortable rooms, swimming pool, children’s play area and event-ready facilities, your guests can celebrate, relax and stay together.",
+      body: "Whether you are planning a 1st birthday, 50th birthday, silver anniversary, golden jubilee or an intimate family celebration, Crown Estate gives you the space and ambience to host it beautifully. With open lawns, comfortable rooms, swimming pool, children’s play area and event-ready facilities, your guests can celebrate, relax and stay together.",
     },
 
     inclusions: {
       icon: "/images/service_icon_2.png",
       heading: "Perfect for milestone celebrations",
-      body:
-        "Crown Estate is designed for private events that need elegance, comfort and enough space for guests to enjoy every moment.",
-      image: "/images/img_4.jpg",
+      body: "Crown Estate is designed for private events that need elegance, comfort and enough space for guests to enjoy every moment.",
+      image: "/eventimages/33.png",
       flower: "/images/flower_2.png",
       flowerClass: "flower---b",
       list: [
@@ -223,36 +210,32 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Share Your Occasion",
-        text:
-          "Tell us about the celebration, guest count, date, stay requirement and preferred event style.",
+        text: "Tell us about the celebration, guest count, date, stay requirement and preferred event style.",
       },
       {
         number: "02",
         title: "Choose Your Space",
-        text:
-          "Select from lawns, hall area, poolside spaces and stay arrangements based on your celebration plan.",
+        text: "Select from lawns, hall area, poolside spaces and stay arrangements based on your celebration plan.",
       },
       {
         number: "03",
         title: "Plan the Setup",
-        text:
-          "Coordinate seating, decor, catering, entertainment, guest stay and event flow with clarity.",
+        text: "Coordinate seating, decor, catering, entertainment, guest stay and event flow with clarity.",
       },
       {
         number: "04",
         title: "Celebrate",
-        text:
-          "Enjoy a smooth, premium celebration experience at a private estate in Bangalore.",
+        text: "Enjoy a smooth, premium celebration experience at a private estate in Bangalore.",
       },
     ],
 
     gallery: [
-      "/images/img_4.jpg",
-      "/images/img_3.jpg",
-      "/images/portfolio_3.jpg",
-      "/images/img_6.jpg",
-      "/images/instagram_3.jpg",
-      "/images/instagram_4.jpg",
+      "/eventimages/38.png",
+      "/eventimages/31.png",
+      "/eventimages/35.jpg",
+      "/eventimages/36.jpg",
+      "/eventimages/37.jpg",
+      "/eventimages/34.jpg",
     ],
 
     testimonial: {
@@ -308,37 +291,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Can we host a birthday party at Crown Estate?",
-        a:
-          "Yes. Crown Estate is suitable for birthday parties, milestone celebrations, children’s birthdays and private family events in Bangalore.",
+        a: "Yes. Crown Estate is suitable for birthday parties, milestone celebrations, children’s birthdays and private family events in Bangalore.",
       },
       {
         q: "Is the venue good for anniversary celebrations?",
-        a:
-          "Yes. The property is ideal for anniversary dinners, family gatherings and milestone anniversary retreats.",
+        a: "Yes. The property is ideal for anniversary dinners, family gatherings and milestone anniversary retreats.",
       },
       {
         q: "Can guests stay overnight?",
-        a:
-          "Yes. Crown Estate has 20 luxury AC rooms with stay capacity for up to 100 guests.",
+        a: "Yes. Crown Estate has 20 luxury AC rooms with stay capacity for up to 100 guests.",
       },
       {
         q: "Is the venue suitable for children?",
-        a:
-          "Yes. The property has a children’s play area and open spaces, making it suitable for family-friendly celebrations.",
+        a: "Yes. The property has a children’s play area and open spaces, making it suitable for family-friendly celebrations.",
       },
       {
         q: "Can we arrange decor and catering?",
-        a:
-          "Yes. The venue has spacious event areas and multiple kitchens to support decor, catering and event vendor coordination.",
+        a: "Yes. The venue has spacious event areas and multiple kitchens to support decor, catering and event vendor coordination.",
       },
     ],
 
     cta: {
       script: "Make it memorable",
       heading: "Plan a birthday or anniversary celebration in Bangalore",
-      body:
-        "Celebrate your milestone at Crown Estate with luxury stay, spacious lawns and a private estate ambience.",
-      image: "/images/img_4.jpg",
+      body: "Celebrate your milestone at Crown Estate with luxury stay, spacious lawns and a private estate ambience.",
+      image: "/eventimages/40.jpg",
       flower: "/images/flower_5.png",
     },
   },
@@ -347,7 +324,7 @@ export const serviceDetails = {
     slug: "family-get-togethers-and-reunions",
     title: "Family Get-Togethers & Reunions",
     eyebrow: "Family Events",
-    teaserImage: "/eventimages/9.webp",
+    teaserImage: "/eventimages/35.jpg",
     teaserBody:
       "Bring your loved ones together at Crown Estate, a spacious family get-together venue in Bangalore with rooms, lawns, pool, play area and private celebration spaces.",
 
@@ -366,16 +343,14 @@ export const serviceDetails = {
     intro: {
       icon: "/images/service_icon_3.png",
       heading: "A private space for families to gather, celebrate and stay",
-      body:
-        "Family gatherings need more than just a venue. They need comfort, open space, stay arrangements, dining areas and activities for all age groups. Crown Estate brings all of this together in one 4-acre property, making it ideal for reunions, weekend family meets and private celebrations in Bangalore.",
+      body: "Family gatherings need more than just a venue. They need comfort, open space, stay arrangements, dining areas and activities for all age groups. Crown Estate brings all of this together in one 4-acre property, making it ideal for reunions, weekend family meets and private celebrations in Bangalore.",
     },
 
     inclusions: {
       icon: "/images/service_icon_3.png",
       heading: "Designed for family comfort",
-      body:
-        "From children to elders, Crown Estate offers a comfortable and spacious setting where every guest can enjoy the occasion.",
-      image: "/images/img_6.jpg",
+      body: "From children to elders, Crown Estate offers a comfortable and spacious setting where every guest can enjoy the occasion.",
+      image: "/eventimages/41.jpg",
       flower: "/images/flower_4.png",
       flowerClass: "flower---a variant",
       list: [
@@ -394,36 +369,32 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Plan the Gathering",
-        text:
-          "Share your family size, event date, stay requirement and celebration format.",
+        text: "Share your family size, event date, stay requirement and celebration format.",
       },
       {
         number: "02",
         title: "Select Spaces",
-        text:
-          "Choose the best combination of rooms, lawns, hall area and poolside spaces.",
+        text: "Choose the best combination of rooms, lawns, hall area and poolside spaces.",
       },
       {
         number: "03",
         title: "Coordinate Details",
-        text:
-          "Plan seating, food, stay allocation, entertainment and activities for your guests.",
+        text: "Plan seating, food, stay allocation, entertainment and activities for your guests.",
       },
       {
         number: "04",
         title: "Reconnect",
-        text:
-          "Enjoy a relaxed and memorable family gathering in a private estate setting.",
+        text: "Enjoy a relaxed and memorable family gathering in a private estate setting.",
       },
     ],
 
     gallery: [
-      "/images/img_6.jpg",
-      "/images/img_7.jpg",
-      "/images/img_8.jpg",
-      "/images/img_9.jpg",
-      "/images/img_10.jpg",
+      "/eventimages/42.jpg",
+      "/eventimages/43.jpg",
       "/images/img_11.jpg",
+      "/eventimages/44.jpg",
+      "/images/img_10.jpg",
+      "/eventimages/30.webp",
     ],
 
     testimonial: {
@@ -479,37 +450,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Is Crown Estate good for family get-togethers?",
-        a:
-          "Yes. Crown Estate is ideal for family get-togethers, reunions and private family celebrations in Bangalore.",
+        a: "Yes. Crown Estate is ideal for family get-togethers, reunions and private family celebrations in Bangalore.",
       },
       {
         q: "How many family members can stay overnight?",
-        a:
-          "The estate can accommodate up to 100 guests across 20 luxury AC rooms.",
+        a: "The estate can accommodate up to 100 guests across 20 luxury AC rooms.",
       },
       {
         q: "Does the property have activities for children?",
-        a:
-          "Yes. Crown Estate has a children’s play area, open lawns and leisure spaces suitable for family groups.",
+        a: "Yes. Crown Estate has a children’s play area, open lawns and leisure spaces suitable for family groups.",
       },
       {
         q: "Can we host a full-day family event?",
-        a:
-          "Yes. The 24-hour package is suitable for families planning a full-day or overnight celebration.",
+        a: "Yes. The 24-hour package is suitable for families planning a full-day or overnight celebration.",
       },
       {
         q: "Is food preparation support available?",
-        a:
-          "The property has multiple kitchens, making it convenient for catering and food service coordination.",
+        a: "The property has multiple kitchens, making it convenient for catering and food service coordination.",
       },
     ],
 
     cta: {
       script: "Bring everyone together",
       heading: "Host your family reunion at Crown Estate Bangalore",
-      body:
-        "Create a memorable family gathering with luxury rooms, lawns, pool and private estate spaces on Airport Road.",
-      image: "/images/img_6.jpg",
+      body: "Create a memorable family gathering with luxury rooms, lawns, pool and private estate spaces on Airport Road.",
+      image: "/eventimages/45.jpg",
       flower: "/images/flower_4.png",
     },
   },
@@ -518,7 +483,7 @@ export const serviceDetails = {
     slug: "luxury-weekend-getaways",
     title: "Luxury Weekend Getaways",
     eyebrow: "Weekend Stay",
-    teaserImage: "/eventimages/11.webp",
+    teaserImage: "/eventimages/50.jpg",
     teaserBody:
       "Escape to Crown Estate for a luxury weekend getaway near Bangalore with 20 AC rooms, swimming pool, children’s play area, open lawns and private group stay facilities.",
 
@@ -537,16 +502,14 @@ export const serviceDetails = {
     intro: {
       icon: "/images/service_icon_3.png",
       heading: "A private estate escape for families and groups",
-      body:
-        "Crown Estate is designed for guests who want a relaxed and premium weekend away from the routine without going too far from Bangalore. Whether it is a family retreat, friends’ reunion, celebration weekend or private group stay, the property offers the comfort, privacy and space needed for a memorable getaway.",
+      body: "Crown Estate is designed for guests who want a relaxed and premium weekend away from the routine without going too far from Bangalore. Whether it is a family retreat, friends’ reunion, celebration weekend or private group stay, the property offers the comfort, privacy and space needed for a memorable getaway.",
     },
 
     inclusions: {
       icon: "/images/service_icon_3.png",
       heading: "Weekend getaway highlights",
-      body:
-        "Enjoy the comfort of a private estate with stay, leisure and gathering spaces in one premium location.",
-      image: "/images/img_6.jpg",
+      body: "Enjoy the comfort of a private estate with stay, leisure and gathering spaces in one premium location.",
+      image: "/eventimages/46.jpg",
       flower: "/images/flower_4.png",
       flowerClass: "flower---a variant",
       list: [
@@ -565,36 +528,35 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Choose Your Dates",
-        text:
-          "Share your weekend dates, number of guests and stay requirements.",
+        text: "Share your weekend dates, number of guests and stay requirements.",
       },
       {
         number: "02",
         title: "Plan the Stay",
-        text:
-          "Finalize room allocation, food arrangements, activities and event spaces.",
+        text: "Finalize room allocation, food arrangements, activities and event spaces.",
       },
       {
         number: "03",
         title: "Arrive & Relax",
-        text:
-          "Check in with your group and enjoy the lawns, pool, rooms and private estate ambience.",
+        text: "Check in with your group and enjoy the lawns, pool, rooms and private estate ambience.",
       },
       {
         number: "04",
         title: "Celebrate the Weekend",
-        text:
-          "Spend quality time with family or friends in a peaceful luxury getaway near Bangalore.",
+        text: "Spend quality time with family or friends in a peaceful luxury getaway near Bangalore.",
       },
     ],
 
     gallery: [
-      "/images/img_6.jpg",
-      "/images/img_7.jpg",
-      "/images/img_8.jpg",
-      "/images/img_9.jpg",
-      "/images/img_10.jpg",
-      "/images/img_11.jpg",
+      "/eventimages/33.png",
+      "/eventimages/37.jpg",
+      "/eventimages/38.png",
+      "/eventimages/46.jpg",
+      "/eventimages/47.jpg",
+      "/eventimages/48.jpg",
+       
+      
+       
     ],
 
     testimonial: {
@@ -650,37 +612,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Is Crown Estate suitable for weekend getaways near Bangalore?",
-        a:
-          "Yes. Crown Estate is a private 4-acre estate on Airport Road, Bangalore, ideal for luxury weekend getaways, group stays and family retreats.",
+        a: "Yes. Crown Estate is a private 4-acre estate on Airport Road, Bangalore, ideal for luxury weekend getaways, group stays and family retreats.",
       },
       {
         q: "How many people can stay at the estate?",
-        a:
-          "The property can accommodate up to 100 guests across 20 AC rooms.",
+        a: "The property can accommodate up to 100 guests across 20 AC rooms.",
       },
       {
         q: "Is there a swimming pool?",
-        a:
-          "Yes. Crown Estate has a swimming pool for guests as part of the estate amenities.",
+        a: "Yes. Crown Estate has a swimming pool for guests as part of the estate amenities.",
       },
       {
         q: "Can we plan a celebration during the stay?",
-        a:
-          "Yes. The estate is suitable for birthday celebrations, reunions, private parties and weekend events.",
+        a: "Yes. The estate is suitable for birthday celebrations, reunions, private parties and weekend events.",
       },
       {
         q: "Is the property family-friendly?",
-        a:
-          "Yes. The property has open lawns, a children’s play area, pool and comfortable rooms, making it suitable for families.",
+        a: "Yes. The property has open lawns, a children’s play area, pool and comfortable rooms, making it suitable for families.",
       },
     ],
 
     cta: {
       script: "Escape beautifully",
       heading: "Plan your luxury weekend getaway near Bangalore",
-      body:
-        "Book Crown Estate for a private weekend stay with rooms, pool, lawns and premium estate facilities.",
-      image: "/images/img_6.jpg",
+      body: "Book Crown Estate for a private weekend stay with rooms, pool, lawns and premium estate facilities.",
+      image: "/eventimages/50.jpg",
       flower: "/images/flower_4.png",
     },
   },
@@ -689,7 +645,7 @@ export const serviceDetails = {
     slug: "exhibitions-and-fashion-shows",
     title: "Exhibitions & Fashion Shows",
     eyebrow: "Exhibition Venue",
-    teaserImage: "/eventimages/14.webp",
+    teaserImage: "/eventimages/55.jpg",
     teaserBody:
       "Host exhibitions, fashion shows, car displays, clothing fairs and lifestyle events at Crown Estate, a spacious 4-acre exhibition venue on Airport Road, Bangalore.",
 
@@ -707,17 +663,16 @@ export const serviceDetails = {
 
     intro: {
       icon: "/images/service_icon_3.png",
-      heading: "A spacious Bangalore venue for showcases, fairs and brand experiences",
-      body:
-        "Exhibitions and fashion events need visibility, movement, layout flexibility and a premium environment. Crown Estate provides expansive lawns, hall area, guest facilities, multiple kitchens and private estate ambience, making it suitable for curated exhibitions, fashion shows, fairs and large-scale public or private showcases.",
+      heading:
+        "A spacious Bangalore venue for showcases, fairs and brand experiences",
+      body: "Exhibitions and fashion events need visibility, movement, layout flexibility and a premium environment. Crown Estate provides expansive lawns, hall area, guest facilities, multiple kitchens and private estate ambience, making it suitable for curated exhibitions, fashion shows, fairs and large-scale public or private showcases.",
     },
 
     inclusions: {
       icon: "/images/service_icon_3.png",
       heading: "Ideal for premium showcases",
-      body:
-        "The property gives organisers enough room to plan stalls, displays, walkways, seating, entry points and experience zones.",
-      image: "/images/img_6.jpg",
+      body: "The property gives organisers enough room to plan stalls, displays, walkways, seating, entry points and experience zones.",
+      image: "/eventimages/52.jpg",
       flower: "/images/flower_4.png",
       flowerClass: "flower---a variant",
       list: [
@@ -736,36 +691,32 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Event Brief",
-        text:
-          "Share your exhibition type, expected visitors, stall count, display requirements and event date.",
+        text: "Share your exhibition type, expected visitors, stall count, display requirements and event date.",
       },
       {
         number: "02",
         title: "Layout Planning",
-        text:
-          "Plan the use of lawns, hall area, entry points, display zones and guest movement.",
+        text: "Plan the use of lawns, hall area, entry points, display zones and guest movement.",
       },
       {
         number: "03",
         title: "Vendor Coordination",
-        text:
-          "Coordinate decor, lighting, sound, staging, food counters and technical requirements.",
+        text: "Coordinate decor, lighting, sound, staging, food counters and technical requirements.",
       },
       {
         number: "04",
         title: "Showcase",
-        text:
-          "Host a polished exhibition or fashion event in a spacious premium Bangalore venue.",
+        text: "Host a polished exhibition or fashion event in a spacious premium Bangalore venue.",
       },
     ],
 
     gallery: [
-      "/images/img_6.jpg",
-      "/images/img_7.jpg",
-      "/images/img_8.jpg",
-      "/images/img_9.jpg",
-      "/images/img_10.jpg",
-      "/images/img_11.jpg",
+      "/eventimages/51.jpg",
+      "/eventimages/53.jpg",
+      "/eventimages/52.jpg",
+      "/eventimages/54.jpg",
+      "/eventimages/14.webp",
+      "/eventimages/55.jpg",
     ],
 
     testimonial: {
@@ -821,37 +772,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Can we host exhibitions at Crown Estate?",
-        a:
-          "Yes. Crown Estate is suitable for exhibitions, lifestyle fairs, clothing exhibitions, car displays and brand showcases in Bangalore.",
+        a: "Yes. Crown Estate is suitable for exhibitions, lifestyle fairs, clothing exhibitions, car displays and brand showcases in Bangalore.",
       },
       {
         q: "Is the venue suitable for fashion shows?",
-        a:
-          "Yes. The property offers spacious lawns and hall areas that can be planned for fashion shows, seating and backstage requirements.",
+        a: "Yes. The property offers spacious lawns and hall areas that can be planned for fashion shows, seating and backstage requirements.",
       },
       {
         q: "Can the venue support large visitor movement?",
-        a:
-          "The 4-acre property offers flexible open spaces suitable for planned visitor movement, stall layouts and display areas.",
+        a: "The 4-acre property offers flexible open spaces suitable for planned visitor movement, stall layouts and display areas.",
       },
       {
         q: "Is food service possible during exhibitions?",
-        a:
-          "Yes. The property has multiple kitchens and support areas that can assist catering and hospitality planning.",
+        a: "Yes. The property has multiple kitchens and support areas that can assist catering and hospitality planning.",
       },
       {
         q: "Where is the venue located?",
-        a:
-          "Crown Estate is located on Airport Road, Bangalore, making it accessible for exhibitors, guests and event organisers.",
+        a: "Crown Estate is located on Airport Road, Bangalore, making it accessible for exhibitors, guests and event organisers.",
       },
     ],
 
     cta: {
       script: "Create the showcase",
       heading: "Book a premium exhibition venue in Bangalore",
-      body:
-        "Plan your fashion show, car display, clothing fair or brand exhibition at Crown Estate on Airport Road.",
-      image: "/images/img_6.jpg",
+      body: "Plan your fashion show, car display, clothing fair or brand exhibition at Crown Estate on Airport Road.",
+      image: "/eventimages/55.jpg",
       flower: "/images/flower_4.png",
     },
   },
@@ -860,12 +805,13 @@ export const serviceDetails = {
     slug: "corporate-events-and-conferences",
     title: "Corporate Events & Conferences",
     eyebrow: "Corporate Venue",
-    teaserImage: "/eventimages/13.webp",
+    teaserImage: "/eventimages/64.jpg",
     teaserBody:
       "Plan corporate events, conferences, team outings, leadership retreats and product showcases at Crown Estate, a premium corporate event venue on Airport Road, Bangalore.",
 
     seo: {
-      metaTitle: "Corporate Event & Conference Venue in Bangalore | Crown Estate",
+      metaTitle:
+        "Corporate Event & Conference Venue in Bangalore | Crown Estate",
       metaDescription:
         "Host corporate events, conferences, offsites, team outings and product launches at Crown Estate Airport Road, Bangalore. 4-acre venue with AC rooms, lawns and hall area.",
       keywords:
@@ -879,16 +825,14 @@ export const serviceDetails = {
     intro: {
       icon: "/images/service_icon_3.png",
       heading: "A premium estate for business events with comfort and scale",
-      body:
-        "Corporate events need a venue that supports presentation, interaction, hospitality and relaxation. Crown Estate combines lawns, hall area, luxury rooms, multiple kitchens and outdoor spaces to create a complete environment for productive business gatherings and memorable team experiences.",
+      body: "Corporate events need a venue that supports presentation, interaction, hospitality and relaxation. Crown Estate combines lawns, hall area, luxury rooms, multiple kitchens and outdoor spaces to create a complete environment for productive business gatherings and memorable team experiences.",
     },
 
     inclusions: {
       icon: "/images/service_icon_3.png",
       heading: "Built for corporate gatherings",
-      body:
-        "From formal conferences to relaxed team retreats, the estate can be planned around your company’s event goals.",
-      image: "/images/img_6.jpg",
+      body: "From formal conferences to relaxed team retreats, the estate can be planned around your company’s event goals.",
+      image: "/eventimages/56.jpg",
       flower: "/images/flower_4.png",
       flowerClass: "flower---a variant",
       list: [
@@ -907,36 +851,32 @@ export const serviceDetails = {
       {
         number: "01",
         title: "Corporate Brief",
-        text:
-          "Share the event objective, attendee count, date, session format and stay requirement.",
+        text: "Share the event objective, attendee count, date, session format and stay requirement.",
       },
       {
         number: "02",
         title: "Venue Planning",
-        text:
-          "Choose the right combination of hall area, lawns, dining zones, rooms and breakout spaces.",
+        text: "Choose the right combination of hall area, lawns, dining zones, rooms and breakout spaces.",
       },
       {
         number: "03",
         title: "Setup Coordination",
-        text:
-          "Plan seating, stage, AV, hospitality, food service, branding and guest movement.",
+        text: "Plan seating, stage, AV, hospitality, food service, branding and guest movement.",
       },
       {
         number: "04",
         title: "Host the Event",
-        text:
-          "Run your corporate event in a premium Bangalore venue with space for both business and networking.",
+        text: "Run your corporate event in a premium Bangalore venue with space for both business and networking.",
       },
     ],
 
     gallery: [
-      "/images/img_6.jpg",
-      "/images/img_7.jpg",
-      "/images/img_8.jpg",
-      "/images/img_9.jpg",
-      "/images/img_10.jpg",
-      "/images/img_11.jpg",
+      "/eventimages/57.jpg",
+      "/eventimages/58.jpg",
+      "/eventimages/59.jpg",
+      "/eventimages/60.jpg",
+      "/eventimages/61.jpg",
+      "/eventimages/62.jpg",
     ],
 
     testimonial: {
@@ -992,37 +932,31 @@ export const serviceDetails = {
     faq: [
       {
         q: "Is Crown Estate suitable for corporate events in Bangalore?",
-        a:
-          "Yes. Crown Estate is suitable for conferences, corporate retreats, team outings, product launches and business gatherings.",
+        a: "Yes. Crown Estate is suitable for conferences, corporate retreats, team outings, product launches and business gatherings.",
       },
       {
         q: "Can teams stay overnight?",
-        a:
-          "Yes. The venue has 20 luxury AC rooms and can accommodate up to 100 stay guests.",
+        a: "Yes. The venue has 20 luxury AC rooms and can accommodate up to 100 stay guests.",
       },
       {
         q: "Can the venue support conferences and presentations?",
-        a:
-          "Yes. The hall area can be planned for conferences, business sessions, presentations and formal seating arrangements.",
+        a: "Yes. The hall area can be planned for conferences, business sessions, presentations and formal seating arrangements.",
       },
       {
         q: "Is the property suitable for team outings?",
-        a:
-          "Yes. The lawns, pool, rooms and open spaces make Crown Estate suitable for team outings and corporate retreats.",
+        a: "Yes. The lawns, pool, rooms and open spaces make Crown Estate suitable for team outings and corporate retreats.",
       },
       {
         q: "Where is the corporate venue located?",
-        a:
-          "Crown Estate is located on Airport Road, Bangalore, making it convenient for corporate teams and visiting guests.",
+        a: "Crown Estate is located on Airport Road, Bangalore, making it convenient for corporate teams and visiting guests.",
       },
     ],
 
     cta: {
       script: "Host with impact",
       heading: "Plan your corporate event at Crown Estate Bangalore",
-      body:
-        "Book a premium corporate venue on Airport Road for conferences, retreats, team outings and product showcases.",
-      image: "/images/img_6.jpg",
+      body: "Book a premium corporate venue on Airport Road for conferences, retreats, team outings and product showcases.",
+      image: "/eventimages/63.jpg",
       flower: "/images/flower_4.png",
     },
   },
