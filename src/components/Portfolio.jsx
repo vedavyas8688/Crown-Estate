@@ -1,10 +1,16 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { portfolio } from '../data/content'
 
 export default function Portfolio() {
   const ref = useRef(null)
   useScrollReveal(ref)
+
+  const [showAll, setShowAll] = useState(false)
+
+  const visiblePortfolio = showAll ? portfolio : portfolio.slice(0, 4)
+  const hasMore = portfolio.length > 4
 
   return (
     <div ref={ref} className="section">
@@ -26,17 +32,17 @@ export default function Portfolio() {
 
         <div className="collection-list-wrapper---portfolio w-dyn-list">
           <div role="list" className="collection-list---portfolio w-dyn-items" data-reveal-group>
-            {portfolio.map((p) => (
+            {visiblePortfolio.map((p) => (
               <div
                 role="listitem"
                 className="collection-item---portfolio w-dyn-item"
                 key={p.slug}
                 data-reveal-child
               >
-                <a
-                  href={`/portfolio/${p.slug}`}
+                <Link
+                  to={`/portfolio/${p.slug}`}
                   className="overflow-portfolio w-inline-block"
-                  onClick={(e) => e.preventDefault()}
+                  style={{ borderRadius: '16px', overflow: 'hidden', display: 'block' }}
                 >
                   <img
                     loading="lazy"
@@ -44,34 +50,45 @@ export default function Portfolio() {
                     alt={p.title}
                     className="image-portfolio"
                   />
-                </a>
+                </Link>
                 <div className="block-portfolio">
-                  <a
-                    href={`/portfolio/${p.slug}`}
+                  <Link
+                    to={`/portfolio/${p.slug}`}
                     className="link-portfolio w-inline-block"
-                    onClick={(e) => e.preventDefault()}
                   >
                     <h5 className="heading-portfolio">{p.title}</h5>
-                  </a>
-                  <a
-                    href={`/portfolio/${p.slug}`}
+                  </Link>
+                  <Link
+                    to={`/portfolio/${p.slug}`}
                     className="link"
-                    onClick={(e) => e.preventDefault()}
                   >
                     learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <a
-          href="/portfolio"
-          className="button w-button"
-          onClick={(e) => e.preventDefault()}
-        >
-          View all portfolios
-        </a>
+
+        {/* {hasMore && !showAll && (
+          <button
+            className="button w-button"
+            onClick={() => setShowAll(true)}
+            style={{ cursor: 'pointer', marginTop: '40px' }}
+          >
+            View all portfolios
+          </button>
+        )}
+
+        {showAll && (
+          <button
+            className="button w-button"
+            onClick={() => setShowAll(false)}
+            style={{ cursor: 'pointer', marginTop: '40px' }}
+          >
+            Show less
+          </button>
+        )} */}
       </div>
     </div>
   )

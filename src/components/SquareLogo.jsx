@@ -2,15 +2,16 @@
  * Fixed square logo badge — top-right corner, every page.
  * Replace `/images/square-logo.svg` with the real logo file when ready.
  */
+ import { Link } from 'react-router-dom'
+
+/**
+ * Fixed square logo badge — top-right corner, every page.
+ * Clicking navigates to the home page.
+ */
 export default function SquareLogo() {
   return (
-    <a
-      href="#"
-      className="square-logo-badge"
-      aria-label="Brand"
-      onClick={(e) => e.preventDefault()}
-    >
-      <img src="/CE-Icon.png" alt="" />
-    </a>
+    <Link to="/" className="square-logo-badge" aria-label="Home">
+      <img src="/CE-Icon.png" alt="Crown Estate" />
+    </Link>
   )
 }

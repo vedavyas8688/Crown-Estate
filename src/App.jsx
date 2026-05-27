@@ -9,6 +9,8 @@ import ServicesPage from './pages/ServicesPage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import AboutPage from './pages/AboutPage'
 
+import PortfolioDetailPage from './pages/PortfolioDetailPage'
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -23,6 +25,9 @@ export default function App() {
         {/* Services list and detail pages */}
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/:slug" element={<ServiceDetailPage />} />
+
+        {/* Portfolio list and detail pages */}
+        <Route path="/portfolio/:slug" element={<PortfolioDetailPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
 

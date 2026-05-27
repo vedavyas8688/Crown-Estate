@@ -28,7 +28,7 @@ export default function PostcardContact() {
           </div>
 
           <div id="w-node-bd4b83d7-4172-b584-e8bd-71526bc4898d-6c01f26c" className="postcard---image">
-            <div className="overflow-image">
+            <div className="overflow-image" style={{ borderRadius: '16px' }}>
               <img className="image" src="/eventimages/15.webp" alt="" loading="lazy" data-reveal data-reveal-distance="50" />
             </div>
             <img

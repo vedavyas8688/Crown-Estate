@@ -1,11 +1,11 @@
-import { useRef, useState } from 'react'
-import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useRef, useState } from "react";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function ContactPage() {
-  const ref = useRef(null)
-  useScrollReveal(ref)
+  const ref = useRef(null);
+  useScrollReveal(ref);
 
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
 
   return (
     <div ref={ref}>
@@ -23,14 +23,15 @@ export default function ContactPage() {
               data-hero-reveal
             />
             <div className="subtitle" data-hero-reveal>
-              Contact<br />
+              Contact
+              <br />
             </div>
             <h1 className="heading-hero" data-hero-reveal>
               We look forward to connecting with you!
             </h1>
             <p className="paragraph margin" data-hero-reveal>
-              Lectus sit turpis iaculis eu non sed turpis suscipit facilisi. Lorem morbi
-              non morbi id aliquam. Urna adipiscing odio.
+              Lectus sit turpis iaculis eu non sed turpis suscipit facilisi.
+              Lorem morbi non morbi id aliquam. Urna adipiscing odio.
             </p>
             <div className="border-down margin" data-hero-reveal></div>
           </div>
@@ -50,39 +51,103 @@ export default function ContactPage() {
                   method="get"
                   className="form"
                   onSubmit={(e) => {
-                    e.preventDefault()
-                    setSubmitted(true)
+                    e.preventDefault();
+                    setSubmitted(true);
                   }}
                 >
                   <div className="field">
-                    <label htmlFor="First-Name" className="field-label">First Name</label>
-                    <input className="text-field w-input" maxLength="256" name="First-Name" data-name="First Name" placeholder="First Name" type="text" id="First-Name" />
+                    <label htmlFor="First-Name" className="field-label">
+                      First Name
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="First-Name"
+                      data-name="First Name"
+                      placeholder="First Name"
+                      type="text"
+                      id="First-Name"
+                    />
                   </div>
                   <div className="field">
-                    <label htmlFor="Last-Name" className="field-label">Last Name</label>
-                    <input className="text-field w-input" maxLength="256" name="Last-Name" data-name="Last Name" placeholder="Last Name" type="text" id="Last-Name" />
+                    <label htmlFor="Last-Name" className="field-label">
+                      Last Name
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="Last-Name"
+                      data-name="Last Name"
+                      placeholder="Last Name"
+                      type="text"
+                      id="Last-Name"
+                    />
                   </div>
                   <div className="field">
-                    <label htmlFor="email" className="field-label">Email</label>
-                    <input className="text-field w-input" maxLength="256" name="email" data-name="Email" placeholder="Email Address" type="email" id="email" required />
+                    <label htmlFor="email" className="field-label">
+                      Email
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="email"
+                      data-name="Email"
+                      placeholder="Email Address"
+                      type="email"
+                      id="email"
+                      required
+                    />
                   </div>
                   <div className="field">
-                    <label htmlFor="Phone-Number" className="field-label">Phone</label>
-                    <input className="text-field w-input" maxLength="256" name="Phone-Number" data-name="Phone Number" placeholder="Phone Number" type="tel" id="Phone-Number" required />
+                    <label htmlFor="Phone-Number" className="field-label">
+                      Phone
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="Phone-Number"
+                      data-name="Phone Number"
+                      placeholder="Phone Number"
+                      type="tel"
+                      id="Phone-Number"
+                      required
+                    />
                   </div>
                   <div className="field">
-                    <label htmlFor="Event-Type" className="field-label">Event Type</label>
-                    <input className="text-field w-input" maxLength="256" name="Event-Type" data-name="Event Type" placeholder="Event Type" type="text" id="Event-Type" />
+                    <label htmlFor="Event-Type" className="field-label">
+                      Event Type
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="Event-Type"
+                      data-name="Event Type"
+                      placeholder="Event Type"
+                      type="text"
+                      id="Event-Type"
+                    />
                   </div>
                   <div className="field">
-                    <label htmlFor="Location" className="field-label">Location</label>
-                    <input className="text-field w-input" maxLength="256" name="Location" data-name="Location" placeholder="Location (State or Country)" type="text" id="Location" />
+                    <label htmlFor="Location" className="field-label">
+                      Location
+                    </label>
+                    <input
+                      className="text-field w-input"
+                      maxLength="256"
+                      name="Location"
+                      data-name="Location"
+                      placeholder="Location (State or Country)"
+                      type="text"
+                      id="Location"
+                    />
                   </div>
                   <div
                     id="w-node-_4b026346-93f3-f726-63a1-a06a9768c8f3-844f95c8"
                     className="field"
                   >
-                    <label htmlFor="Message" className="field-label">Message</label>
+                    <label htmlFor="Message" className="field-label">
+                      Message
+                    </label>
                     <textarea
                       placeholder="Event Details & Other Questions"
                       maxLength="5000"
@@ -103,7 +168,10 @@ export default function ContactPage() {
               )}
 
               {submitted && (
-                <div className="success-message w-form-done" style={{ display: 'block', padding: '20px' }}>
+                <div
+                  className="success-message w-form-done"
+                  style={{ display: "block", padding: "20px" }}
+                >
                   <div className="text-success">
                     Thank you! Your submission has been received!
                   </div>
@@ -133,32 +201,64 @@ export default function ContactPage() {
         <div className="content">
           <div className="w-layout-grid grid-3-columns">
             <div className="info" data-reveal>
-              <img src="/images/service_icon_1.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <img
+                src="/images/service_icon_1.png"
+                loading="lazy"
+                width="69"
+                alt=""
+                className="icon-flower"
+              />
               <h4>Address</h4>
-              <p className="paragraph-info">
-                 Yelahanka, 2nd Phase, Gantiganahalli,  <br />
-                 Bangalore - 560119
-              </p>
+              <a
+                href="https://maps.google.com/?q=Crown+Estate+Gantiganahalli+Yelahanka+Bangalore"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-text"
+              >
+                <p className="paragraph-info">
+                  Yelahanka, 2nd Phase, Gantiganahalli,
+                  <br />
+                  Bangalore - 560119
+                </p>
+              </a>
             </div>
             <div className="info" data-reveal data-reveal-delay="0.15">
-              <img src="/images/service_icon_2.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <img
+                src="/images/service_icon_2.png"
+                loading="lazy"
+                width="69"
+                alt=""
+                className="icon-flower"
+              />
               <h4>Email</h4>
               <p className="paragraph-info">
-                Email Us At:<br />
-                <a href="mailto:nabilsidd@crownestate.in" className="link-text">nabilsidd@crownestate.in</a>
+                Email Us At:
+                <br />
+                <a href="mailto:nabilsidd@crownestate.in" className="link-text">
+                  nabilsidd@crownestate.in
+                </a>
               </p>
             </div>
             <div className="info" data-reveal data-reveal-delay="0.3">
-              <img src="/images/service_icon_3.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <img
+                src="/images/service_icon_3.png"
+                loading="lazy"
+                width="69"
+                alt=""
+                className="icon-flower"
+              />
               <h4>Phone</h4>
               <p className="paragraph-info">
-                Call Us At:<br />
-                <a href="tel:9035222022" className="link-text">9035222022</a>
+                Call Us At:
+                <br />
+                <a href="tel:9035222022" className="link-text">
+                  9035222022
+                </a>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

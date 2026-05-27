@@ -43,7 +43,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <div id="w-node-bb127e2e-cfb0-af59-52fb-e7ade1277139-a31abeb8" className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/banner2.webp" alt="Destination Weddings & Receptions" loading="lazy" />
               </div>
               <img src="/images/flower_5.png" loading="eager" alt="" className="flower---a" />
@@ -57,7 +57,7 @@ export default function ServicesPage() {
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/4.png" alt="Birthday & Anniversary Celebrations" loading="lazy" />
               </div>
               <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
@@ -93,7 +93,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <div id="w-node-_67dae5bd-5d11-3d93-0d20-a10fcf8b3987-a31abeb8" className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/6.png" alt="Family Get-Togethers & Reunions" loading="lazy" />
               </div>
               <img src="/images/flower_4.png" loading="eager" alt="" className="flower---a variant" />
@@ -106,7 +106,7 @@ export default function ServicesPage() {
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/crown-estate.webp" alt="Luxury Weekend Getaways" loading="lazy" />
               </div>
               <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
@@ -141,7 +141,7 @@ export default function ServicesPage() {
               </Link>
             </div>
             <div id="w-node-_67dae5bd-5d11-3d93-0d20-a10fcf8b3987-a31abeb8" className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/3.png" alt="Exhibitions & Fashion Shows" loading="lazy" />
               </div>
               <img src="/images/flower_4.png" loading="eager" alt="" className="flower---a variant" />
@@ -154,7 +154,7 @@ export default function ServicesPage() {
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-image" data-reveal>
-              <div className="overflow-image">
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/banner1.webp" alt="Corporate Events & Conferences" loading="lazy" />
               </div>
               <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />

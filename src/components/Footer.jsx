@@ -83,14 +83,14 @@ export default function Footer() {
           <a href="/" rel="noopener noreferrer" className="link-footer">
             © 2026. All rights reserved by Crown Estate
           </a>
-          <a
+          {/* <a
             href="https://hirolainfotech.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="link-footer"
           >
             Developed & Designed By Hirola InfoTech Solutions Pvt Ltd.
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

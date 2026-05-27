@@ -962,11 +962,11 @@ export const serviceDetails = {
   },
 };
 
-export const serviceList = [
+ export const serviceList = [
   "destination-weddings-and-receptions",
+  "exhibitions-and-fashion-shows",
+  "corporate-events-and-conferences",
   "birthday-and-anniversary-celebrations",
   "family-get-togethers-and-reunions",
   "luxury-weekend-getaways",
-  "exhibitions-and-fashion-shows",
-  "corporate-events-and-conferences",
 ];

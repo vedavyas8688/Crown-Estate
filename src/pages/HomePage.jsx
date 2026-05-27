@@ -13,8 +13,8 @@ export default function HomePage() {
       <Hero />
       <Quote />
       <Services />
-      <PostcardAbout />
       <Galleries />
+      <PostcardAbout />
       <Testimonials />
       <Portfolio />
       <PostcardContact />

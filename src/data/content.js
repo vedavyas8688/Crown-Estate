@@ -13,7 +13,7 @@ export const galleryRows = [
   { images: ['/eventimages/8.png', '/eventimages/4.png'], margin: true }
 ]
 
- export const testimonials = [
+export const testimonials = [
   {
     flower: '/images/flower_1.png',
     quote:
@@ -62,7 +62,8 @@ export const portfolio = [
   { image: '/images/portfolio_1.jpg', title: 'Jennifer & Oliver', slug: 'jennifer-oliver' },
   { image: '/images/portfolio_2.jpg', title: 'Briana & Richard', slug: 'briana-richard' },
   { image: '/images/portfolio_3.jpg', title: 'Anne & Cameron', slug: 'anne-cameron' },
-  { image: '/images/portfolio_4.jpg', title: 'Linda & Charles', slug: 'linda-charles' }
+  { image: '/images/portfolio_4.jpg', title: 'Linda & Charles', slug: 'linda-charles' },
+  { image: '/images/portfolio_1.jpg', title: 'Rahul & Priya', slug: 'rahul-priya' },
 ]
 
 export const instagramImages = [
@@ -85,4 +86,3 @@ export const navLinks = {
     { label: 'Contact', to: '/contact' }
   ]
 }
-
