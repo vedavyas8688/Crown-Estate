@@ -15,13 +15,34 @@ const style = `
   }
 `
 
+function useVisibleCount() {
+  const [count, setCount] = useState(() => {
+    if (typeof window === 'undefined') return 3
+    if (window.innerWidth < 640) return 1
+    if (window.innerWidth < 1024) return 2
+    return 3
+  })
+
+  useEffect(() => {
+    const update = () => {
+      if (window.innerWidth < 640) setCount(1)
+      else if (window.innerWidth < 1024) setCount(2)
+      else setCount(3)
+    }
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
+
+  return count
+}
+
 export default function Services() {
   const ref = useRef(null)
   useScrollReveal(ref)
   const [current, setCurrent] = useState(0)
   const [direction, setDirection] = useState('next')
   const total = serviceList.length
-  const visible = 3
+  const visible = useVisibleCount()
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -44,6 +65,8 @@ export default function Services() {
   const getVisible = () =>
     Array.from({ length: visible }, (_, i) => serviceList[(current + i) % total])
 
+  const gridCols = visible === 1 ? '1fr' : visible === 2 ? '1fr 1fr' : '1fr 1fr 1fr'
+
   return (
     <>
       <style>{style}</style>
@@ -55,16 +78,21 @@ export default function Services() {
             {/* Left Arrow */}
             <button
               onClick={prev}
+              aria-label="Previous service"
               className="flex-shrink-0 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:shadow-lg transition-shadow duration-300"
+              style={{ minWidth: '40px' }}
             >
               <MdChevronLeft className="text-2xl" style={{ color: 'var(--heading)' }} />
             </button>
 
             {/* Cards */}
             <div
-              className="flex-1 grid grid-cols-3 gap-5"
-              key={current}
+              className="flex-1"
+              key={`${current}-${visible}`}
               style={{
+                display: 'grid',
+                gridTemplateColumns: gridCols,
+                gap: '20px',
                 animation: `${direction === 'next' ? 'fadeSlide' : 'fadeSlideReverse'} 0.5s cubic-bezier(.25,.46,.45,.94) both`,
               }}
             >
@@ -103,7 +131,9 @@ export default function Services() {
             {/* Right Arrow */}
             <button
               onClick={next}
+              aria-label="Next service"
               className="flex-shrink-0 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:shadow-lg transition-shadow duration-300"
+              style={{ minWidth: '40px' }}
             >
               <MdChevronRight className="text-2xl" style={{ color: 'var(--heading)' }} />
             </button>

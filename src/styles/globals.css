@@ -1,4 +1,3 @@
-
 @tailwind components;
 @tailwind utilities;
 
@@ -622,4 +621,185 @@ ul.w-commerce-commercecartoptionlist {
 }
 @media (max-width: 991px) {
   .square-logo-badge { display: none; }
+}
+
+/* ============================================================
+   RESPONSIVE ADDITIONS — covers every breakpoint systematically
+   ============================================================ */
+
+/* ---- HERO HEADING responsive font scale ---- */
+ .hero-heading-responsive {
+  font-size: 56px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .hero-heading-responsive { font-size: 44px; margin-top: 10px; }
+}
+@media (max-width: 991px) {
+  .hero-heading-responsive { font-size: 34px; }
+}
+@media (max-width: 767px) {
+  .hero-heading-responsive { font-size: 26px; }
+}
+@media (max-width: 479px) {
+  .hero-heading-responsive { font-size: 5vw; line-height: 1.15; }
+}
+
+/* ---- FEATURED TESTIMONIAL — mobile ---- */
+@media (max-width: 767px) {
+  .featured-testimonial {
+    padding: 40px 20px;
+  }
+  .featured-testimonial .quote {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .featured-testimonial .author {
+    font-size: 22px;
+  }
+  .featured-testimonial img {
+    width: 80px;
+  }
+}
+@media (max-width: 479px) {
+  .featured-testimonial {
+    padding: 30px 12px;
+  }
+  .featured-testimonial .quote {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .featured-testimonial .author {
+    font-size: 20px;
+  }
+}
+
+/* ---- PROCESS — mobile ---- */
+@media (max-width: 767px) {
+  .process-number { font-size: 34px; }
+  .process-title  { font-size: 22px; }
+  .process-step .paragraph { font-size: 15px; }
+}
+@media (max-width: 479px) {
+  .process-number { font-size: 30px; }
+  .process-title  { font-size: 20px; }
+}
+
+/* ---- PRICING — mobile ---- */
+@media (max-width: 767px) {
+  .grid-pricing { max-width: 100%; }
+  .pricing-card { padding: 36px 28px; }
+  .pricing-name { font-size: 28px; }
+  .pricing-price { font-size: 20px; }
+  .pricing-description { min-height: 0; }
+}
+@media (max-width: 479px) {
+  .pricing-card  { padding: 28px 20px; }
+  .pricing-name  { font-size: 24px; }
+  .pricing-price { font-size: 18px; }
+}
+
+/* ---- FAQ — mobile ---- */
+@media (max-width: 767px) {
+  .faq-toggle {
+    font-size: 18px;
+    padding: 22px 0;
+    gap: 16px;
+  }
+  .faq-answer p { font-size: 15px; }
+}
+@media (max-width: 479px) {
+  .faq-toggle {
+    font-size: 16px;
+    padding: 18px 0;
+    gap: 12px;
+  }
+  .faq-icon { width: 22px; height: 22px; }
+  .faq-icon::before { width: 14px; }
+  .faq-icon::after  { height: 14px; }
+}
+
+/* ---- CTA SECTION — mobile ---- */
+@media (max-width: 767px) {
+  .section-cta { padding-top: 70px; padding-bottom: 70px; }
+  .cta-script   { font-size: 28px; }
+  .cta-text h2  { font-size: 32px; }
+  .cta-flower   { width: 110px; right: -10px; bottom: -20px; }
+}
+@media (max-width: 479px) {
+  .section-cta  { padding-top: 54px; padding-bottom: 54px; }
+  .cta-script   { font-size: 24px; }
+  .cta-text h2  { font-size: 26px; }
+  .cta-text .paragraph { font-size: 15px; }
+  .cta-flower   { width: 90px; }
+}
+
+/* ---- RELATED SERVICES/PORTFOLIO cards — mobile ---- */
+@media (max-width: 479px) {
+  .related-content h3  { font-size: 22px; }
+  .related-content     { padding: 20px; }
+  .related-content .subtitle { font-size: 10px; }
+}
+
+/* ---- INCLUSION LIST — mobile ---- */
+@media (max-width: 479px) {
+  .inclusion-list li { font-size: 15px; }
+}
+
+/* ---- SQUARE LOGO BADGE — already hidden at 991px via existing rule ---- */
+
+/* ---- SERVICE CARDS (block-service) text — mobile ---- */
+@media (max-width: 479px) {
+  .block-service { padding-left: 2%; padding-right: 2%; }
+  .heading-service { font-size: 20px; }
+  .paragraph-service { font-size: 14px; }
+}
+
+/* ---- FOOTER instagram — 2 cols on very small screens ---- */
+@media (max-width: 380px) {
+  .grid-instagram {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+  }
+  .overflow-instagram.margin { margin-top: 0; }
+}
+
+/* ---- HERO images on very small screens ---- */
+@media (max-width: 479px) {
+  .image-hero---a {
+    height: 52vw;
+    min-height: 160px;
+  }
+}
+
+/* ---- BLOCK-TEXT padding on mobile ---- */
+@media (max-width: 479px) {
+  .block-text {
+    padding: 40px 5%;
+  }
+  .block-image {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* ---- Postcard text padding on mobile ---- */
+@media (max-width: 479px) {
+  .postcard-text {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+/* ---- LOGO FOOTER sizing on mobile ---- */
+@media (max-width: 479px) {
+  .logo-footer { width: 50%; }
+}
+
+/* ---- Section vertical padding on very small screens ---- */
+@media (max-width: 380px) {
+  .section { padding: 48px 10px; }
+  .section-footer { padding: 48px 10px; }
 }

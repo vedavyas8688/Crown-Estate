@@ -8,7 +8,8 @@ export default function Quote() {
   return (
     <div ref={ref} className="section">
       <div className="content wide">
-        <div className="w-layout-grid grid-2-columns" style={{ gridTemplateColumns: '1fr 1fr', alignItems: 'center' }}>
+        {/* Remove inline gridTemplateColumns so CSS media queries can collapse to 1 col on mobile */}
+        <div className="w-layout-grid grid-2-columns" style={{ alignItems: 'center' }}>
           
           {/* Left: Content */}
           <div className="block-text" data-reveal>

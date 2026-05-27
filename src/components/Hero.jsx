@@ -11,6 +11,8 @@ export default function Hero() {
       <div className="section-hero">
         <div className="content wide">
           <div className="hero---a">
+
+            {/* Images */}
             <div
               className="w-layout-grid grid-hero---a"
               style={{ gridTemplateColumns: "1fr 1fr" }}
@@ -29,10 +31,8 @@ export default function Hero() {
               ))}
             </div>
 
-            <div
-              className="block-hero---a"
-              style={{ width: "60%", maxWidth: "620px" }}
-            >
+            {/* Card — no inline width/maxWidth so CSS breakpoints take full control */}
+            <div className="block-hero---a">
               <div
                 className="text-hero---a"
                 style={{ borderRadius: "16px", padding: "20px 8%" }}
@@ -46,13 +46,11 @@ export default function Hero() {
                   data-hero-reveal
                   style={{ opacity: 0 }}
                 />
-                <div className="subtitle">
-                  CROWN ESTATE
-                  <br />
-                </div>
+                <div className="subtitle">CROWN ESTATE</div>
                 <h1
-                  className="heading-hero"
-                  style={{ fontSize: "42px", whiteSpace: "nowrap" }}
+                  className="heading-hero hero-heading-responsive"
+                  data-hero-reveal
+                  style={{ opacity: 0 }}
                 >
                   Luxury Events & Celebrations
                 </h1>
@@ -78,6 +76,7 @@ export default function Hero() {
                 style={{ opacity: 0 }}
               />
             </div>
+
           </div>
         </div>
       </div>
