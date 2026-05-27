@@ -20,7 +20,6 @@ const style = `
     border-radius: 16px;
     aspect-ratio: 3 / 4;
   }
-
   .service-image-wrap img {
     width: 100%;
     height: 100%;
@@ -74,6 +73,16 @@ const style = `
     overflow: hidden;
   }
 
+  .services-slider-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .services-cards-area {
+    flex: 1;
+  }
+
   /* Tablet */
   @media (max-width: 1024px) {
     .service-arrow-btn {
@@ -85,16 +94,30 @@ const style = `
     .service-card-text .paragraph-service { font-size: 15px; }
   }
 
-  /* Mobile */
+  /* Mobile — each arrow is 7.5% of screen, cards fill the rest */
   @media (max-width: 640px) {
+    .services-slider-row {
+      gap: 0;
+    }
+
+    .service-arrow-btn {
+      width: 7.5vw;
+      height: 7.5vw;
+      min-width: 7.5vw;
+      border-radius: 50%;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+
+    .services-cards-area {
+      width: 85vw;
+      flex: none;
+    }
+
     .service-image-wrap {
       aspect-ratio: 4 / 5;
       border-radius: 12px;
-    }
-    .service-arrow-btn {
-      width: 38px;
-      height: 38px;
-      min-width: 38px;
     }
     .service-card-text {
       padding-top: 20px;
@@ -166,7 +189,7 @@ export default function Services() {
           className="content wide"
           style={{ paddingLeft: '20px', paddingRight: '20px' }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div className="services-slider-row">
 
             {/* Left Arrow */}
             <button
@@ -179,9 +202,9 @@ export default function Services() {
 
             {/* Cards */}
             <div
+              className="services-cards-area"
               key={`${current}-${visible}`}
               style={{
-                flex: 1,
                 display: 'grid',
                 gridTemplateColumns: gridCols,
                 gap: '28px',
