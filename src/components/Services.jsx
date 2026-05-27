@@ -316,9 +316,9 @@ const style = `
   @media (max-width: 480px) {
     .services-section-wrap { padding: 16px 0 20px !important; max-height: 60vh;  }
     .service-card-text { padding: 10px 4px 0; }
-    .service-card-text .heading-service { font-size: 15px; }
-    .service-card-text .paragraph-service { font-size: 11px; }
-    .service-card-text .link { font-size: 10px; }
+    .service-card-text .heading-service { font-size: 22px; }
+    .service-card-text .paragraph-service { font-size: 19px; }
+    .service-card-text .link { font-size: 15px; }
   }
 
   /* ─── Very small phones ──────────────────────────────────────────── */
