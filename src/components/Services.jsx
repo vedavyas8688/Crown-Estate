@@ -314,7 +314,7 @@ const style = `
 
   /* ─── Small phones ───────────────────────────────────────────────── */
   @media (max-width: 480px) {
-    .services-section-wrap { padding: 16px 0 20px !important; max-height: 80vh;  }
+    .services-section-wrap { padding: 16px 0 20px !important; max-height: 60vh;  }
     .service-card-text { padding: 10px 4px 0; }
     .service-card-text .heading-service { font-size: 15px; }
     .service-card-text .paragraph-service { font-size: 11px; }
