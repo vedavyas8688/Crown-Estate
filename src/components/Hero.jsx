@@ -11,7 +11,6 @@ export default function Hero() {
       <div className="section-hero">
         <div className="content wide">
           <div className="hero---a">
-
             {/* Images */}
             <div
               className="w-layout-grid grid-hero---a"
@@ -76,7 +75,6 @@ export default function Hero() {
                 style={{ opacity: 0 }}
               />
             </div>
-
           </div>
         </div>
       </div>
