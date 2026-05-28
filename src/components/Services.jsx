@@ -143,7 +143,7 @@ const style = `
   }
 
   .service-card-text .heading-service {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 0;
     opacity: 0;
     transform: translate3d(0, 18px, 0);
@@ -155,7 +155,7 @@ const style = `
     max-width: 100%;
   }
   .service-card-text .paragraph-service {
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.5;
     max-width: 300px;
     margin-bottom: 0;
@@ -173,7 +173,7 @@ const style = `
     transform: translate3d(0, 14px, 0);
     transition: opacity 450ms ease, transform 450ms cubic-bezier(0.25,0.46,0.45,0.94);
     transition-delay: 440ms;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .services-slide.entering-next .service-card-text .heading-service,
@@ -222,9 +222,9 @@ const style = `
     .services-slide { gap: 14px; padding: 8px 0; }
     .service-image-wrap { border-radius: 13px; }
     .service-card-text { padding: 12px 8px 0; gap: 5px; }
-    .service-card-text .heading-service { font-size: 18px; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .paragraph-service { font-size: 12px; max-width: 100%; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .link { font-size: 11px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .heading-service { font-size: 21px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .paragraph-service { font-size: 16px; max-width: 100%; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .link { font-size: 12px; opacity: 1 !important; transform: none !important; transition: none !important; }
   }
 
   /* ─── Tablet portrait: 769px–900px ──────────────────────────────── */
@@ -242,9 +242,9 @@ const style = `
     .services-slide { gap: 12px; padding: 6px 0; }
     .service-image-wrap { border-radius: 12px; }
     .service-card-text { padding: 10px 6px 0; gap: 4px; }
-    .service-card-text .heading-service { font-size: 17px; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .paragraph-service { font-size: 12px; max-width: 100%; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .link { font-size: 11px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .heading-service { font-size: 20px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .paragraph-service { font-size: 15px; max-width: 100%; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .link { font-size: 12px; opacity: 1 !important; transform: none !important; transition: none !important; }
   }
 
   /* ─── Small tablet: 641px–768px ─────────────────────────────────── */
@@ -260,11 +260,11 @@ const style = `
       box-shadow: 0 2px 12px -4px rgba(84,87,72,0.16);
     }
     .services-slide { gap: 10px; padding: 6px 0; }
-    .service-image-wrap { border-radius: 12px;    }
+    .service-image-wrap { border-radius: 12px; }
     .service-card-text { padding: 9px 4px 0; gap: 4px; }
-    .service-card-text .heading-service { font-size: 15px; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .paragraph-service { font-size: 11px; max-width: 100%; -webkit-line-clamp: 2; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .link { font-size: 10px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .heading-service { font-size: 18px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .paragraph-service { font-size: 14px; max-width: 100%; -webkit-line-clamp: 2; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .link { font-size: 11px; opacity: 1 !important; transform: none !important; transition: none !important; }
   }
 
   /* ─── Mobile: 640px and below ────────────────────────────────────── */
@@ -300,34 +300,28 @@ const style = `
       flex: 1;
       min-height: 0;
     }
-    .service-image-wrap {
-      border-radius: 16px;
-    }
-    .service-card-text {
-      padding: 12px 4px 0;
-      gap: 5px;
-    }
-    .service-card-text .heading-service { font-size: 17px; }
-    .service-card-text .paragraph-service { font-size: 12px; line-height: 1.5; max-width: 100%; }
-    .service-card-text .link { font-size: 11px; }
+    .service-image-wrap { border-radius: 16px; }
+    .service-card-text { padding: 12px 4px 0; gap: 5px; }
+    .service-card-text .heading-service { font-size: 20px; }
+    .service-card-text .paragraph-service { font-size: 15px; line-height: 1.5; max-width: 100%; }
+    .service-card-text .link { font-size: 12px; }
   }
 
   /* ─── Small phones ───────────────────────────────────────────────── */
   @media (max-width: 480px) {
-    .services-section-wrap { padding: 16px 0 20px !important; max-height: 60vh;  }
+    .services-section-wrap { padding: 16px 0 20px !important; max-height: 60vh; }
     .service-card-text { padding: 10px 4px 0; }
-    .service-card-text .heading-service { font-size: 22px; }
-    .service-card-text .paragraph-service { font-size: 19px; }
-    .service-card-text .link { font-size: 15px; }
+    .service-card-text .heading-service { font-size: 18px; }
+    .service-card-text .paragraph-service { font-size: 14px; }
+    .service-card-text .link { font-size: 12px; }
   }
 
   /* ─── Very small phones ──────────────────────────────────────────── */
   @media (max-width: 360px) {
-    
     .services-section-wrap { padding: 12px 0 16px !important; }
     .service-card-text { padding: 8px 2px 0; }
-    .service-card-text .heading-service { font-size: 14px; }
-    .service-card-text .paragraph-service { font-size: 10px; -webkit-line-clamp: 1; }
+    .service-card-text .heading-service { font-size: 15px; }
+    .service-card-text .paragraph-service { font-size: 12px; -webkit-line-clamp: 1; }
     .service-card-text .link { font-size: 10px; }
   }
 
@@ -336,9 +330,9 @@ const style = `
     .services-section-wrap { padding: 8px 0 10px !important; height: 100svh; }
     .service-image-wrap { border-radius: 10px; }
     .service-card-text { padding: 5px 4px 0; gap: 2px; }
-    .service-card-text .heading-service { font-size: 13px; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .paragraph-service { font-size: 10px; -webkit-line-clamp: 1; opacity: 1 !important; transform: none !important; transition: none !important; }
-    .service-card-text .link { font-size: 9px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .heading-service { font-size: 15px; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .paragraph-service { font-size: 12px; -webkit-line-clamp: 1; opacity: 1 !important; transform: none !important; transition: none !important; }
+    .service-card-text .link { font-size: 10px; opacity: 1 !important; transform: none !important; transition: none !important; }
     .service-arrow-btn { width: 30px; height: 30px; }
   }
 
@@ -346,6 +340,16 @@ const style = `
   @media (hover: none) {
     .service-image-wrap:hover img { transform: none; }
     .service-arrow-btn:hover { box-shadow: 0 2px 10px -3px rgba(84,87,72,0.14); transform: none; }
+  }
+
+  /* ─── Heading block ──────────────────────────────────────────────── */
+  .services-heading-block {
+    flex-shrink: 0;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  @media (max-width: 640px) {
+    .services-heading-block { padding-bottom: 10px; }
   }
 `
 
@@ -442,6 +446,21 @@ export default function Services() {
       <style>{style}</style>
       <div ref={ref} className="section services-section-wrap" style={{ padding: '20px' }}>
         <div className="content wide" style={{ height: '100%', paddingLeft: '0', paddingRight: '0' }}>
+
+          {/* ── Heading block ── */}
+          <div className="services-heading-block">
+            <img
+              src="/images/subtitle.png"
+              loading="lazy"
+              alt=""
+              width="62"
+              className="image-subtitle"
+            />
+            <div className="subtitle">SERVICES</div>
+            <h2 className="heading">What we offer</h2>
+          </div>
+
+          {/* ── Slider ── */}
           <div className="services-slider-row">
 
             <div className="service-arrow-btn-wrap">
