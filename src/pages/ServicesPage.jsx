@@ -27,7 +27,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* ============ 2. WEDDINGS — text left, image right ============ */}
+      {/* ============ 1. Destination Weddings — text left, image right ============ */}
       <div className="section first">
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
                 learn more
               </Link>
             </div>
-            <div id="w-node-bb127e2e-cfb0-af59-52fb-e7ade1277139-a31abeb8" className="block-image" data-reveal>
+            <div className="block-image" data-reveal>
               <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/banner2.webp" alt="Destination Weddings & Receptions" loading="lazy" />
               </div>
@@ -52,7 +52,57 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* ============ 3. EVENT DESIGN — image left, text right ============ */}
+      {/* ============ 2. Exhibitions & Fashion Shows — image left, text right ============ */}
+      <div className="section">
+        <div className="content">
+          <div className="w-layout-grid grid-2-columns">
+            <div className="block-image" data-reveal>
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
+                <img className="image" src="/eventimages/3.png" alt="Exhibitions & Fashion Shows" loading="lazy" />
+              </div>
+              <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
+            </div>
+            <div className="block-text" data-reveal>
+              <img src="/images/service_icon_3.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <h3 className="heading">Exhibitions & Fashion Shows</h3>
+              <p className="paragraph">
+                Host exhibitions, fashion shows, car displays, clothing fairs and lifestyle events at Crown Estate, a spacious 4-acre exhibition venue
+                on Airport Road, Bangalore.
+              </p>
+              <Link to={"/services/exhibitions-and-fashion-shows"} className="link">
+                learn more
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ============ 3. Corporate Events — text left, image right ============ */}
+      <div className="section">
+        <div className="content">
+          <div className="w-layout-grid grid-2-columns">
+            <div className="block-text" data-reveal>
+              <img src="/images/service_icon_2.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <h3 className="heading">Corporate Events & Conferences</h3>
+              <p className="paragraph">
+                Plan corporate events, conferences, team outings, leadership retreats and product showcases at Crown Estate, a premium corporate event
+                venue on Airport Road, Bangalore.
+              </p>
+              <Link to={"/services/corporate-events-and-conferences"} className="link">
+                learn more
+              </Link>
+            </div>
+            <div className="block-image" data-reveal>
+              <div className="overflow-image" style={{ borderRadius: "16px" }}>
+                <img className="image" src="/eventimages/banner1.webp" alt="Corporate Events & Conferences" loading="lazy" />
+              </div>
+              <img src="/images/flower_4.png" loading="eager" alt="" className="flower---a variant" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ============ 4. Birthday & Anniversary — image left, text right ============ */}
       <div className="section">
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
@@ -77,7 +127,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* ============ 4. BRANDING — text left, image right ============ */}
+      {/* ============ 5. Family Get-Togethers — text left, image right ============ */}
       <div className="section">
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
@@ -92,7 +142,7 @@ export default function ServicesPage() {
                 learn more
               </Link>
             </div>
-            <div id="w-node-_67dae5bd-5d11-3d93-0d20-a10fcf8b3987-a31abeb8" className="block-image" data-reveal>
+            <div className="block-image" data-reveal>
               <div className="overflow-image" style={{ borderRadius: "16px" }}>
                 <img className="image" src="/eventimages/6.png" alt="Family Get-Togethers & Reunions" loading="lazy" />
               </div>
@@ -102,6 +152,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      {/* ============ 6. Luxury Weekend Getaways — image left, text right ============ */}
       <div className="section">
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
@@ -112,10 +163,10 @@ export default function ServicesPage() {
               <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
             </div>
             <div className="block-text" data-reveal>
-              <img src="/images/service_icon_2.png" loading="lazy" width="69" alt="" className="icon-flower" />
+              <img src="/images/service_icon_1.png" loading="lazy" width="69" alt="" className="icon-flower" />
               <h3 className="heading">Luxury Weekend Getaways</h3>
               <p className="paragraph">
-                Escape to Crown Estate for a luxury weekend getaway near Bangalore with 20 AC rooms, swimming pool, children’s play area, open lawns
+                Escape to Crown Estate for a luxury weekend getaway near Bangalore with 20 AC rooms, swimming pool, children's play area, open lawns
                 and private group stay facilities.
               </p>
               <Link to={"/services/luxury-weekend-getaways"} className="link">
@@ -126,55 +177,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      <div className="section">
-        <div className="content">
-          <div className="w-layout-grid grid-2-columns">
-            <div className="block-text" data-reveal>
-              <img src="/images/service_icon_3.png" loading="lazy" width="69" alt="" className="icon-flower" />
-              <h3 className="heading">Exhibitions & Fashion Shows</h3>
-              <p className="paragraph">
-                Host exhibitions, fashion shows, car displays, clothing fairs and lifestyle events at Crown Estate, a spacious 4-acre exhibition venue
-                on Airport Road, Bangalore.
-              </p>
-              <Link to={"/services/exhibitions-and-fashion-shows"} className="link">
-                learn more
-              </Link>
-            </div>
-            <div id="w-node-_67dae5bd-5d11-3d93-0d20-a10fcf8b3987-a31abeb8" className="block-image" data-reveal>
-              <div className="overflow-image" style={{ borderRadius: "16px" }}>
-                <img className="image" src="/eventimages/3.png" alt="Exhibitions & Fashion Shows" loading="lazy" />
-              </div>
-              <img src="/images/flower_4.png" loading="eager" alt="" className="flower---a variant" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="section">
-        <div className="content">
-          <div className="w-layout-grid grid-2-columns">
-            <div className="block-image" data-reveal>
-              <div className="overflow-image" style={{ borderRadius: "16px" }}>
-                <img className="image" src="/eventimages/banner1.webp" alt="Corporate Events & Conferences" loading="lazy" />
-              </div>
-              <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
-            </div>
-            <div className="block-text" data-reveal>
-              <img src="/images/service_icon_2.png" loading="lazy" width="69" alt="" className="icon-flower" />
-              <h3 className="heading">Corporate Events & Conferences</h3>
-              <p className="paragraph">
-                Plan corporate events, conferences, team outings, leadership retreats and product showcases at Crown Estate, a premium corporate event
-                venue on Airport Road, Bangalore.
-              </p>
-              <Link to={"/services/corporate-events-and-conferences"} className="link">
-                learn more
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ============ 5. TESTIMONIALS ============ */}
+      {/* ============ 7. TESTIMONIALS ============ */}
       <Testimonials />
     </div>
   );
