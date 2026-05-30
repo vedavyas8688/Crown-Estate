@@ -7,7 +7,7 @@ export default function PostcardContact() {
 
   return (
     <div ref={ref} className="section">
-      <div className="content">
+      <div className="content contact-responsiveness">
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "16px", maxWidth: "600px", margin: "0 auto" }}>
           <img src="/images/subtitle.png" loading="lazy" alt="" width="62" className="image-subtitle" />
           <div className="subtitle">Contact</div>

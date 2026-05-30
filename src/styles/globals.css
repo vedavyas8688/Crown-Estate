@@ -1098,7 +1098,7 @@ ul.w-commerce-commercecartoptionlist {
   .ce-mobile-menu,
   .ce-mobile-menu__link { transition: none; }
 }
-/* ---- QUOTE SECTION — mobile top spacing ---- */
+/* ---- QUOTE SECTION —  */
 @media (max-width: 767px) {
   .quote-responsiveness {
     margin-top: -20px;
@@ -1111,7 +1111,7 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
 
-/* ---- PRICING SECTION — mobile top spacing ---- */
+/* ---- PRICING SECTION —  */
 @media (max-width: 767px) {
   .section-pricing {
     margin-top: -30px;
@@ -1136,7 +1136,7 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
 
-/* ---- TESTIMONIALS SECTION — mobile spacing ---- */
+/* ---- TESTIMONIALS SECTION —  */
 @media (max-width: 767px) {
   .testinomial-responsiveness {
     margin-top: -30px;
@@ -1155,3 +1155,28 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
  
+
+/* ---- portfolio SECTION —   */
+@media (max-width: 767px) {
+  .portfolio-responsiveness {
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .portfolio-responsiveness {
+    margin-top: -70px;
+  }
+}
+/* ---- contact SECTION —   */
+@media (max-width: 767px) {
+  .contact-responsiveness{
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .contact-responsiveness {
+    margin-top: -85px;
+  }
+}

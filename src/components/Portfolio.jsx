@@ -14,7 +14,7 @@ export default function Portfolio() {
 
   return (
     <div ref={ref} className="section">
-      <div className="content">
+      <div className="content portfolio-responsiveness">
         <div className="block-heading margin" data-reveal>
           <img
             src="/images/subtitle.png"
