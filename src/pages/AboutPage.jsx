@@ -197,7 +197,7 @@ export default function AboutPage() {
 
       {/* ============ 3. MAIN ABOUT CONTENT ============ */}
       <div className="section">
-        <div className="content">
+        <div className="content approach-responsiveness">
           {/* 3-col image strip: about_2 / about_1 / about_3 */}
           {/* <div className="w-layout-grid grid-3-columns">
             <div className="overflow-image" data-reveal>
@@ -288,10 +288,10 @@ export default function AboutPage() {
 
           {/* 3-col image strip: about_7 / about_8 / about_9 */}
           <div
-            className="w-layout-grid grid-3-columns"
+            className="w-layout-grid grid-3-columns  "
             style={{ marginTop: "76px" }}
           >
-            <div className="overflow-image" data-reveal>
+            <div className="overflow-image" data-reveal >
               <img
                 src="/eventimages/1.png"
                 loading="lazy"

@@ -1219,3 +1219,19 @@ ul.w-commerce-commercecartoptionlist {
     margin-top: -60px;
   }
 }
+
+/* ---- about section approach —   */
+@media (max-width: 767px) {
+  .approach-responsiveness{
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .approach-responsiveness {
+    margin-top: -110px;
+  }
+}
+
+
+ 
