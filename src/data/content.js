@@ -62,8 +62,8 @@ export const testimonials = [
   { image: '/eventimages/65.jpg', title: 'Event 1', slug: 'event-1' },
   { image: '/eventimages/66.png', title: 'Event 2', slug: 'event-2' },
   { image: '/eventimages/67.png', title: 'Event 3', slug: 'event-3' },
-  { image: '/images/portfolio_4.jpg', title: 'Event 4', slug: 'event-4' },
-  { image: '/images/portfolio_1.jpg', title: 'Event 5', slug: 'event-5' },
+  { image: '/eventimages/68.png', title: 'Event 4', slug: 'event-4' },
+  { image: '/eventimages/69.png', title: 'Event 5', slug: 'event-5' },
 ]
 
 export const instagramImages = [

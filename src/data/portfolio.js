@@ -61,7 +61,7 @@ export const portfolioDetails = {
   "event-4": {
     slug: "event-4",
     title: "Birthday & Anniversary Celebrations",
-    teaserImage: "/images/portfolio_4.jpg",
+    teaserImage: "/eventimages/68.png",
     intro: {
       body: "Milestone moments deserve an extraordinary setting. Crown Estate offers the privacy, elegance and space needed to celebrate birthdays and anniversaries in true style. Whether it is an intimate gathering or a grand party, the estate's lawns, poolside and hall areas come together to create an experience your guests will talk about for years.",
     },
@@ -75,7 +75,7 @@ export const portfolioDetails = {
   "event-5": {
     slug: "event-5",
     title: "Family Get-Togethers & Reunions",
-    teaserImage: "/eventimages/65.jpg",
+    teaserImage: "/eventimages/69.png",
     intro: {
       body: "Crown Estate was made for families. With 20 AC rooms, open lawns, a pool and generous communal spaces, the estate gives every generation room to relax, connect and celebrate together. Family get-togethers and reunions at Crown Estate feel less like events and more like a homecoming — warm, unhurried and full of joy.",
     },
@@ -89,7 +89,7 @@ export const portfolioDetails = {
   "event-6": {
     slug: "event-6",
     title: "Luxury Weekend Getaways",
-    teaserImage: "eventimages/66.png",
+    teaserImage: "/eventimages/69.png",
     intro: {
       body: "Escape the city and settle into the quiet luxury of Crown Estate for a weekend getaway unlike any other. With 20 well-appointed AC rooms, a poolside retreat, lush lawns and attentive hospitality, the estate offers everything you need to unwind, recharge and indulge — all within a private 4-acre sanctuary in Bangalore.",
     },
