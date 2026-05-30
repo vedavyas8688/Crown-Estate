@@ -1098,3 +1098,17 @@ ul.w-commerce-commercecartoptionlist {
   .ce-mobile-menu,
   .ce-mobile-menu__link { transition: none; }
 }
+/* ---- QUOTE SECTION — mobile top spacing ---- */
+@media (max-width: 767px) {
+  .quote-responsiveness {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .quote-responsiveness {
+    margin-top: -60px;
+  }
+}
+
+ 
