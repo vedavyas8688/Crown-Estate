@@ -8,27 +8,15 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.classList.toggle('menu-open', mobileOpen)
+    return () => document.body.classList.remove('menu-open')
   }, [mobileOpen])
 
-  // Close mobile menu on every route change
   useEffect(() => {
     setMobileOpen(false)
   }, [location.pathname])
 
-  // Helper: render a top-level link with active highlighting
-  const NavLink = ({ to, children }) => {
-    const isActive =
-      location.pathname === to || (to === '/' && location.pathname === '/home-a')
-    return (
-      <Link
-        to={to}
-        className={`nav-link w-nav-link ${isActive ? 'w--current' : ''}`}
-        onClick={() => setMobileOpen(false)}
-      >
-        {children}
-      </Link>
-    )
-  }
+  const isActive = (to) =>
+    location.pathname === to || (to === '/' && location.pathname === '/home-a')
 
   return (
     <div
@@ -36,31 +24,28 @@ export default function Navbar() {
       data-animation="default"
       data-duration="400"
       role="banner"
-      className={`navbar w-nav ${mobileOpen ? 'w--nav-menu-open' : ''}`}
+      className="navbar w-nav"
     >
-      <Link to="/" className="brand-mobile w-nav-brand">
-        <img src="/CE-logo.png" loading="lazy" alt="Lovio" className="logo-mobile" />
-      </Link>
-
-      <nav
-        role="navigation"
-        className="nav-menu w-nav-menu"
-        style={mobileOpen ? { display: 'block' } : undefined}
-      >
+      {/* ─── DESKTOP nav — exact original structure, untouched ── */}
+      <nav role="navigation" className="nav-menu w-nav-menu">
         <div className="w-layout-grid grid-navbar">
           <div
             id="w-node-_07425466-8eb7-6e44-8292-395d2ea97cad-2ea97ca8"
             className="block-navbar"
           >
             {navLinks.left.map((link) => (
-              <NavLink key={link.to} to={link.to}>
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`nav-link w-nav-link${isActive(link.to) ? ' w--current' : ''}`}
+              >
                 {link.label}
-              </NavLink>
+              </Link>
             ))}
           </div>
 
           <Link to="/" className="brand w-nav-brand">
-            <img src="/CE-logo.png" loading="lazy" alt="Lovio" className="logo" />
+            <img src="/CE-logo.png" loading="lazy" alt="Crown Estate" className="logo" />
           </Link>
 
           <div
@@ -68,36 +53,55 @@ export default function Navbar() {
             className="block-navbar"
           >
             {navLinks.right.map((link) => (
-              <NavLink key={link.to} to={link.to}>
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`nav-link w-nav-link${isActive(link.to) ? ' w--current' : ''}`}
+              >
                 {link.label}
-              </NavLink>
+              </Link>
             ))}
           </div>
         </div>
       </nav>
 
-      {/* Mobile hamburger */}
-      <div
-        className={`menu-button w-nav-button ${mobileOpen ? 'w--open' : ''}`}
-        role="button"
-        tabIndex="0"
-        aria-label="menu"
-        aria-expanded={mobileOpen}
-        onClick={() => setMobileOpen((v) => !v)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault()
-            setMobileOpen((v) => !v)
-          }
-        }}
-      >
-        <img
-          src={mobileOpen ? '/images/close.svg' : '/images/menu.svg'}
-          loading="lazy"
-          alt=""
-          className="menu-image"
-        />
+      {/* ─── MOBILE bar — logo left, burger right ─────────────── */}
+      <div className="ce-mobile-bar">
+        <Link to="/" className="ce-mobile-bar__logo" onClick={() => setMobileOpen(false)}>
+          <img src="/CE-logo.png" loading="lazy" alt="Crown Estate" />
+        </Link>
+
+        <button
+          className={`ce-mobile-bar__burger${mobileOpen ? ' ce-mobile-bar__burger--open' : ''}`}
+          onClick={() => setMobileOpen((v) => !v)}
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
+          aria-controls="ce-mobile-menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
+
+      {/* ─── MOBILE dropdown — below bar only ─────────────────── */}
+      <nav
+        id="ce-mobile-menu"
+        className={`ce-mobile-menu${mobileOpen ? ' ce-mobile-menu--open' : ''}`}
+        aria-hidden={!mobileOpen}
+      >
+        {[...navLinks.left, ...navLinks.right].map((link) => (
+          <Link
+            key={link.to}
+            to={link.to}
+            className={`ce-mobile-menu__link${isActive(link.to) ? ' ce-mobile-menu__link--active' : ''}`}
+            onClick={() => setMobileOpen(false)}
+            tabIndex={mobileOpen ? 0 : -1}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
     </div>
   )
 }
