@@ -288,8 +288,8 @@ export default function AboutPage() {
 
           {/* 3-col image strip: about_7 / about_8 / about_9 */}
           <div
-            className="w-layout-grid grid-3-columns  "
-            style={{ marginTop: "76px" }}
+            className="w-layout-grid grid-3-columns threeimages-responsiveness "
+            style={{ marginTop: "-76px" }}
           >
             <div className="overflow-image" data-reveal >
               <img
