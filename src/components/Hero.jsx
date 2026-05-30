@@ -17,7 +17,7 @@ export default function Hero() {
               style={{ gridTemplateColumns: "1fr 1fr" }}
             >
               {heroImages.slice(0, 2).map((src, i) => (
-                <div className="overflow-hero---a" key={src}>
+                <div className="overflow-hero---a" key={src} style={{ borderRadius: "16px", overflow: "hidden" }}>
                   <img
                     className="image-hero---a"
                     src={src}
@@ -63,7 +63,7 @@ export default function Hero() {
                   className="link"
                   style={{ marginTop: "-10px" }}
                 >
-                  Book A Consult
+                  Book A Event
                 </a>
               </div>
               <img

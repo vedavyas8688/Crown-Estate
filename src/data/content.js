@@ -58,12 +58,12 @@ export const testimonials = [
   },
 ]
 
-export const portfolio = [
-  { image: '/images/portfolio_1.jpg', title: 'Jennifer & Oliver', slug: 'jennifer-oliver' },
-  { image: '/images/portfolio_2.jpg', title: 'Briana & Richard', slug: 'briana-richard' },
-  { image: '/images/portfolio_3.jpg', title: 'Anne & Cameron', slug: 'anne-cameron' },
-  { image: '/images/portfolio_4.jpg', title: 'Linda & Charles', slug: 'linda-charles' },
-  { image: '/images/portfolio_1.jpg', title: 'Rahul & Priya', slug: 'rahul-priya' },
+ export const portfolio = [
+  { image: '/images/portfolio_1.jpg', title: 'Event 1', slug: 'event-1' },
+  { image: '/images/portfolio_2.jpg', title: 'Event 2', slug: 'event-2' },
+  { image: '/images/portfolio_3.jpg', title: 'Event 3', slug: 'event-3' },
+  { image: '/images/portfolio_4.jpg', title: 'Event 4', slug: 'event-4' },
+  { image: '/images/portfolio_1.jpg', title: 'Event 5', slug: 'event-5' },
 ]
 
 export const instagramImages = [
@@ -86,3 +86,48 @@ export const navLinks = {
     { label: 'Contact', to: '/contact' }
   ]
 }
+
+
+export const pricingPackages = [
+  {
+    eyebrow: '24 Hours',
+    name: 'Wedding & Reception Package',
+    description: 'A complete venue package for destination weddings, nikah ceremonies and grand receptions in Bangalore.',
+    price: '₹5.5 Lakhs + 18% GST',
+    featured: false,
+    features: [
+      '20 AC rooms for up to 100 guests',
+      'Quadruple occupancy stay arrangement',
+      'Complimentary reception or nikah stage',
+      'Complimentary entrance gate',
+      'Optional complimentary mantap',
+      'Chairs and tables for 500 to 800 guests',
+    ],
+  },
+  {
+    eyebrow: 'Grand Event',
+    name: 'Reception Package',
+    description: 'Ideal for large evening receptions, post-wedding celebrations and family gatherings.',
+    price: 'On request',
+    featured: true,
+    features: [
+      'Lawn and hall area access',
+      'Guest seating support',
+      'Stage setup options',
+      'Vendor-friendly event space',
+    ],
+  },
+  {
+    eyebrow: 'Custom',
+    name: 'Wedding Weekend Stay',
+    description: 'Best suited for families planning a multi-day wedding stay experience in Bangalore.',
+    price: 'On request',
+    featured: false,
+    features: [
+      'Guest accommodation planning',
+      'Event space allocation',
+      'Poolside and lawn usage',
+      'Custom setup support',
+    ],
+  },
+]

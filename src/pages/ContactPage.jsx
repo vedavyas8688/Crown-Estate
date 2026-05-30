@@ -27,11 +27,13 @@ export default function ContactPage() {
               <br />
             </div>
             <h1 className="heading-hero" data-hero-reveal>
-              We look forward to connecting with you!
+              Book Your Celebration with Crown Venues
             </h1>
             <p className="paragraph margin" data-hero-reveal>
-              Lectus sit turpis iaculis eu non sed turpis suscipit facilisi.
-              Lorem morbi non morbi id aliquam. Urna adipiscing odio.
+              Make your special occasion unforgettable with Crown Estate, Crown
+              Pavilion I, or Crown Pavilion II. Reach out to us today to check
+              availability, discuss your requirements, and reserve the ideal
+              venue for your event.
             </p>
             <div className="border-down margin" data-hero-reveal></div>
           </div>

@@ -9,57 +9,19 @@ const GALLERY_1 = [
   '/eventimages/4.png',
 ];
 
-const GALLERY_2 = [
-  '/eventimages/1.png',
-  '/eventimages/5.png',
-  '/eventimages/6.png',
-  '/eventimages/2.png',
-  '/eventimages/3.png',
-  '/eventimages/12.webp',
-  '/eventimages/8.png',
-  '/eventimages/4.png',
-];
-
-const GALLERY_3 = [
-  '/eventimages/1.png',
-  '/eventimages/5.png',
-  '/eventimages/6.png',
-  '/eventimages/2.png',
-  '/eventimages/3.png',
-  '/eventimages/12.webp',
-  '/eventimages/8.png',
-  '/eventimages/4.png',
-];
-
-const GALLERY_4 = [
-  '/eventimages/1.png',
-  '/eventimages/5.png',
-  '/eventimages/6.png',
-  '/eventimages/2.png',
-  '/eventimages/3.png',
-  '/eventimages/12.webp',
-  '/eventimages/8.png',
-  '/eventimages/4.png',
-];
-
-const GALLERY_5 = [
-  '/eventimages/1.png',
-  '/eventimages/5.png',
-  '/eventimages/6.png',
-  '/eventimages/2.png',
-  '/eventimages/3.png',
-  '/eventimages/12.webp',
-  '/eventimages/8.png',
-  '/eventimages/4.png',
-];
+const GALLERY_2 = [...GALLERY_1];
+const GALLERY_3 = [...GALLERY_1];
+const GALLERY_4 = [...GALLERY_1];
+const GALLERY_5 = [...GALLERY_1];
+const GALLERY_6 = [...GALLERY_1];
 
 export const portfolioDetails = {
-  "jennifer-oliver": {
-    slug: "jennifer-oliver",
-    title: "Jennifer & Oliver",
+  "event-1": {
+    slug: "event-1",
+    title: "Destination Weddings & Receptions",
     teaserImage: "/images/portfolio_1.jpg",
     intro: {
-      body: "From the entrance gate to the reception lawn, every corner of Crown Estate was transformed for Jennifer and Oliver's wedding. Guests stayed across our 20 luxury AC rooms while the lawns and hall area hosted the ceremonies, reception and family gatherings over a beautiful weekend.",
+      body: "Crown Estate sets the perfect stage for destination weddings and grand receptions. From the entrance gate to the sprawling reception lawn, every corner of the estate is transformed to reflect your vision. Guests stay across 20 luxury AC rooms while the lawns, hall and stage area host ceremonies, receptions and family gatherings across a beautiful celebration weekend.",
     },
     gallery: GALLERY_1,
     testimonial: {
@@ -68,72 +30,83 @@ export const portfolioDetails = {
       author: "Jennifer & Oliver",
     },
   },
-
-  "briana-richard": {
-    slug: "briana-richard",
-    title: "Briana & Richard",
+  "event-2": {
+    slug: "event-2",
+    title: "Exhibitions & Fashion Shows",
     teaserImage: "/images/portfolio_2.jpg",
     intro: {
-      body: "Briana and Richard's reception at Crown Estate was a celebration of love, family and joy. The estate's lawns, stage area and hall space were beautifully set up for an evening that guests will remember for years to come.",
+      body: "With expansive lawns, a flexible hall and a striking entrance, Crown Estate is an exceptional venue for exhibitions and fashion shows. The open layout allows for custom staging, runway setups and curated display areas, while the estate's elegance provides a naturally sophisticated backdrop that elevates every showcase.",
     },
     gallery: GALLERY_2,
     testimonial: {
       flower: "/images/flower_2.png",
-      quote: '"The reception at Crown Estate was everything we hoped for. The lawn, the lights, the hospitality — it all came together beautifully for our special evening."',
+      quote: '"The space at Crown Estate was perfect for our exhibition. The layout, the ambience and the team\'s support made the entire event seamless and memorable."',
       author: "Briana & Richard",
     },
   },
-
-  "anne-cameron": {
-    slug: "anne-cameron",
-    title: "Anne & Cameron",
+  "event-3": {
+    slug: "event-3",
+    title: "Corporate Events & Conferences",
     teaserImage: "/images/portfolio_3.jpg",
     intro: {
-      body: "Family celebrations deserve space, comfort and a setting that allows everyone to relax and enjoy. Crown Estate gave Anne and Cameron's family exactly that — an estate to gather, celebrate, play and rest together over a beautiful weekend.",
+      body: "Crown Estate brings a rare blend of professionalism and elegance to corporate events and conferences. The estate's hall and outdoor spaces can be configured for seminars, product launches, team off-sites and formal gatherings — all within a private, distraction-free environment that inspires focus and connection.",
     },
     gallery: GALLERY_3,
     testimonial: {
       flower: "/images/flower_1.png",
-      quote: '"Crown Estate was perfect for our family get-together. Everyone had space, comfort and a beautiful setting to relax in. It truly felt like our own private retreat."',
+      quote: '"Our corporate off-site at Crown Estate exceeded every expectation. The facilities, the privacy and the setting made it our most productive and enjoyable team event yet."',
       author: "Anne & Cameron",
     },
   },
-
-  "linda-charles": {
-    slug: "linda-charles",
-    title: "Linda & Charles",
+  "event-4": {
+    slug: "event-4",
+    title: "Birthday & Anniversary Celebrations",
     teaserImage: "/images/portfolio_4.jpg",
     intro: {
-      body: "Anniversary celebrations deserve privacy, elegance and a setting that feels truly special. Linda and Charles found exactly that at Crown Estate — a private 4-acre estate where their milestone anniversary became an intimate, memorable retreat for their closest circle.",
+      body: "Milestone moments deserve an extraordinary setting. Crown Estate offers the privacy, elegance and space needed to celebrate birthdays and anniversaries in true style. Whether it is an intimate gathering or a grand party, the estate's lawns, poolside and hall areas come together to create an experience your guests will talk about for years.",
     },
     gallery: GALLERY_4,
     testimonial: {
       flower: "/images/flower_2.png",
-      quote: '"Our anniversary retreat at Crown Estate was everything we could have asked for. Intimate, elegant and truly memorable — we could not have chosen a more beautiful setting."',
+      quote: '"Our anniversary celebration at Crown Estate was intimate, elegant and truly unforgettable. We could not have chosen a more beautiful or personal setting."',
       author: "Linda & Charles",
     },
   },
-
-  "rahul-priya": {
-    slug: "rahul-priya",
-    title: "Rahul & Priya",
+  "event-5": {
+    slug: "event-5",
+    title: "Family Get-Togethers & Reunions",
     teaserImage: "/images/portfolio_1.jpg",
     intro: {
-      body: "Rahul and Priya brought their families together at Crown Estate for a vibrant and joyful celebration. The estate's open lawns, beautifully lit spaces and warm hospitality made every moment of their special day truly unforgettable.",
+      body: "Crown Estate was made for families. With 20 AC rooms, open lawns, a pool and generous communal spaces, the estate gives every generation room to relax, connect and celebrate together. Family get-togethers and reunions at Crown Estate feel less like events and more like a homecoming — warm, unhurried and full of joy.",
     },
     gallery: GALLERY_5,
     testimonial: {
       flower: "/images/flower_1.png",
-      quote: '"Crown Estate made our wedding feel like a dream. The space, the ambience and the warmth of the team made everything absolutely perfect for us and our families."',
+      quote: '"Crown Estate was perfect for our family reunion. Everyone had space to relax, play and enjoy — it truly felt like our own private retreat for the weekend."',
       author: "Rahul & Priya",
+    },
+  },
+  "event-6": {
+    slug: "event-6",
+    title: "Luxury Weekend Getaways",
+    teaserImage: "/images/portfolio_2.jpg",
+    intro: {
+      body: "Escape the city and settle into the quiet luxury of Crown Estate for a weekend getaway unlike any other. With 20 well-appointed AC rooms, a poolside retreat, lush lawns and attentive hospitality, the estate offers everything you need to unwind, recharge and indulge — all within a private 4-acre sanctuary in Bangalore.",
+    },
+    gallery: GALLERY_6,
+    testimonial: {
+      flower: "/images/flower_2.png",
+      quote: '"Our weekend at Crown Estate was pure indulgence. The rooms, the pool, the grounds — everything was beautiful. We left completely refreshed and already planning our return."',
+      author: "Meera & Arjun",
     },
   },
 };
 
 export const portfolioList = [
-  "jennifer-oliver",
-  "briana-richard",
-  "anne-cameron",
-  "linda-charles",
-  "rahul-priya",
+  "event-1",
+  "event-2",
+  "event-3",
+  "event-4",
+  "event-5",
+  "event-6",
 ];
