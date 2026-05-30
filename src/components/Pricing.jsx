@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
-export default function Pricing({ packages, eyebrow = 'Investment', heading = 'OUR OFFERINGS' }) {
+export default function Pricing({ packages, eyebrow = 'Packages', heading = 'OUR OFFERINGS' }) {
   const ref = useRef(null)
   useScrollReveal(ref)
 

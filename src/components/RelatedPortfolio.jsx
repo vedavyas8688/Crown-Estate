@@ -26,7 +26,7 @@ export default function RelatedPortfolio({ currentSlug }) {
           <div className="subtitle" data-reveal>
             Continue exploring<br />
           </div>
-          <h2 className="heading" data-reveal>More from our portfolio</h2>
+          <h2 className="heading" data-reveal>More from our Events</h2>
         </div>
 
         <div className="collection-list---portfolio w-dyn-items" data-reveal-group>

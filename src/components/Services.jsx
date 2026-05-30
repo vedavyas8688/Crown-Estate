@@ -385,7 +385,7 @@ export default function Services() {
 
   const total   = serviceList.length
   const visible = useVisibleCount()
-  const ANIM_DURATION = 500
+  const ANIM_DURATION = 300
 
   const go = useCallback((dir) => {
     if (isAnimating) return
@@ -411,7 +411,7 @@ export default function Services() {
   }, [isAnimating, current, total, visible])
 
   useEffect(() => {
-    const timer = setInterval(() => go('next'), 3500)
+    const timer = setInterval(() => go('next'), 1000)
     return () => clearInterval(timer)
   }, [go])
 

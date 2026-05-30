@@ -10,6 +10,7 @@ import ServiceDetailPage from './pages/ServiceDetailPage'
 import AboutPage from './pages/AboutPage'
 
 import PortfolioDetailPage from './pages/PortfolioDetailPage'
+import FloatingButtons from './components/FloatingButtons'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
       <SquareLogo />
+      <FloatingButtons />
       <Routes>
         <Route path="/" element={<HomePage />} />
 
