@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="hero---a">
             {/* Images */}
             <div
-              className="w-layout-grid grid-hero---a"
+              className="w-layout-grid grid-hero---a  grid-hero-responsive"
               style={{ gridTemplateColumns: "1fr 1fr" }}
             >
               {heroImages.slice(0, 2).map((src, i) => (

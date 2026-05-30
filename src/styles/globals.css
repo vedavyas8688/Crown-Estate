@@ -673,6 +673,9 @@ ul.w-commerce-commercecartoptionlist {
 
 /* ---- 767px ---- */
 @media (max-width: 767px) {
+  .grid-hero-responsive{
+    margin-top: 10px;
+  }
   .hero---a {
     display: flex;
     flex-direction: column;
@@ -745,6 +748,9 @@ ul.w-commerce-commercecartoptionlist {
 
 /* ---- 479px ---- */
 @media (max-width: 479px) {
+  .grid-hero-responsive{
+    margin-top: 10px;
+  }
   .block-hero---a {
     width: 88%;
     margin-top: -30px;
