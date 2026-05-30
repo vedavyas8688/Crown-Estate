@@ -1111,4 +1111,22 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
 
+/* ---- PRICING SECTION — mobile top spacing ---- */
+@media (max-width: 767px) {
+  .section-pricing {
+    margin-top: -30px;
+  }
+  .section-pricing1{
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .section-pricing {
+    margin-top: -80px;
+  }
+  .section-pricing1 {
+    margin-top: -30px;
+  }
+}
  

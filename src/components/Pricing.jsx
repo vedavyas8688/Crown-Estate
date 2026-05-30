@@ -7,7 +7,7 @@ export default function Pricing({ packages, eyebrow = 'Investment', heading = 'C
   useScrollReveal(ref)
 
   return (
-    <div className="section" ref={ref}>
+    <div className="section section-pricing" ref={ref}>
       <div className="content">
         <div className="block-heading margin" style={{ textAlign: 'center', alignItems: 'center' }}>
           <img
@@ -24,7 +24,7 @@ export default function Pricing({ packages, eyebrow = 'Investment', heading = 'C
           <h2 className="heading" data-reveal>{heading}</h2>
         </div>
 
-        <div className="grid-pricing" data-reveal-group>
+        <div className="grid-pricing section-pricing1" data-reveal-group>
           {packages.map((pkg, i) => (
             <div
               key={pkg.name}
