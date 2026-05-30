@@ -29,7 +29,7 @@ export default function ServicesPage() {
 
       {/* ============ 1. Destination Weddings — text left, image right ============ */}
       <div className="section first">
-        <div className="content">
+        <div className="content service1-responsiveness">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-text" data-reveal>
               <img src="/images/service_icon_1.png" loading="lazy" width="69" alt="" className="icon-flower" />

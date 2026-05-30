@@ -1233,6 +1233,19 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
 
+/* ---- service page 1st service  —   */
+@media (max-width: 767px) {
+  .service1-responsiveness{
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 479px) {
+  .service1-responsiveness {
+    margin-top: -70px;
+  }
+}
+
 /* ---- service page 3rd service  —   */
 @media (max-width: 767px) {
   .service3-responsiveness{
