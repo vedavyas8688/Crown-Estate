@@ -30,11 +30,102 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* ============ 2. MAIN ABOUT CONTENT ============ */}
+      {/* ============ 2. OUR PROPERTIES — alternating left/right ============ */}
+
+      {/* Section heading */}
       <div className="section first">
         <div className="content">
+           
+
+          {/* Crown Estate — text left, image right */}
+          <div className="w-layout-grid grid-2-columns">
+            <div className="block-text" data-reveal>
+              <div className="subtitle" style={{ marginBottom: '6px' }}>Airport Road, Bangalore</div>
+              <h3 className="heading">Crown Estate</h3>
+              <p className="paragraph">
+                A luxury private estate spread across 4 acres on Airport Road, Bangalore. Crown Estate is designed for destination weddings,
+                grand receptions, family gatherings, corporate events, exhibitions, and luxury weekend getaways — all within a single beautifully
+                planned property.
+              </p>
+              <ul className="inclusion-list" style={{ marginBottom: '32px' }}>
+                <li>Capacity: 500–800 guests for events</li>
+                <li>20 luxury AC rooms · stay for up to 100 guests</li>
+                <li>Suitable For: Weddings, Receptions, Corporates, Exhibitions, Family Events</li>
+                <li>Location: Airport Road, Yelahanka, Bangalore – 560119</li>
+              </ul>
+              <a href="/contact" className="button w-button">Enquire Now</a>
+            </div>
+            <div className="block-image" data-reveal data-reveal-delay="0.15">
+              <div className="overflow-image" style={{ borderRadius: '16px' }}>
+                <img className="image" src="/eventimages/crown-estate.webp" alt="Crown Estate" loading="lazy" />
+              </div>
+              <img src="/images/flower_5.png" loading="eager" alt="" className="flower---a" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Crown Pavilion I — image left, text right */}
+      <div className="section">
+        <div className="content">
+          <div className="w-layout-grid grid-2-columns">
+            <div className="block-image" data-reveal>
+              <div className="overflow-image" style={{ borderRadius: '16px' }}>
+                <img className="image" src="/eventimages/banner2.webp" alt="Crown Pavilion I" loading="lazy" />
+              </div>
+              <img src="/images/flower_2.png" loading="eager" alt="" className="flower---b" />
+            </div>
+            <div className="block-text" data-reveal data-reveal-delay="0.15">
+              <div className="subtitle" style={{ marginBottom: '6px' }}>Bangalore Palace Grounds</div>
+              <h3 className="heading">Crown Pavilion I</h3>
+              <p className="paragraph">
+                An iconic venue at the prestigious Bangalore Palace Grounds, Crown Pavilion I offers a grand and central setting for large-scale
+                celebrations. Centrally located and easily accessible, it is ideal for families and guests from across the city.
+              </p>
+              <ul className="inclusion-list" style={{ marginBottom: '32px' }}>
+                <li>Capacity: 1,000 – 2,000 guests</li>
+                <li>Suitable For: Weddings, Parties, Corporate Events, Other Celebrations</li>
+                <li>Location: Prestigious Bangalore Palace Grounds, central to the city</li>
+              </ul>
+              <a href="/contact" className="button w-button">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Crown Pavilion II — text left, image right */}
+      <div className="section">
+        <div className="content">
+          <div className="w-layout-grid grid-2-columns">
+            <div className="block-text" data-reveal>
+              <div className="subtitle" style={{ marginBottom: '6px' }}>Bangalore Palace Grounds</div>
+              <h3 className="heading">Crown Pavilion II</h3>
+              <p className="paragraph">
+                Crown Pavilion II is a refined venue at Bangalore Palace Grounds, offering an intimate yet grand setting for celebrations of up to
+                1,200 guests. A premium choice for events that demand elegance, comfort, and a central city location.
+              </p>
+              <ul className="inclusion-list" style={{ marginBottom: '32px' }}>
+                <li>Capacity: 1,000 – 1,200 guests</li>
+                <li>Suitable For: Weddings, Parties, Corporate Events, Other Celebrations</li>
+                <li>Location: Prestigious Bangalore Palace Grounds, central to the city</li>
+              </ul>
+              <a href="/contact" className="button w-button">Enquire Now</a>
+            </div>
+            <div className="block-image" data-reveal data-reveal-delay="0.15">
+              <div className="overflow-image" style={{ borderRadius: '16px' }}>
+                <img className="image" src="/eventimages/banner3.webp" alt="Crown Pavilion II" loading="lazy" />
+              </div>
+              <img src="/images/flower_4.png" loading="eager" alt="" className="flower---a variant" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ============ 3. MAIN ABOUT CONTENT ============ */}
+      <div className="section">
+        <div className="content">
           {/* 3-col image strip: about_2 / about_1 / about_3 */}
-          <div className="w-layout-grid grid-3-columns">
+          {/* <div className="w-layout-grid grid-3-columns">
             <div className="overflow-image" data-reveal>
               <img src="/eventimages/wedding.webp" loading="lazy" alt="" className="image about" />
             </div>
@@ -44,10 +135,10 @@ export default function AboutPage() {
             <div className="overflow-image" data-reveal data-reveal-delay="0.3">
               <img src="/eventimages/banner1.webp" loading="lazy" alt="" className="image about" />
             </div>
-          </div>
+          </div> */}
 
           {/* "Who we are" text block */}
-          <div className="text-about" data-reveal>
+          {/* <div className="text-about" data-reveal>
             <img src="/images/extra.png" loading="lazy" alt="" width="70" className="image-extra" />
             <h3>CROWN ESTATE</h3>
             <p>
@@ -64,17 +155,17 @@ export default function AboutPage() {
               Every corner of the estate is planned to give guests comfort, convenience, and a premium celebration experience. Whether you are hosting
               a traditional wedding, a corporate event, or a private family retreat, Crown Estate gives you the space and setting to make it special.
             </p>
-          </div>
+          </div> */}
 
           {/* 2-col image strip: about_5 / about_6 */}
-          <div className="w-layout-grid grid-2-columns about">
+          {/* <div className="w-layout-grid grid-2-columns about">
             <div className="overflow-image" data-reveal>
               <img className="image about" src="/eventimages/8.png" loading="lazy" alt="" />
             </div>
             <div className="overflow-image" data-reveal data-reveal-delay="0.15">
               <img className="image about" src="/eventimages/about-crown.webp" loading="lazy" alt="" />
             </div>
-          </div>
+          </div> */}
 
           {/* "Our process" text block */}
           <div className="text-about" data-reveal>
