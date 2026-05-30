@@ -89,7 +89,7 @@ export const portfolioDetails = {
   "event-6": {
     slug: "event-6",
     title: "Luxury Weekend Getaways",
-    teaserImage: "/eventimages/69.png",
+    teaserImage: "/eventimages/50.jpg",
     intro: {
       body: "Escape the city and settle into the quiet luxury of Crown Estate for a weekend getaway unlike any other. With 20 well-appointed AC rooms, a poolside retreat, lush lawns and attentive hospitality, the estate offers everything you need to unwind, recharge and indulge — all within a private 4-acre sanctuary in Bangalore.",
     },
