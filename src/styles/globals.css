@@ -1119,6 +1119,9 @@ ul.w-commerce-commercecartoptionlist {
   .section-pricing1{
     margin-top: -10px;
   }
+  .heading {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1126,7 +1129,10 @@ ul.w-commerce-commercecartoptionlist {
     margin-top: -80px;
   }
   .section-pricing1 {
-    margin-top: -30px;
+    margin-top: -25px;
+  }
+  .heading {
+    font-size: 22px;
   }
 }
  
