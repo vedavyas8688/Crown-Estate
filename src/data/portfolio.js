@@ -19,7 +19,7 @@ export const portfolioDetails = {
   "event-1": {
     slug: "event-1",
     title: "Destination Weddings & Receptions",
-    teaserImage: "/images/portfolio_1.jpg",
+    teaserImage: "/eventimages/65.jpg",
     intro: {
       body: "Crown Estate sets the perfect stage for destination weddings and grand receptions. From the entrance gate to the sprawling reception lawn, every corner of the estate is transformed to reflect your vision. Guests stay across 20 luxury AC rooms while the lawns, hall and stage area host ceremonies, receptions and family gatherings across a beautiful celebration weekend.",
     },
@@ -75,7 +75,7 @@ export const portfolioDetails = {
   "event-5": {
     slug: "event-5",
     title: "Family Get-Togethers & Reunions",
-    teaserImage: "/images/portfolio_1.jpg",
+    teaserImage: "/eventimages/65.jpg",
     intro: {
       body: "Crown Estate was made for families. With 20 AC rooms, open lawns, a pool and generous communal spaces, the estate gives every generation room to relax, connect and celebrate together. Family get-togethers and reunions at Crown Estate feel less like events and more like a homecoming — warm, unhurried and full of joy.",
     },

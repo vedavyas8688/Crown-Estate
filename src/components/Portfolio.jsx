@@ -24,7 +24,7 @@ export default function Portfolio() {
             className="image-subtitle"
           />
           <div className="subtitle">
-            Portfolio
+             Events
             <br />
           </div>
           <h2 className="heading">Event design to make your heart skip a beat</h2>

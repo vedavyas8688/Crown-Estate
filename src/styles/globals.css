@@ -650,6 +650,83 @@ ul.w-commerce-commercecartoptionlist {
   .hero-heading-responsive { font-size: 18px; line-height: 1.15; }
 }
 
+
+/* ---- HERO CARD — base styles ---- */
+.overflow-hero---a {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.grid-hero---a {
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-hero---a {
+  border-radius: 16px;
+  padding: 20px 8%;
+}
+
+.link {
+  display: inline-block;
+  margin-top: -10px;
+}
+
+/* ---- HERO CARD — mobile ---- */
+@media (max-width: 767px) {
+  .block-hero---a {
+    width: 100%;
+  }
+
+  .text-hero---a {
+    padding: 16px 5%;
+    border-radius: 12px;
+  }
+
+  .image-subtitle {
+    width: 46px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  .paragraph {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .link {
+    font-size: 13px;
+    margin-top: -6px;
+  }
+
+  .flower-hero---a {
+    width: 80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .text-hero---a {
+    padding: 14px 4%;
+  }
+
+  .image-subtitle {
+    width: 38px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+
+  .paragraph {
+    font-size: 12px;
+  }
+
+  .flower-hero---a {
+    width: 64px;
+  }
+}
 /* ---- FEATURED TESTIMONIAL — mobile ---- */
 @media (max-width: 767px) {
   .featured-testimonial {

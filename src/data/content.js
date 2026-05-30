@@ -59,7 +59,7 @@ export const testimonials = [
 ]
 
  export const portfolio = [
-  { image: '/images/portfolio_1.jpg', title: 'Event 1', slug: 'event-1' },
+  { image: '/eventimages/65.jpg', title: 'Event 1', slug: 'event-1' },
   { image: '/images/portfolio_2.jpg', title: 'Event 2', slug: 'event-2' },
   { image: '/images/portfolio_3.jpg', title: 'Event 3', slug: 'event-3' },
   { image: '/images/portfolio_4.jpg', title: 'Event 4', slug: 'event-4' },
