@@ -1180,3 +1180,42 @@ ul.w-commerce-commercecartoptionlist {
     margin-top: -85px;
   }
 }
+
+
+/* ---- about section venue1 —   */
+@media (max-width: 767px) {
+  .venue1-responsiveness{
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .venue1-responsiveness {
+    margin-top: -60px;
+  }
+}
+
+/* ---- about section venue2 —   */
+@media (max-width: 767px) {
+  .venue2-responsiveness{
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .venue2-responsiveness {
+    margin-top: -60px;
+  }
+}
+/* ---- about section venue3 —   */
+@media (max-width: 767px) {
+  .venue3-responsiveness{
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 479px) {
+  .venue3-responsiveness {
+    margin-top: -60px;
+  }
+}
