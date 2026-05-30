@@ -6622,8 +6622,9 @@ figcaption {
   }
 
   .flower-postcard---b {
-    width: 100px;
+    width: 50px;
     bottom: -72px;
+    right: 12%;
   }
 
   .postcard-text {
