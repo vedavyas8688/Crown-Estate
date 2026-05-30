@@ -33,7 +33,7 @@ export const portfolioDetails = {
   "event-2": {
     slug: "event-2",
     title: "Exhibitions & Fashion Shows",
-    teaserImage: "/images/portfolio_2.jpg",
+    teaserImage: "eventimages/66.png",
     intro: {
       body: "With expansive lawns, a flexible hall and a striking entrance, Crown Estate is an exceptional venue for exhibitions and fashion shows. The open layout allows for custom staging, runway setups and curated display areas, while the estate's elegance provides a naturally sophisticated backdrop that elevates every showcase.",
     },
@@ -47,7 +47,7 @@ export const portfolioDetails = {
   "event-3": {
     slug: "event-3",
     title: "Corporate Events & Conferences",
-    teaserImage: "/images/portfolio_3.jpg",
+    teaserImage: "/eventimages/67.png",
     intro: {
       body: "Crown Estate brings a rare blend of professionalism and elegance to corporate events and conferences. The estate's hall and outdoor spaces can be configured for seminars, product launches, team off-sites and formal gatherings — all within a private, distraction-free environment that inspires focus and connection.",
     },
@@ -89,7 +89,7 @@ export const portfolioDetails = {
   "event-6": {
     slug: "event-6",
     title: "Luxury Weekend Getaways",
-    teaserImage: "/images/portfolio_2.jpg",
+    teaserImage: "eventimages/66.png",
     intro: {
       body: "Escape the city and settle into the quiet luxury of Crown Estate for a weekend getaway unlike any other. With 20 well-appointed AC rooms, a poolside retreat, lush lawns and attentive hospitality, the estate offers everything you need to unwind, recharge and indulge — all within a private 4-acre sanctuary in Bangalore.",
     },
