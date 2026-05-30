@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
 
           <Link to="/" className="brand w-nav-brand">
-            <img src="/CE-logo.png" loading="lazy" alt="Crown Estate" className="logo" />
+            <img src="/newlogo.png" loading="lazy" alt="Crown Estate" className="logo" />
           </Link>
 
           <div
@@ -68,7 +68,7 @@ export default function Navbar() {
       {/* ─── MOBILE bar — logo left, burger right ─────────────── */}
       <div className="ce-mobile-bar">
         <Link to="/" className="ce-mobile-bar__logo" onClick={() => setMobileOpen(false)}>
-          <img src="/CE-logo.png" loading="lazy" alt="Crown Estate" />
+          <img src="/newlogo.png" loading="lazy" alt="Crown Estate" />
         </Link>
 
         <button

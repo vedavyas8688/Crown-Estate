@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
         <div className="block-footer">
           <img
-            src="/CE-logo.png"
+            src="/newlogo.png"
             loading="lazy"
             alt="Lovio"
             className="logo-footer"

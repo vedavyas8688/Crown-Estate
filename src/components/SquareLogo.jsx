@@ -11,7 +11,7 @@
 export default function SquareLogo() {
   return (
     <Link to="/" className="square-logo-badge" aria-label="Home">
-      <img src="/CE-Icon.png" alt="Crown Estate" />
+      <img src="/squarelogo.png" alt="Crown Estate" />
     </Link>
   )
 }
