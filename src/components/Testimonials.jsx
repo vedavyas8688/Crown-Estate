@@ -13,8 +13,8 @@ export default function Testimonials() {
   useScrollReveal(ref)
 
   return (
-    <div ref={ref} className="section">
-      <div className="content">
+    <div ref={ref} className="section  ">
+      <div className="content testinomial-responsiveness">
         <div className="block-heading margin" data-reveal>
           <img
             src="/images/subtitle.png"
@@ -30,7 +30,7 @@ export default function Testimonials() {
           <h2 className="heading">What our guests say</h2>
         </div>
 
-        <div className="slider-testimonials w-slider" data-reveal>
+        <div className="slider-testimonials w-slider testinomial-responsiveness1" data-reveal>
           <Swiper
             modules={[Navigation, EffectFade, A11y]}
             navigation={{

@@ -1135,4 +1135,23 @@ ul.w-commerce-commercecartoptionlist {
     font-size: 22px;
   }
 }
+
+/* ---- TESTIMONIALS SECTION — mobile spacing ---- */
+@media (max-width: 767px) {
+  .testinomial-responsiveness {
+    margin-top: -30px;
+  }
+  .testinomial-responsiveness1{
+     margin-top: -10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .testinomial-responsiveness {
+    margin-top: -80px;
+  }
+  .testinomial-responsiveness1{
+     margin-top: -30px;
+  }
+}
  
