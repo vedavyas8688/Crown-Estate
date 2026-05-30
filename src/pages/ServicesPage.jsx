@@ -79,7 +79,7 @@ export default function ServicesPage() {
 
       {/* ============ 3. Corporate Events — text left, image right ============ */}
       <div className="section">
-        <div className="content">
+        <div className="content service3-responsiveness">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-text" data-reveal>
               <img src="/images/service_icon_2.png" loading="lazy" width="69" alt="" className="icon-flower" />
@@ -129,7 +129,7 @@ export default function ServicesPage() {
 
       {/* ============ 5. Family Get-Togethers — text left, image right ============ */}
       <div className="section">
-        <div className="content">
+        <div className="content service5-responsiveness">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-text" data-reveal>
               <img src="/images/service_icon_3.png" loading="lazy" width="69" alt="" className="icon-flower" />
