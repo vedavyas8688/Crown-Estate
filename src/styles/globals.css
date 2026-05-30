@@ -627,31 +627,7 @@ ul.w-commerce-commercecartoptionlist {
 /* ============================================================
    RESPONSIVE ADDITIONS — covers every breakpoint systematically
    ============================================================ */
-
- /* ---- HERO HEADING responsive font scale ---- */
-.hero-heading-responsive {
-  font-size: 42px;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-@media (max-width: 1200px) {
-  .hero-heading-responsive { font-size: 45px; margin-top: 10px; }
-}
-@media (max-width: 991px) {
-  .hero-heading-responsive { font-size: 32px; }
-}
-@media (max-width: 767px) {
-  .hero-heading-responsive { font-size: 20px; }
-}
-@media (max-width: 479px) {
-  .hero-heading-responsive { font-size: 25px; line-height: 1.15; }
-}
-@media (max-width: 320px) {
-  .hero-heading-responsive { font-size: 18px; line-height: 1.15; }
-}
-
-
-/* ---- HERO CARD — base styles ---- */
+ /* ---- HERO CARD — base styles ---- */
 .overflow-hero---a {
   border-radius: 16px;
   overflow: hidden;
@@ -664,6 +640,8 @@ ul.w-commerce-commercecartoptionlist {
 .text-hero---a {
   border-radius: 16px;
   padding: 20px 8%;
+  background: white;
+  text-align: center;
 }
 
 .link {
@@ -671,52 +649,118 @@ ul.w-commerce-commercecartoptionlist {
   margin-top: -10px;
 }
 
-/* ---- HERO CARD — mobile ---- */
-@media (max-width: 767px) {
-  .block-hero---a {
-    width: 100%;
-  }
+/* ---- HERO HEADING — base ---- */
+.hero-heading-responsive {
+  font-size: 42px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
 
-  .text-hero---a {
-    padding: 16px 5%;
-    border-radius: 12px;
-  }
-
-  .image-subtitle {
-    width: 46px;
-  }
-
-  .subtitle {
-    font-size: 11px;
-    letter-spacing: 0.08em;
-  }
-
-  .paragraph {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .link {
-    font-size: 13px;
-    margin-top: -6px;
-  }
-
-  .flower-hero---a {
-    width: 80px;
+/* ---- 1200px ---- */
+@media (max-width: 1200px) {
+  .hero-heading-responsive {
+    font-size: 45px;
+    margin-top: 10px;
   }
 }
 
-@media (max-width: 479px) {
+/* ---- 991px ---- */
+@media (max-width: 991px) {
+  .hero-heading-responsive {
+    font-size: 32px;
+  }
+}
+
+/* ---- 767px ---- */
+@media (max-width: 767px) {
+  .hero---a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .grid-hero---a {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .image-hero---a {
+    height: 45vw;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .block-hero---a {
+    width: 85%;
+    margin: -40px auto 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
   .text-hero---a {
-    padding: 14px 4%;
+    padding: 20px 7%;
+    border-radius: 14px;
+    text-align: center;
   }
 
   .image-subtitle {
-    width: 38px;
+    width: 40px;
+    margin: 0 auto 6px auto;
+    display: block;
   }
 
   .subtitle {
     font-size: 10px;
+    letter-spacing: 0.15em;
+    text-align: center;
+  }
+
+  .hero-heading-responsive {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .paragraph {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .link {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    margin-top: 4px;
+    display: block;
+    text-align: center;
+  }
+
+  .flower-hero---a {
+    width: 70px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+}
+
+/* ---- 479px ---- */
+@media (max-width: 479px) {
+  .block-hero---a {
+    width: 88%;
+    margin-top: -30px;
+  }
+
+  .text-hero---a {
+    padding: 14px 5%;
+  }
+
+  .image-subtitle {
+    width: 36px;
+  }
+
+  .hero-heading-responsive {
+    font-size: 20px;
+    line-height: 1.15;
   }
 
   .paragraph {
@@ -724,7 +768,19 @@ ul.w-commerce-commercecartoptionlist {
   }
 
   .flower-hero---a {
-    width: 64px;
+    width: 60px;
+  }
+}
+
+/* ---- 320px ---- */
+@media (max-width: 320px) {
+  .hero-heading-responsive {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+
+  .block-hero---a {
+    width: 92%;
   }
 }
 /* ---- FEATURED TESTIMONIAL — mobile ---- */
