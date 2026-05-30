@@ -33,7 +33,7 @@ export const portfolioDetails = {
   "event-2": {
     slug: "event-2",
     title: "Exhibitions & Fashion Shows",
-    teaserImage: "eventimages/66.png",
+    teaserImage: "/eventimages/66.png",
     intro: {
       body: "With expansive lawns, a flexible hall and a striking entrance, Crown Estate is an exceptional venue for exhibitions and fashion shows. The open layout allows for custom staging, runway setups and curated display areas, while the estate's elegance provides a naturally sophisticated backdrop that elevates every showcase.",
     },
