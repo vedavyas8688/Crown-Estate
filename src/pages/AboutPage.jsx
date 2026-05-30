@@ -35,7 +35,11 @@ export default function AboutPage() {
       {/* Section heading */}
       <div className="section first">
         <div className="content">
-           
+          {/* <div className="block-heading margin" style={{ textAlign: 'center', alignItems: 'center', marginBottom: '60px' }} data-reveal>
+            <img src="/images/subtitle.png" loading="lazy" alt="" width="62" className="image-subtitle" />
+            <div className="subtitle">Our Properties<br /></div>
+            <h2 className="heading">Spaces built for extraordinary celebrations</h2>
+          </div> */}
 
           {/* Crown Estate — text left, image right */}
           <div className="w-layout-grid grid-2-columns">
@@ -65,10 +69,10 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Crown Pavilion I — image left, text right */}
+      {/* Crown Pavilion I — image left, text right (mobile: text top, image bottom) */}
       <div className="section">
         <div className="content">
-          <div className="w-layout-grid grid-2-columns">
+          <div className="w-layout-grid grid-2-columns venue-flip">
             <div className="block-image" data-reveal>
               <div className="overflow-image" style={{ borderRadius: '16px' }}>
                 <img className="image" src="/eventimages/banner2.webp" alt="Crown Pavilion I" loading="lazy" />

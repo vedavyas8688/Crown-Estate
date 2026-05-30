@@ -806,3 +806,18 @@ ul.w-commerce-commercecartoptionlist {
   .section { padding: 48px 10px; }
   .section-footer { padding: 48px 10px; }
 }
+
+
+/* ---- VENUE FLIP — on mobile, show text before image even when image is first in DOM ---- */
+@media (max-width: 767px) {
+  .venue-flip {
+    display: flex;
+    flex-direction: column;
+  }
+  .venue-flip .block-image {
+    order: 2;
+  }
+  .venue-flip .block-text {
+    order: 1;
+  }
+}
