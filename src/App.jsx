@@ -8,7 +8,8 @@ import ContactPage from './pages/ContactPage'
 import ServicesPage from './pages/ServicesPage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import AboutPage from './pages/AboutPage'
-
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import PortfolioDetailPage from './pages/PortfolioDetailPage'
 import FloatingButtons from './components/FloatingButtons'
 
@@ -19,6 +20,7 @@ export default function App() {
       <Navbar />
       <SquareLogo />
       <FloatingButtons />
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<HomePage />} />
 
