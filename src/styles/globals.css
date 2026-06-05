@@ -1573,3 +1573,72 @@ ul.w-commerce-commercecartoptionlist {
     height: 44px;
   }
 }
+
+/* ============================================================
+   BOOKING MODAL — responsive
+   ============================================================ */
+ 
+/* ── Tablet: 768px–991px ── */
+@media (max-width: 991px) {
+  .bm-card {
+    padding: 24px 32px 24px !important;
+    max-width: 480px !important;
+  }
+}
+ 
+/* ── Mobile: 640px and below ── */
+@media (max-width: 640px) {
+  .bm-card {
+    padding: 20px 22px 20px !important;
+    max-width: 100% !important;
+  }
+ 
+  /* Stack 2-col rows to single column */
+  .bm-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+ 
+  .bm-input {
+    font-size: 14px !important;
+  }
+ 
+  .bm-header-logo {
+    width: 28px !important;
+  }
+ 
+  .bm-header-title {
+    font-size: 20px !important;
+  }
+ 
+  .bm-submit {
+    padding: 13px 16px !important;
+    font-size: 10px !important;
+  }
+}
+ 
+/* ── Small phones: 479px and below ── */
+@media (max-width: 479px) {
+  .bm-card {
+    padding: 16px 16px 18px !important;
+  }
+ 
+  .bm-input {
+    font-size: 13px !important;
+  }
+ 
+  .bm-header-title {
+    font-size: 18px !important;
+  }
+ 
+  .cs-option {
+    font-size: 11px !important;
+    padding: 5px 10px !important;
+  }
+ 
+  .bm-submit {
+    font-size: 10px !important;
+    letter-spacing: 1.5px !important;
+    padding: 12px 12px !important;
+  }
+}

@@ -29,6 +29,13 @@ const css = `
 .bm-input:focus { border-bottom-color: var(--heading); }
 .bm-input::placeholder { color: rgba(109, 112, 94, 0.4); font-size: 14px; }
 
+/* ── 2-col grid — collapses on mobile via globals.css ── */
+.bm-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
 /* ── Custom Select ── */
 .cs-wrap { position: relative; }
 .cs-trigger {
@@ -56,7 +63,6 @@ const css = `
   color: var(--heading);
 }
 .cs-arrow.open { transform: rotate(180deg); }
-
 .cs-dropdown {
   position: absolute;
   top: calc(100% + 2px);
@@ -223,12 +229,21 @@ export default function BookingModal({ onClose }) {
             <>
               {/* Header */}
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
-                <img src="/images/subtitle.png" loading="lazy" alt="" width="32" style={{ display: "block", flexShrink: 0 }} />
+                <img
+                  src="/images/subtitle.png"
+                  loading="lazy"
+                  alt=""
+                  className="bm-header-logo"
+                  style={{ width: "32px", display: "block", flexShrink: 0 }}
+                />
                 <div>
                   <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "2px", textTransform: "uppercase", margin: 0, color: "var(--subtitle)" }}>
                     Crown Estate
                   </p>
-                  <h2 style={{ fontFamily: "Marcellus, serif", fontWeight: 400, margin: 0, lineHeight: 1.2, fontSize: "22px", color: "var(--heading)" }}>
+                  <h2
+                    className="bm-header-title"
+                    style={{ fontFamily: "Marcellus, serif", fontWeight: 400, margin: 0, lineHeight: 1.2, fontSize: "22px", color: "var(--heading)" }}
+                  >
                     Request a Callback
                   </h2>
                 </div>
@@ -239,7 +254,8 @@ export default function BookingModal({ onClose }) {
 
               <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
+                {/* Row 1 — Name */}
+                <div className="bm-grid-2">
                   <Field label="First Name" required>
                     <input className="bm-input" name="firstName" type="text" placeholder="First name" required />
                   </Field>
@@ -248,7 +264,8 @@ export default function BookingModal({ onClose }) {
                   </Field>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
+                {/* Row 2 — Contact */}
+                <div className="bm-grid-2">
                   <Field label="Mobile Number" required>
                     <input className="bm-input" name="phone" type="tel" placeholder="Mobile number" required />
                   </Field>
