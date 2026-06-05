@@ -17,8 +17,6 @@ export default function ContactPage() {
   const ref = useRef(null);
   useScrollReveal(ref);
 
-  const [submitted, setSubmitted] = useState(false);
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -65,11 +63,7 @@ export default function ContactPage() {
               location: "",
               message: "",
             });
-            setIsLoading(false);
             toast.success("Successfully we got your info.");
-            setTimeout(() => {
-              setVisibleModal(false);
-            }, 300);
           } else {
             console.error("Error:", data.message);
             setModalMessage(
@@ -94,9 +88,7 @@ export default function ContactPage() {
         toast.error(error);
       });
     }
-
     setIsLoading(false);
-    setShowModal(true);
   };
 
   return (

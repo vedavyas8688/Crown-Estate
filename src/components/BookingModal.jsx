@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { MdClose, MdKeyboardArrowDown, MdCheckCircleOutline } from "react-icons/md";
+import {
+  MdClose,
+  MdKeyboardArrowDown,
+  MdCheckCircleOutline,
+} from "react-icons/md";
+import { toast } from "react-toastify";
 
 const css = `
 @keyframes ceOverlayIn {
@@ -132,16 +137,26 @@ const EVENT_OPTIONS = [
   "Corporate Events & Conferences",
 ];
 
-function CustomSelect({ name }) {
+function CustomSelect({ name, value, onChange }) {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState("");
+
+  const handleSelect = (option) => {
+    onChange({
+      target: {
+        name,
+        value: option,
+      },
+    });
+    setOpen(false);
+  };
 
   return (
     <div className="cs-wrap">
-      <input type="hidden" name={name} value={selected} />
+      <input type="hidden" name={name} value={value || ""} />
+
       <button
         type="button"
-        className={`cs-trigger${!selected ? " placeholder" : ""}`}
+        className={`cs-trigger${!value ? " placeholder" : ""}`}
         onClick={() => setOpen((o) => !o)}
         onBlur={(e) => {
           if (!e.currentTarget.parentElement.contains(e.relatedTarget)) {
@@ -149,8 +164,11 @@ function CustomSelect({ name }) {
           }
         }}
       >
-        <span>{selected || "Select an event type"}</span>
-        <MdKeyboardArrowDown className={`cs-arrow${open ? " open" : ""}`} size={18} />
+        <span>{value || "Select an event type"}</span>
+        <MdKeyboardArrowDown
+          className={`cs-arrow${open ? " open" : ""}`}
+          size={18}
+        />
       </button>
 
       {open && (
@@ -158,9 +176,9 @@ function CustomSelect({ name }) {
           {EVENT_OPTIONS.map((opt) => (
             <div
               key={opt}
-              className={`cs-option${selected === opt ? " selected" : ""}`}
+              className={`cs-option${value === opt ? " selected" : ""}`}
               onMouseDown={(e) => e.preventDefault()}
-              onClick={() => { setSelected(opt); setOpen(false); }}
+              onClick={() => handleSelect(opt)}
             >
               {opt}
             </div>
@@ -174,18 +192,22 @@ function CustomSelect({ name }) {
 function Field({ label, required, children }) {
   return (
     <div style={{ marginBottom: "12px" }}>
-      <label style={{
-        display: "block",
-        fontFamily: "Montserrat, sans-serif",
-        fontSize: "10px",
-        fontWeight: 500,
-        letterSpacing: "2px",
-        textTransform: "uppercase",
-        marginBottom: "4px",
-        color: "var(--heading)",
-      }}>
+      <label
+        style={{
+          display: "block",
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: "10px",
+          fontWeight: 500,
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          marginBottom: "4px",
+          color: "var(--heading)",
+        }}
+      >
         {label}
-        {required && <span style={{ color: "var(--accent)", marginLeft: "2px" }}>*</span>}
+        {required && (
+          <span style={{ color: "var(--accent)", marginLeft: "2px" }}>*</span>
+        )}
       </label>
       {children}
     </div>
@@ -194,6 +216,94 @@ function Field({ label, required, children }) {
 
 export default function BookingModal({ onClose }) {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    eventType: "",
+    location: "",
+    message: "",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    if (!formData.firstName.trim()) errors.firstName = "First name is required";
+    if (!formData.lastName.trim()) errors.lastName = "Last name is required";
+    if (!formData.email.trim()) errors.email = "Email is required";
+    if (!formData.phone.trim()) errors.phone = "Phone number is required";
+    if (!/^\d{10}$/.test(formData.phone))
+      errors.phone = "Phone number is invalid";
+    return errors;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formErrors = validateForm();
+
+    if (Object.keys(formErrors).length === 0) {
+      try {
+        const response = await fetch("http://localhost/crown/contact.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        console.log("response", response);
+
+        if (response.ok) {
+          const data = await response.json();
+
+          if (data.status === "success") {
+            setFormData({
+              firstName: "",
+              lastName: "",
+              email: "",
+              phone: "",
+              eventType: "",
+              location: "",
+              message: "",
+            });
+            setIsLoading(false);
+            toast.success("Successfully we got your info.");
+            onClose();
+          } else {
+            console.error("Error:", data.message);
+            setModalMessage(
+              data.message || "An error occurred. Please try again.",
+            );
+            toast.error(data.message);
+          }
+        } else {
+          console.error("Error:", response.statusText);
+          setModalMessage("An error occurred. Please try again.");
+          toast.error("An error occurred. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        setModalMessage("An error occurred. Please try again later.");
+        toast.error("An error occurred. Please try again later.");
+      }
+    } else {
+      setErrors(formErrors);
+      setModalMessage("Please correct the errors in the form.");
+      Object.values(formErrors).forEach((error) => {
+        toast.error(error);
+      });
+    }
+
+    setIsLoading(false);
+    onClose();
+  };
 
   return (
     <>
@@ -202,8 +312,12 @@ export default function BookingModal({ onClose }) {
       <div
         className="bm-overlay"
         style={{
-          position: "fixed", inset: 0, zIndex: 9999,
-          display: "flex", alignItems: "center", justifyContent: "center",
+          position: "fixed",
+          inset: 0,
+          zIndex: 9999,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           padding: "16px",
           background: "rgba(2, 67, 75, 0.55)",
           backdropFilter: "blur(6px)",
@@ -225,77 +339,139 @@ export default function BookingModal({ onClose }) {
             <MdClose size={20} />
           </button>
 
-          {!submitted ? (
-            <>
-              {/* Header */}
-              <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
-                <img
-                  src="/images/subtitle.png"
-                  loading="lazy"
-                  alt=""
-                  className="bm-header-logo"
-                  style={{ width: "32px", display: "block", flexShrink: 0 }}
-                />
-                <div>
-                  <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: "10px", fontWeight: 500, letterSpacing: "2px", textTransform: "uppercase", margin: 0, color: "var(--subtitle)" }}>
-                    Crown Estate
-                  </p>
-                  <h2
-                    className="bm-header-title"
-                    style={{ fontFamily: "Marcellus, serif", fontWeight: 400, margin: 0, lineHeight: 1.2, fontSize: "22px", color: "var(--heading)" }}
-                  >
-                    Request a Callback
-                  </h2>
-                </div>
+          <>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                marginBottom: "12px",
+              }}
+            >
+              <img
+                src="/images/subtitle.png"
+                loading="lazy"
+                alt=""
+                className="bm-header-logo"
+                style={{ width: "32px", display: "block", flexShrink: 0 }}
+              />
+              <div>
+                <p
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    fontSize: "10px",
+                    fontWeight: 500,
+                    letterSpacing: "2px",
+                    textTransform: "uppercase",
+                    margin: 0,
+                    color: "var(--subtitle)",
+                  }}
+                >
+                  Crown Estate
+                </p>
+                <h2
+                  className="bm-header-title"
+                  style={{
+                    fontFamily: "Marcellus, serif",
+                    fontWeight: 400,
+                    margin: 0,
+                    lineHeight: 1.2,
+                    fontSize: "22px",
+                    color: "var(--heading)",
+                  }}
+                >
+                  Request a Callback
+                </h2>
+              </div>
+            </div>
+            <div
+              style={{
+                width: "100%",
+                height: "1px",
+                marginBottom: "16px",
+                backgroundImage:
+                  "linear-gradient(to right, transparent, var(--border) 30%, var(--border) 70%, transparent)",
+              }}
+            />
+
+            <form onSubmit={handleSubmit}>
+              <div className="bm-grid-2">
+                <Field label="First Name" required>
+                  <input
+                    className="bm-input"
+                    name="firstName"
+                    type="text"
+                    placeholder="First name"
+                    required
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                  />
+                </Field>
+                <Field label="Last Name">
+                  <input
+                    className="bm-input"
+                    name="lastName"
+                    type="text"
+                    placeholder="Last name"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                  />
+                </Field>
               </div>
 
-              {/* Divider */}
-              <div style={{ width: "100%", height: "1px", marginBottom: "16px", backgroundImage: "linear-gradient(to right, transparent, var(--border) 30%, var(--border) 70%, transparent)" }} />
-
-              <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
-
-                {/* Row 1 — Name */}
-                <div className="bm-grid-2">
-                  <Field label="First Name" required>
-                    <input className="bm-input" name="firstName" type="text" placeholder="First name" required />
-                  </Field>
-                  <Field label="Last Name">
-                    <input className="bm-input" name="lastName" type="text" placeholder="Last name" />
-                  </Field>
-                </div>
-
-                {/* Row 2 — Contact */}
-                <div className="bm-grid-2">
-                  <Field label="Mobile Number" required>
-                    <input className="bm-input" name="phone" type="tel" placeholder="Mobile number" required />
-                  </Field>
-                  <Field label="Email">
-                    <input className="bm-input" name="email" type="email" placeholder="Email address" />
-                  </Field>
-                </div>
-
-                <Field label="Event / Service">
-                  <CustomSelect name="eventType" />
+              <div className="bm-grid-2">
+                <Field label="Mobile Number" required>
+                  <input
+                    className="bm-input"
+                    name="phone"
+                    type="tel"
+                    placeholder="Mobile number"
+                    required
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                  />
                 </Field>
-
-                <Field label="Message">
-                  <textarea className="bm-input" name="message" placeholder="Tell us about your event…" rows={2} style={{ resize: "none", paddingTop: "4px" }} />
+                <Field label="Email">
+                  <input
+                    className="bm-input"
+                    name="email"
+                    type="email"
+                    placeholder="Email address"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                  />
                 </Field>
+              </div>
 
-                <button type="submit" className="bm-submit" style={{ marginTop: "8px" }}>
-                  Request a Callback
-                </button>
-              </form>
-            </>
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: "48px 0", gap: "16px" }}>
-              <MdCheckCircleOutline size={52} style={{ color: "var(--accent)" }} />
-              <p style={{ fontFamily: "Marcellus, serif", fontSize: "22px", color: "var(--heading)", margin: 0 }}>Thank you!</p>
-              <p style={{ fontFamily: "Montserrat, sans-serif", fontSize: "14px", lineHeight: 1.6, color: "var(--paragraphs)", margin: 0 }}>
-                We've received your request and will call you back shortly.
-              </p>
-            </div>
-          )}
+              <Field label="Event / Service">
+                <CustomSelect
+                  name="eventType"
+                  value={formData.eventType}
+                  onChange={handleInputChange}
+                />
+              </Field>
+
+              <Field label="Message">
+                <textarea
+                  className="bm-input"
+                  name="message"
+                  placeholder="Tell us about your event…"
+                  rows={2}
+                  style={{ resize: "none", paddingTop: "4px" }}
+                  value={formData.message}
+                  onChange={handleInputChange}
+                />
+              </Field>
+
+              <button
+                type="submit"
+                className="bm-submit"
+                style={{ marginTop: "8px" }}
+              >
+                {isLoading ? "Please wait..." : "Request a Callback"}
+              </button>
+            </form>
+          </>
         </div>
       </div>
     </>
