@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { toast } from "react-toastify";
+import Seo from "../components/Seo";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -93,6 +94,11 @@ export default function ContactPage() {
 
   return (
     <div ref={ref}>
+      <Seo
+        title="Book a Wedding & Event Venue in Bangalore | Crown Estate"
+        description="Contact Crown Estate to book a luxury wedding and event venue in Bangalore for weddings, receptions, corporate events, celebrations, and weekend getaways."
+        keywords="Book a Wedding & Event Venue in Bangalore"
+      />
       {/* ============ 0. HERO — same section-hero.page pattern as Services/About ============ */}
       <div className="section-hero page">
         <div className="content">

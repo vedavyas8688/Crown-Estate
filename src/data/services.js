@@ -6,14 +6,11 @@ export const serviceDetails = {
     teaserImage: "/eventimages/wedding.webp",
     teaserBody:
       "Host your dream destination wedding or grand reception at Crown Estate, a luxury 4-acre wedding venue on Airport Road, Bangalore with lawns, AC rooms, hall area, stage setup and guest accommodation.",
-
     seo: {
-      metaTitle:
-        "Destination Wedding Venue in Bangalore | Crown Estate Airport Road",
+      metaTitle: "Luxury Destination Wedding Venue in Bangalore | Crown Estate",
       metaDescription:
-        "Book Crown Estate, a luxury destination wedding and reception venue on Airport Road, Bangalore with 20 AC rooms, lawns, hall, stage setup and space for 500 to 800 guests.",
-      keywords:
-        "destination wedding venue in Bangalore, wedding venue Airport Road Bangalore, reception venue Bangalore, nikah venue Bangalore, luxury wedding venue Bangalore",
+        "Celebrate your dream wedding at Crown Estate, a luxury destination wedding venue in Bangalore with elegant event spaces, premium stay, and unforgettable experiences.",
+      keywords: "Destination Wedding Venue in Bangalore",
     },
 
     heroHeading: "Luxury Destination Wedding Venue in Bangalore",
@@ -170,11 +167,11 @@ export const serviceDetails = {
       "Celebrate milestone birthdays and anniversaries at Crown Estate, a luxury private event venue in Bangalore with lawns, rooms, poolside spaces and premium celebration facilities.",
 
     seo: {
-      metaTitle: "Birthday & Anniversary Venue in Bangalore | Crown Estate",
+      metaTitle:
+        "Birthday & Anniversary Celebration Venue in Bangalore | Crown Estate",
       metaDescription:
-        "Celebrate birthdays, anniversaries and milestone events at Crown Estate Airport Road, Bangalore. Luxury 4-acre venue with lawns, AC rooms, pool, hall and guest stay.",
-      keywords:
-        "birthday party venue in Bangalore, anniversary venue Bangalore, private party venue Airport Road Bangalore, luxury celebration venue Bangalore",
+        "Celebrate birthdays, anniversaries, and special moments at Crown Estate, a premium celebration venue in Bangalore with elegant event spaces and memorable experiences.",
+      keywords: "Birthday & Anniversary Celebration Venue in Bangalore",
     },
 
     heroHeading: "Elegant Birthday & Anniversary Venue in Bangalore",
@@ -329,11 +326,11 @@ export const serviceDetails = {
       "Bring your loved ones together at Crown Estate, a spacious family get-together venue in Bangalore with rooms, lawns, pool, play area and private celebration spaces.",
 
     seo: {
-      metaTitle: "Family Get-Together Venue in Bangalore | Crown Estate",
+      metaTitle:
+        "Family Get-Together & Reunion Venue in Bangalore | Crown Estate",
       metaDescription:
-        "Host family get-togethers, reunions and private gatherings at Crown Estate Airport Road, Bangalore. 4-acre estate with AC rooms, lawns, pool and children’s play area.",
-      keywords:
-        "family get together venue in Bangalore, reunion venue Bangalore, family resort Airport Road Bangalore, private estate for family gathering Bangalore",
+        "Create lasting memories with family get-togethers and reunions at Crown Estate, a premium venue in Bangalore offering elegant spaces and warm hospitality.",
+      keywords: "Family Get-Together & Reunion Venue in Bangalore",
     },
 
     heroHeading: "Spacious Family Get-Together Venue in Bangalore",
@@ -490,9 +487,8 @@ export const serviceDetails = {
     seo: {
       metaTitle: "Luxury Weekend Getaway Near Bangalore | Crown Estate",
       metaDescription:
-        "Plan a luxury weekend getaway near Bangalore at Crown Estate Airport Road. Private 4-acre estate with AC rooms, swimming pool, lawns and family-friendly amenities.",
-      keywords:
-        "luxury weekend getaway near Bangalore, private estate stay Bangalore, group stay near Bangalore, weekend resort Airport Road Bangalore",
+        "Escape to Crown Estate, a luxury weekend getaway near Bangalore offering comfortable stays, relaxing spaces, family-friendly amenities, and memorable experiences.",
+      keywords: "Weekend Getaway Near Bangalore",
     },
 
     heroHeading: "Luxury Weekend Getaway Near Bangalore",
@@ -554,9 +550,6 @@ export const serviceDetails = {
       "/eventimages/46.jpg",
       "/eventimages/47.jpg",
       "/eventimages/48.jpg",
-       
-      
-       
     ],
 
     testimonial: {
@@ -650,11 +643,11 @@ export const serviceDetails = {
       "Host exhibitions, fashion shows, car displays, clothing fairs and lifestyle events at Crown Estate, a spacious 4-acre exhibition venue on Airport Road, Bangalore.",
 
     seo: {
-      metaTitle: "Exhibition & Fashion Show Venue in Bangalore | Crown Estate",
+      metaTitle:
+        "Premium Exhibition & Fashion Show Venue in Bangalore | Crown Estate",
       metaDescription:
-        "Book Crown Estate for exhibitions, fashion shows, car displays, clothing fairs and lifestyle events in Bangalore. Spacious 4-acre venue on Airport Road.",
-      keywords:
-        "exhibition venue in Bangalore, fashion show venue Bangalore, car exhibition venue Bangalore, clothing fair venue Airport Road Bangalore",
+        "Host exhibitions, fashion shows, product launches, and brand events at Crown Estate, a premium venue in Bangalore with spacious event spaces and modern facilities.",
+      keywords: "Exhibition & Fashion Show Venue in Bangalore",
     },
 
     heroHeading: "Premium Exhibition & Fashion Show Venue in Bangalore",
@@ -813,9 +806,8 @@ export const serviceDetails = {
       metaTitle:
         "Corporate Event & Conference Venue in Bangalore | Crown Estate",
       metaDescription:
-        "Host corporate events, conferences, offsites, team outings and product launches at Crown Estate Airport Road, Bangalore. 4-acre venue with AC rooms, lawns and hall area.",
-      keywords:
-        "corporate event venue in Bangalore, conference venue Airport Road Bangalore, team outing venue Bangalore, corporate retreat near Bangalore",
+        "Plan successful corporate events, conferences, meetings, and business gatherings at Crown Estate, a premium venue in Bangalore with elegant event spaces.",
+      keywords: "Corporate Event & Conference Venue in Bangalore",
     },
 
     heroHeading: "Corporate Event & Conference Venue in Bangalore",
@@ -962,7 +954,7 @@ export const serviceDetails = {
   },
 };
 
- export const serviceList = [
+export const serviceList = [
   "destination-weddings-and-receptions",
   "exhibitions-and-fashion-shows",
   "corporate-events-and-conferences",

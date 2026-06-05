@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import Testimonials from "../components/Testimonials";
+import Seo from "../components/Seo";
 
 export default function AboutPage() {
   const ref = useRef(null);
@@ -8,6 +9,11 @@ export default function AboutPage() {
 
   return (
     <div ref={ref}>
+      <Seo
+        title="About Crown Estate | Destination Wedding in Bangalore & Event Spaces"
+        description="Discover Crown Estate, a premier destination wedding venue in Bangalore offering elegant event spaces for weddings, receptions, corporate events, and celebrations."
+        keywords="Destination Wedding in Bangalore"
+      />
       {/* ============ 1. HERO ============ */}
       <div className="section-hero page">
         <div className="content">
@@ -45,8 +51,6 @@ export default function AboutPage() {
       {/* Section heading */}
       <div className="section first">
         <div className="content venue1-responsiveness">
-           
-
           {/* Crown Estate — text left, image right */}
           <div className="w-layout-grid grid-2-columns">
             <div className="block-text" data-reveal>
@@ -291,7 +295,7 @@ export default function AboutPage() {
             className="w-layout-grid grid-3-columns threeimages-responsiveness "
             style={{ marginTop: "-76px" }}
           >
-            <div className="overflow-image" data-reveal >
+            <div className="overflow-image" data-reveal>
               <img
                 src="/eventimages/1.png"
                 loading="lazy"

@@ -14,8 +14,9 @@ export default function HomePage() {
   return (
     <>
       <Seo
-        title="Crown Estate Bangalore | Luxury Wedding & Event Venue on Airport Road"
-        description="Crown Estate is a luxury 4-acre wedding and event venue on Airport Road, Bangalore. Host destination weddings, receptions, birthday celebrations, corporate events and weekend getaways with 20 AC rooms and spacious lawns."
+        title="Luxury Wedding & Event Venue in Bangalore | Crown Estate"
+        description="Discover Crown Estate, a luxury wedding and event venue in Bangalore offering elegant spaces for weddings, receptions, corporate events, weekend getaways, and special celebrations."
+        keywords="Luxury Wedding & Event Venue in Bangalore"
       />
       <Hero />
       <Quote />

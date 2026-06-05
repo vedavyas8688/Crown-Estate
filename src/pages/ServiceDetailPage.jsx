@@ -7,24 +7,8 @@ import Pricing from '../components/Pricing'
 import FAQ from '../components/FAQ'
 import CTA from '../components/CTA'
 import RelatedServices from '../components/RelatedServices'
+import Seo from '../components/Seo'
 
-/**
- * Service detail page — reads :slug from the URL and renders the matching
- * service from src/data/services.js. If the slug is unknown, redirects
- * back to the services list.
- *
- * Section order (long-form by design):
- *   1. Hero            (section-hero.page)
- *   2. Intro           (centered narrow text)
- *   3. Inclusions      (text-left + image-right with watercolor flower)
- *   4. Process         (4 numbered steps)
- *   5. Gallery         (3-col image grid, reused .image.about styling)
- *   6. Featured quote  (single testimonial, no slider)
- *   7. Pricing         (3 packages, middle one highlighted)
- *   8. FAQ             (accordion)
- *   9. CTA             (split, image + script + button to /contact)
- *  10. Related         (2 other services as overlay cards)
- */
 export default function ServiceDetailPage() {
   const { slug } = useParams()
   const ref = useRef(null)
@@ -32,11 +16,18 @@ export default function ServiceDetailPage() {
 
   const data = serviceDetails[slug]
 
-  // unknown slug → bounce back to the services list
   if (!data) return <Navigate to="/services" replace />
 
   return (
     <div ref={ref}>
+
+      {/* ============ SEO ============ */}
+      <Seo
+        title={data.seo?.metaTitle}
+        description={data.seo?.metaDescription}
+        keywords={data.seo?.keywords}
+      />
+
       {/* ============ 1. HERO ============ */}
       <div className="section-hero page">
         <div className="content">
@@ -62,18 +53,8 @@ export default function ServiceDetailPage() {
 
       {/* ============ 2. INTRO ============ */}
       <div className="section first">
-        <div
-          className="content narrow"
-          style={{ alignItems: 'center', textAlign: 'center' }}
-        >
-          <img
-            src={data.intro.icon}
-            loading="lazy"
-            alt=""
-            width="69"
-            className="icon-flower"
-            data-reveal
-          />
+        <div className="content narrow" style={{ alignItems: 'center', textAlign: 'center' }}>
+          <img src={data.intro.icon} loading="lazy" alt="" width="69" className="icon-flower" data-reveal />
           <h2 className="heading" data-reveal>{data.intro.heading}</h2>
           <p className="paragraph margin" data-reveal>{data.intro.body}</p>
         </div>
@@ -84,13 +65,7 @@ export default function ServiceDetailPage() {
         <div className="content">
           <div className="w-layout-grid grid-2-columns">
             <div className="block-text" data-reveal>
-              <img
-                src={data.inclusions.icon}
-                loading="lazy"
-                width="69"
-                alt=""
-                className="icon-flower"
-              />
+              <img src={data.inclusions.icon} loading="lazy" width="69" alt="" className="icon-flower" />
               <h3 className="heading">{data.inclusions.heading}</h3>
               <p className="paragraph">{data.inclusions.body}</p>
               <ul className="inclusion-list">
@@ -101,12 +76,7 @@ export default function ServiceDetailPage() {
             </div>
             <div className="block-image" data-reveal data-reveal-delay="0.15">
               <div className="overflow-image">
-                <img
-                  src={data.inclusions.image}
-                  loading="lazy"
-                  alt=""
-                  className="image"
-                />
+                <img src={data.inclusions.image} loading="lazy" alt="" className="image" />
               </div>
               {data.inclusions.flower && (
                 <img
@@ -128,18 +98,14 @@ export default function ServiceDetailPage() {
       <div className="section">
         <div className="content">
           <div className="w-layout-grid grid-3-columns" data-reveal-group>
-            {data.gallery.slice(0, 3).map((src, i) => (
+            {data.gallery.slice(0, 3).map((src) => (
               <div key={src} className="overflow-image" data-reveal-child>
                 <img src={src} loading="lazy" alt="" className="image about" />
               </div>
             ))}
           </div>
           {data.gallery.length > 3 && (
-            <div
-              className="w-layout-grid grid-3-columns"
-              style={{ marginTop: '20px' }}
-              data-reveal-group
-            >
+            <div className="w-layout-grid grid-3-columns" style={{ marginTop: '20px' }} data-reveal-group>
               {data.gallery.slice(3, 6).map((src) => (
                 <div key={src} className="overflow-image" data-reveal-child>
                   <img src={src} loading="lazy" alt="" className="image about" />
