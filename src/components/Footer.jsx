@@ -62,11 +62,11 @@ export default function Footer() {
           </div>
           <div className="block-footer border">
             <h5 className="heading-footer">Quick Links</h5>
-            <a href="/about" className="link-footer">
-              About
-            </a>
             <a href="/services" className="link-footer">
               Services
+            </a>
+            <a href="/about" className="link-footer">
+              About
             </a>
             <a href="/contact" className="link-footer">
               Contact
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
         <div className="block-footer">
           <img
-            src="/newlogo.png"
+            src="/newlogo1.png"
             loading="lazy"
             alt="Lovio"
             className="logo-footer"

@@ -1,10 +1,10 @@
 import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, EffectFade, A11y } from 'swiper/modules'
+import { Navigation, EffectFade, Autoplay, A11y } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
-
+import 'swiper/css/autoplay'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { testimonials } from '../data/content'
 
@@ -29,10 +29,9 @@ export default function Testimonials() {
           </div>
           <h2 className="heading">What our guests say</h2>
         </div>
-
         <div className="slider-testimonials w-slider testinomial-responsiveness1" data-reveal>
           <Swiper
-            modules={[Navigation, EffectFade, A11y]}
+            modules={[Navigation, EffectFade, Autoplay, A11y]}
             navigation={{
               prevEl: '.testimonial-prev',
               nextEl: '.testimonial-next'
@@ -40,7 +39,12 @@ export default function Testimonials() {
             effect="fade"
             fadeEffect={{ crossFade: true }}
             speed={600}
-            loop
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
             allowTouchMove={true}
             className="swiper-testimonials mask w-slider-mask"
             a11y={{
@@ -63,7 +67,6 @@ export default function Testimonials() {
               </SwiperSlide>
             ))}
           </Swiper>
-
           <div className="testimonial-prev left-arrow w-slider-arrow-left" role="button" aria-label="Previous slide">
             <img src="/images/left-arrow.png" loading="lazy" width="23" alt="" className="arrow" />
           </div>

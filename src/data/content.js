@@ -13,51 +13,50 @@ export const galleryRows = [
   { images: ['/eventimages/8.png', '/eventimages/4.png'], margin: true }
 ]
 
-export const testimonials = [
+ export const testimonials = [
   {
     flower: '/images/flower_1.png',
     quote:
-      '"Crown Estate gave our family the perfect space for a grand celebration. The lawns, rooms, and overall ambience made the event feel truly special and memorable."',
-    author: 'Happy Guest'
+      '"Celebrating our daughter\'s wedding at Crown Estate was beyond our expectations. The sprawling lawns, elegant interiors, and attentive staff made every moment feel magical. Our guests are still talking about it."',
+    author: 'Rajesh Mehta'
   },
   {
     flower: '/images/flower_2.png',
     quote:
-      '"An ideal venue for weddings and large gatherings. The property is spacious, elegant, and very comfortable for guests staying overnight."',
-    author: 'Event Guest'
+      '"We chose Crown Estate for our son\'s reception and it was the best decision we made. The venue is stunning, the rooms are luxurious, and the entire team ensured everything went flawlessly."',
+    author: 'Priya Nair'
   },
   {
     flower: '/images/flower_1.png',
     quote:
-      '"Crown Estate was the perfect venue for our family wedding. The lawns, rooms, and overall ambience made the celebration feel grand, elegant, and very comfortable for all our guests."',
-    author: 'Wedding Guest'
+      '"Crown Estate made our 25th anniversary celebration truly unforgettable. The privacy, the beautiful pool area, and the grand ambience gave our family gathering the royal touch we always dreamed of."',
+    author: 'Suresh & Kavitha Rao'
   },
   {
     flower: '/images/flower_2.png',
     quote:
-      '"We hosted our anniversary celebration at Crown Estate, and the experience was beautiful. The property felt private, spacious, and luxurious, exactly what we wanted for our family gathering."',
-    author: 'Anniversary Guest'
+      '"From the moment we arrived, Crown Estate felt like a world of its own. The open lawns were perfect for our mehendi, and the banquet hall transformed beautifully for the wedding evening."',
+    author: 'Ananya Sharma'
   },
   {
     flower: '/images/flower_1.png',
     quote:
-      '"A wonderful place for large family get-togethers. The rooms, pool, open lawns, and children\'s play area made it easy for everyone to relax and enjoy the weekend together."',
-    author: 'Family Guest'
+      '"We hosted our annual corporate retreat here and were thoroughly impressed. The spacious event areas, comfortable stay facilities, and seamless coordination made it a productive and enjoyable experience for our entire team."',
+    author: 'Vikram Iyer'
   },
   {
     flower: '/images/flower_2.png',
     quote:
-      '"Crown Estate gave our corporate event a premium setting. The location, spacious event areas, and stay facilities made it very convenient for our team and visiting guests."',
-    author: 'Corporate Guest'
+      '"Crown Estate is hands down the finest venue in the region. We brought together over 300 family members for a milestone birthday, and the estate handled every detail with grace and professionalism."',
+    author: 'Meenakshi Pillai'
   },
   {
     flower: '/images/flower_1.png',
     quote:
-      '"The estate is ideal for exhibitions and large showcases. The open space, easy layout possibilities, and premium environment helped us create a smooth and impressive event experience."',
-    author: 'Exhibition Guest'
+      '"The children had the time of their lives at the play area while the adults enjoyed the pool and evening décor. Crown Estate truly caters to every age group. A perfect family venue."',
+    author: 'Arjun & Deepa Krishnan'
   },
 ]
-
  export const portfolio = [
   { image: '/eventimages/65.jpg', title: 'Event 1', slug: 'event-1' },
   { image: '/eventimages/66.png', title: 'Event 2', slug: 'event-2' },
@@ -79,10 +78,11 @@ export const instagramImages = [
 export const navLinks = {
   left: [
     { label: 'Home', to: '/' },
-    { label: 'About', to: '/about' }
+    { label: 'Services', to: '/services' }
+    
   ],
   right: [
-    { label: 'Services', to: '/services' },
+      { label: 'About', to: '/about' },
     { label: 'Contact', to: '/contact' }
   ]
 }
