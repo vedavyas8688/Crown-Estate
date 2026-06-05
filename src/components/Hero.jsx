@@ -10,10 +10,10 @@ export default function Hero() {
 
   return (
     <>
-      <div ref={ref} className="overflow">
-        <div className="section-hero">
+      <div ref={ref}>
+        <div className="section-hero" style={{ paddingBottom: "200px" }}>
           <div className="content wide">
-            <div className="hero---a">
+            <div className="hero---a" style={{ marginBottom: 0 }}>
 
               {/* Images */}
               <div
@@ -39,7 +39,7 @@ export default function Hero() {
               </div>
 
               {/* Card */}
-              <div className="block-hero---a ">
+              <div className="block-hero---a" style={{ bottom: "-260px" }}>
                 <div
                   className="text-hero---a"
                   style={{ borderRadius: "16px", padding: "20px 8%" }}
@@ -67,17 +67,18 @@ export default function Hero() {
                     every detail is a statement of elegance.
                   </p>
 
-                  {/* Trigger — styled exactly like the existing .link class */}
                   <button
                     className="link"
                     style={{
                       marginTop: "-10px",
                       background: "none",
                       border: "none",
-                      borderBottom: "1px solid var(--accent)",
+                      borderBottom: "2px solid var(--accent)",
                       cursor: "pointer",
-                      padding: "6px 0",
+                      padding: "10px 0",
                       display: "inline-block",
+                      fontSize: "15px",
+                      fontWeight: "300",
                     }}
                     onClick={() => setModalOpen(true)}
                   >
@@ -100,7 +101,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Modal — portal-like, renders above everything */}
       {modalOpen && <BookingModal onClose={() => setModalOpen(false)} />}
     </>
   );

@@ -411,7 +411,7 @@ export default function Services() {
   }, [isAnimating, current, total, visible])
 
   useEffect(() => {
-    const timer = setInterval(() => go('next'), 1000)
+    const timer = setInterval(() => go('next'), 3000)
     return () => clearInterval(timer)
   }, [go])
 

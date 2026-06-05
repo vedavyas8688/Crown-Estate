@@ -749,9 +749,7 @@ ul.w-commerce-commercecartoptionlist {
   }
 }
 
-/* ============================================================
-   RESPONSIVE ADDITIONS — covers every breakpoint systematically
-   ============================================================ */
+ 
 /* ---- HERO CARD — base styles ---- */
 .overflow-hero---a {
   border-radius: 16px;
@@ -784,6 +782,7 @@ ul.w-commerce-commercecartoptionlist {
 /* ---- 1200px ---- */
 @media (max-width: 1200px) {
   .hero-heading-responsive {
+
     font-size: 45px;
     margin-top: 10px;
   }
@@ -1640,5 +1639,83 @@ ul.w-commerce-commercecartoptionlist {
     font-size: 10px !important;
     letter-spacing: 1.5px !important;
     padding: 12px 12px !important;
+  }
+}
+
+
+
+/* ============================================================
+   HERO MOBILE / TABLET FIX
+   Paste this at the bottom of globals.css
+   ============================================================ */
+
+/* ── Tablet 991px — reduce section bottom padding ── */
+@media (max-width: 991px) {
+  .section-hero {
+    padding-bottom: 160px !important;
+  }
+}
+
+/* ── 767px — card switches to relative flow, section resets ── */
+@media (max-width: 767px) {
+  /* Reset section padding — card is no longer absolute */
+  .section-hero {
+    padding-bottom: 40px !important;
+  }
+
+  /* Override inline bottom:-100px — card must flow naturally */
+  .block-hero---a {
+    bottom: auto !important;
+    position: relative !important;
+    margin: -40px auto 0 auto !important;
+    width: 85% !important;
+    z-index: 20 !important;
+  }
+}
+
+/* ── 479px ── */
+@media (max-width: 479px) {
+  .section-hero {
+    padding-bottom: 30px !important;
+  }
+
+  .block-hero---a {
+    bottom: auto !important;
+    position: relative !important;
+    margin: -30px auto 0 auto !important;
+    width: 88% !important;
+  }
+}
+
+/* ── 320px ── */
+@media (max-width: 320px) {
+  .block-hero---a {
+    width: 92% !important;
+  }
+}
+
+/* ============================================================
+   QUOTE SECTION — space for card overhang on desktop only
+   ============================================================ */
+.quote-section-spacer {
+  padding-top: 180px !important;
+}
+
+@media (max-width: 991px) {
+  .quote-section-spacer {
+    padding-top: 150px !important;
+  }
+}
+
+/* On mobile the card is in normal flow so no extra space needed */
+@media (max-width: 767px) {
+  .quote-section-spacer {
+    padding-top: 58px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .quote-section-spacer {
+    padding-top: 54px !important;
   }
 }

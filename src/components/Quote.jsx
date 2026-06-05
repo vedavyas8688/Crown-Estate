@@ -6,13 +6,12 @@ export default function Quote() {
   useScrollReveal(ref);
 
   return (
-    <div ref={ref} className="section   ">
-      <div className="content wide ">
-        {/* Remove inline gridTemplateColumns so CSS media queries can collapse to 1 col on mobile */}
+    <div ref={ref} className="section quote-section-spacer">
+      <div className="content wide">
         <div className="w-layout-grid grid-2-columns quote-responsiveness" style={{ alignItems: 'center' }}>
-          
+
           {/* Left: Content */}
-          <div className="block-text" data-reveal >
+          <div className="block-text" data-reveal>
             <img src="/images/extra.png" loading="lazy" alt="" width="70" className="image-extra" />
             <h4 className="heading-extra" style={{ textAlign: 'left' }}>
               YOUR CELEBRATION SHOULD BE GRAND, BEAUTIFUL, COMFORTABLE AND TRULY UNFORGETTABLE.
@@ -26,7 +25,7 @@ export default function Quote() {
 
           {/* Right: Image */}
           <div className="block-image">
-             <div className="overflow-image" style={{ borderRadius: '16px' }}>
+            <div className="overflow-image" style={{ borderRadius: '16px' }}>
               <img
                 src="/eventimages/60.jpg"
                 loading="lazy"
