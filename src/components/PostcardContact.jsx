@@ -10,15 +10,14 @@ export default function PostcardContact() {
   return (
     <>
       <div ref={ref} className="section postcard-contact-section">
+        {/*
+          The bg image is set as a CSS background-attachment: fixed on this wrapper.
+          This makes the image sticky only while THIS section is in view —
+          it won't affect any other section on the page.
+        */}
         <div className="postcard-contact-wrapper">
-           <div className="postcard-bg">
-            <img
-              src="eventimages/70.jpg"
-              alt=""
-              className="postcard-bg-img"
-            />
-            <div className="postcard-bg-overlay" />
-          </div>
+          {/* Dark overlay for text legibility */}
+          <div className="postcard-overlay" />
 
           {/* Content */}
           <div className="postcard-contact-inner" data-reveal>
@@ -29,18 +28,24 @@ export default function PostcardContact() {
               width="62"
               className="image-subtitle"
             />
-            <div className="subtitle">Contact</div>
+            <div className="subtitle" style={{ color: "#cd912c" }}>
+              Contact
+            </div>{" "}
             <h2 className="heading postcard-heading">
-              Extraordinary events<br />begin here
+              Extraordinary events
+              <br />
+              begin here
             </h2>
             <div className="postcard-divider" />
             <p className="paragraph postcard-para">
               Plan your next wedding, reception, family celebration, exhibition,
-              conference, or luxury weekend getaway at Crown Estate – Airport Road.
+              conference, or luxury weekend getaway at Crown Estate – Airport
+              Road.
             </p>
             <button
-              className="button w-button postcard-btn"
+              className="button w-button postcard-btn "
               onClick={() => setModalOpen(true)}
+              style={{ color: "white" }}
             >
               Let's connect
             </button>
@@ -60,30 +65,24 @@ export default function PostcardContact() {
             align-items: center;
             justify-content: center;
             overflow: hidden;
+
+            /* ── Sticky bg scoped to this section only ── */
+            background-image: url('eventimages/70.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            /* fixed = image stays put while the section scrolls over it */
+            background-attachment: fixed;
           }
 
-          .postcard-bg {
+          /* Semi-transparent overlay so white text is legible */
+          .postcard-overlay {
             position: absolute;
             inset: 0;
             z-index: 0;
+            background: rgba(0, 0, 0, 0.42);
           }
 
-          .postcard-bg-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 30%;
-            display: block;
-          }
-
-          .postcard-bg-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(1px);
-            -webkit-backdrop-filter: blur(1px);
-          }
-
+          /* ── Content ── */
           .postcard-contact-inner {
             position: relative;
             z-index: 1;
@@ -97,27 +96,33 @@ export default function PostcardContact() {
             padding: 80px 32px;
           }
 
-          .postcard-heading {
-            line-height: 1.2;
-            color: #111111 !important;
+          /* All text unified to white */
+          .postcard-contact-inner,
+          .postcard-contact-inner .subtitle,
+          .postcard-contact-inner .heading,
+          .postcard-contact-inner .postcard-heading,
+          .postcard-contact-inner .postcard-para,
+          .postcard-contact-inner p {
+            color: #ffffff !important;
           }
 
-          .postcard-contact-inner .subtitle {
-            color: #111111 !important;
+          .postcard-heading {
+            line-height: 1.2;
           }
 
           .postcard-divider {
             width: 48px;
             height: 1.5px;
-            background: #111111;
-            opacity: 0.35;
+            background: #ffffff;
+            opacity: 0.45;
             margin: 4px 0;
           }
 
           .postcard-para {
             max-width: 480px;
-            color: #1a1a1a !important;
-            font-weight: 500 !important;
+            font-weight: 300 !important;
+            letter-spacing: 0.02em;
+            line-height: 1.75;
           }
 
           .postcard-btn {
@@ -125,9 +130,12 @@ export default function PostcardContact() {
             cursor: pointer;
           }
 
+          /* iOS Safari doesn't support background-attachment: fixed inside
+             overflow:hidden — fall back to a plain cover image on mobile */
           @media (max-width: 768px) {
             .postcard-contact-wrapper {
               min-height: 420px;
+              background-attachment: scroll;
             }
             .postcard-contact-inner {
               padding: 60px 24px;

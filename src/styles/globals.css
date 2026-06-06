@@ -1658,7 +1658,7 @@ ul.w-commerce-commercecartoptionlist {
 /* Card pushed 180px below the image strip bottom edge
    (mainstyles sets position:absolute on .block-hero---a) */
 .hero-card-bottom {
-  bottom: -180px;
+  bottom: -130px;
 }
 
 /* ── 991px tablet ── */
