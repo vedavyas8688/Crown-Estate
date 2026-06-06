@@ -1644,27 +1644,39 @@ ul.w-commerce-commercecartoptionlist {
 
 
 
-/* ============================================================
-   HERO MOBILE / TABLET FIX
-   Paste this at the bottom of globals.css
+ /* ============================================================
+   HERO OVERLAP SYSTEM
+   Replace the existing hero overlap block in globals.css
+   with this. Card is now 20% higher (bottom: -180px).
    ============================================================ */
 
-/* ── Tablet 991px — reduce section bottom padding ── */
+/* Desktop — section needs enough bottom padding so card isn't clipped */
+.hero-section-pb {
+  padding-bottom: 260px;
+}
+
+/* Card pushed 180px below the image strip bottom edge
+   (mainstyles sets position:absolute on .block-hero---a) */
+.hero-card-bottom {
+  bottom: -180px;
+}
+
+/* ── 991px tablet ── */
 @media (max-width: 991px) {
-  .section-hero {
-    padding-bottom: 160px !important;
+  .hero-section-pb {
+    padding-bottom: 220px;
+  }
+  .hero-card-bottom {
+    bottom: -150px;
   }
 }
 
-/* ── 767px — card switches to relative flow, section resets ── */
+/* ── 767px — card reverts to normal flow ── */
 @media (max-width: 767px) {
-  /* Reset section padding — card is no longer absolute */
-  .section-hero {
+  .hero-section-pb {
     padding-bottom: 40px !important;
   }
-
-  /* Override inline bottom:-100px — card must flow naturally */
-  .block-hero---a {
+  .hero-card-bottom {
     bottom: auto !important;
     position: relative !important;
     margin: -40px auto 0 auto !important;
@@ -1675,39 +1687,37 @@ ul.w-commerce-commercecartoptionlist {
 
 /* ── 479px ── */
 @media (max-width: 479px) {
-  .section-hero {
+  .hero-section-pb {
     padding-bottom: 30px !important;
   }
-
-  .block-hero---a {
-    bottom: auto !important;
-    position: relative !important;
-    margin: -30px auto 0 auto !important;
+  .hero-card-bottom {
+    margin-top: -30px !important;
     width: 88% !important;
   }
 }
 
 /* ── 320px ── */
 @media (max-width: 320px) {
-  .block-hero---a {
+  .hero-card-bottom {
     width: 92% !important;
   }
 }
 
 /* ============================================================
-   QUOTE SECTION — space for card overhang on desktop only
+   QUOTE SECTION SPACER
+   Matches the increased card overhang on desktop.
+   Resets to normal section padding on mobile.
    ============================================================ */
 .quote-section-spacer {
-  padding-top: 180px !important;
+  padding-top: 240px !important;
 }
 
 @media (max-width: 991px) {
   .quote-section-spacer {
-    padding-top: 150px !important;
+    padding-top: 210px !important;
   }
 }
 
-/* On mobile the card is in normal flow so no extra space needed */
 @media (max-width: 767px) {
   .quote-section-spacer {
     padding-top: 58px !important;

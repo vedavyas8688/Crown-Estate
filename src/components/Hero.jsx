@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <>
       <div ref={ref}>
-        <div className="section-hero" style={{ paddingBottom: "200px" }}>
+        <div className="section-hero hero-section-pb">
           <div className="content wide">
             <div className="hero---a" style={{ marginBottom: 0 }}>
 
@@ -38,8 +38,8 @@ export default function Hero() {
                 ))}
               </div>
 
-              {/* Card */}
-              <div className="block-hero---a" style={{ bottom: "-260px" }}>
+              {/* Card — hero-card-bottom controls the offset via CSS */}
+              <div className="block-hero---a hero-card-bottom">
                 <div
                   className="text-hero---a"
                   style={{ borderRadius: "16px", padding: "20px 8%" }}
