@@ -1652,7 +1652,7 @@ ul.w-commerce-commercecartoptionlist {
 
 /* Desktop — section needs enough bottom padding so card isn't clipped */
 .hero-section-pb {
-  padding-bottom: 260px;
+  padding-bottom: 200px;
 }
 
 /* Card pushed 180px below the image strip bottom edge
@@ -1709,7 +1709,7 @@ ul.w-commerce-commercecartoptionlist {
    Resets to normal section padding on mobile.
    ============================================================ */
 .quote-section-spacer {
-  padding-top: 240px !important;
+  padding-top: 100px !important;
 }
 
 @media (max-width: 991px) {
