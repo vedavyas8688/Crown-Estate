@@ -39,7 +39,7 @@ export default function Quote() {
           <div className="block-image">
             <div className="overflow-image" style={{ borderRadius: "16px" }}>
               <img
-                src="/eventimages/60.jpg"
+                src="/eventimages/71.jpg"
                 loading="lazy"
                 alt="Crown Estate celebration"
                 className="image about"
