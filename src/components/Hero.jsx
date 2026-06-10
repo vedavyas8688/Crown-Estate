@@ -14,7 +14,6 @@ export default function Hero() {
         <div className="section-hero hero-section-pb">
           <div className="content wide">
             <div className="hero---a" style={{ marginBottom: 0 }}>
-
               {/* Images */}
               <div
                 className="w-layout-grid grid-hero---a grid-hero-responsive"
@@ -62,9 +61,12 @@ export default function Hero() {
                     Luxury Events & Celebrations
                   </h1>
                   <p className="paragraph">
-                    From intimate gatherings to grand celebrations, we craft
-                    unforgettable experiences tailored to your vision — where
-                    every detail is a statement of elegance.
+                    Situated just two kilometers from Bangalore’s Airport Road,
+                    Crown Estate offers four acres of breathtaking landscapes
+                    for your weddings and special events. Featuring enchanting
+                    spaces for large groups and premium accommodations for up to
+                    100 guests, it is the quintessential destination for
+                    unforgettable celebrations.
                   </p>
 
                   <button
@@ -95,7 +97,6 @@ export default function Hero() {
                   style={{ opacity: 0 }}
                 />
               </div>
-
             </div>
           </div>
         </div>
