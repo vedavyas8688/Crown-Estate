@@ -25,7 +25,7 @@ export default function HomePage() {
       <Pricing packages={pricingPackages} />
       <PostcardAbout />
       <Testimonials />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <PostcardContact />
     </>
   );

@@ -1,15 +1,14 @@
 // Centralized content for the home-a page — matches the original Lovio template verbatim.
 
 export const heroImages = [
-  '/eventimages/banner2.webp',
-  '/eventimages/banner1.webp',
-  '/eventimages/banner3.webp'
+  '/eventimages/banner4.jpg',
+  '/eventimages/banner5.jpg',
 ]
 
 export const galleryRows = [
-  { images: ['/eventimages/1.png', '/eventimages/5.png'], margin: false },
-  { images: ['/eventimages/6.png', '/eventimages/2.png'], margin: true },
-  { images: ['/eventimages/3.png', '/eventimages/12.webp'], margin: false },
+  { images: ['/eventimages/72.jpg', '/eventimages/5.png'], margin: false },
+  { images: ['/eventimages/73.jpg', '/eventimages/2.png'], margin: true },
+  { images: ['/eventimages/74.jpg', '/eventimages/75.jpg'], margin: false },
   { images: ['/eventimages/8.png', '/eventimages/4.png'], margin: true }
 ]
 
