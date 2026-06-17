@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { useParams, Navigate, Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import { blogPosts, BLOG_BANNER } from '../data/blogs'
-// import Seo from '../components/Seo'
+import Seo from '../components/Seo'
 
 /* Turn a heading into a stable anchor id (used for deep linking) */
 const slugify = (s = '') =>
@@ -214,12 +214,11 @@ export default function BlogDetailPage() {
 
   return (
     <div ref={ref}>
-      {/* SEO — uncomment along with the import above if Seo.jsx is present
-      <Seo
-        title={post.metaTitle || post.title}
-        description={post.metaDescription || post.excerpt}
-        keywords={post.keywords}
-      /> */}
+       <Seo
+      title={post.metaTitle || post.title}
+       description={post.metaDescription || post.excerpt}
+     keywords={post.keywords}
+       /> 
 
       {/* ============ HERO ============ */}
       <header className="bd-hero">
