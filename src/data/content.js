@@ -73,15 +73,15 @@ export const instagramImages = [
   '/eventimages/20.webp'
 ]
 
-// Top-level navigation — split across the centered logo
+ // Top-level navigation — split across the centered logo
 export const navLinks = {
   left: [
     { label: 'Home', to: '/' },
-    { label: 'Services', to: '/services' }
-    
+    { label: 'About', to: '/about' }
   ],
   right: [
-      { label: 'About', to: '/about' },
+    { label: 'Services', to: '/services' },
+    { label: 'Blogs', to: '/blog' },
     { label: 'Contact', to: '/contact' }
   ]
 }

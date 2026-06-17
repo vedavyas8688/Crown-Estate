@@ -12,6 +12,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import PortfolioDetailPage from './pages/PortfolioDetailPage'
 import FloatingButtons from './components/FloatingButtons'
+import BlogPage from './pages/BlogPage'
+import BlogDetailPage from './pages/Blogdetailpage'
 
 export default function App() {
   return (
@@ -32,6 +34,9 @@ export default function App() {
 
         {/* Portfolio list and detail pages */}
         <Route path="/portfolio/:slug" element={<PortfolioDetailPage />} />
+
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogDetailPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
 
