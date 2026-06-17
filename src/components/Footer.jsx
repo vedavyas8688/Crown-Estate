@@ -69,7 +69,7 @@ export default function Footer() {
               About
             </a>
             <a href="/blog" className="link-footer">
-              Blog
+              Blogs
             </a>
             <a href="/contact" className="link-footer">
               Contact

@@ -235,9 +235,9 @@ export default function BlogDetailPage() {
             ← Back to all articles
           </Link>
           <div className="bd-hero-text">
-            <div className="bd-eyebrow" data-hero-reveal>
+            {/* <div className="bd-eyebrow" data-hero-reveal>
               {post.eyebrow}
-            </div>
+            </div> */}
             <h1 className="bd-title" data-hero-reveal>
               {post.title}
             </h1>
@@ -360,7 +360,7 @@ export default function BlogDetailPage() {
         .bd-related { border-top: 1px solid var(--border); padding: clamp(56px, 8vw, 100px) 24px; }
         .bd-related-inner { max-width: 1180px; margin: 0 auto; }
         .bd-related-head { text-align: center; margin-bottom: 56px; }
-        .bd-related-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 12px; letter-spacing: 3px;
+        .bd-related-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 15px; letter-spacing: 3px;
           text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
         .bd-related-title { font-family: 'Marcellus', serif; font-weight: 400;
           font-size: clamp(26px, 3.4vw, 36px); color: var(--heading); margin: 0; }

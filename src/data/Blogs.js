@@ -29,7 +29,7 @@
  * Single shared banner image used on the hero of every blog detail page.
  * Replace this one line to change the banner for all articles.
  */
-export const BLOG_BANNER = "/eventimages/70.jpg";
+export const BLOG_BANNER = "/Blogimages/BlogBanner.jpg";
 
 export const blogPosts = [
   /* ================================================================ */
@@ -41,8 +41,9 @@ export const blogPosts = [
     eyebrow: "Luxury Events",
     date: "April 02, 2026",
     readTime: "10 min read",
-    image: "/eventimages/crown-estate.webp",
-    metaTitle: "Top Reasons to Choose Crown Estate for Luxury Events in Bangalore",
+    image: "/Blogimages/1.png",
+    metaTitle:
+      "Top Reasons to Choose Crown Estate for Luxury Events in Bangalore",
     metaDescription:
       "Discover why Crown Estate is a preferred destination for luxury events in Bangalore, offering elegant venues, premium facilities, and exceptional event experiences.",
     keywords:
@@ -68,120 +69,401 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "A Prime Location Near Bangalore Airport" },
-      { type: "paragraph", text: "One of the biggest advantages of choosing a premium event venue is accessibility." },
-      { type: "paragraph", text: "Guests often travel from different cities and states to attend weddings, conferences, and celebrations. A venue located near major transportation hubs makes travel easier and more convenient." },
+      {
+        type: "paragraph",
+        text: "One of the biggest advantages of choosing a premium event venue is accessibility.",
+      },
+      {
+        type: "paragraph",
+        text: "Guests often travel from different cities and states to attend weddings, conferences, and celebrations. A venue located near major transportation hubs makes travel easier and more convenient.",
+      },
       { type: "paragraph", text: "Benefits of a strategic location include:" },
-      { type: "list", items: ["Easy airport access", "Smooth road connectivity", "Reduced travel time", "Convenient guest transportation", "Better event attendance"] },
-      { type: "paragraph", text: "A well-connected venue creates a stress-free experience for both hosts and guests." },
+      {
+        type: "list",
+        items: [
+          "Easy airport access",
+          "Smooth road connectivity",
+          "Reduced travel time",
+          "Convenient guest transportation",
+          "Better event attendance",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A well-connected venue creates a stress-free experience for both hosts and guests.",
+      },
 
       { type: "heading", text: "Spacious Event Venues for Every Occasion" },
       { type: "paragraph", text: "Every event has unique requirements." },
-      { type: "paragraph", text: "A successful venue should be able to accommodate different event formats while maintaining comfort and functionality." },
+      {
+        type: "paragraph",
+        text: "A successful venue should be able to accommodate different event formats while maintaining comfort and functionality.",
+      },
       { type: "paragraph", text: "Luxury event venues should provide:" },
-      { type: "list", items: ["Grand outdoor lawns", "Elegant banquet spaces", "Flexible seating arrangements", "Multi-purpose event areas", "Separate event zones"] },
-      { type: "paragraph", text: "Whether you are planning a wedding reception, corporate conference, or social celebration, spacious venues create a more enjoyable guest experience." },
+      {
+        type: "list",
+        items: [
+          "Grand outdoor lawns",
+          "Elegant banquet spaces",
+          "Flexible seating arrangements",
+          "Multi-purpose event areas",
+          "Separate event zones",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Whether you are planning a wedding reception, corporate conference, or social celebration, spacious venues create a more enjoyable guest experience.",
+      },
 
       { type: "heading", text: "Beautiful Outdoor Event Spaces" },
-      { type: "paragraph", text: "Outdoor events continue to grow in popularity." },
-      { type: "paragraph", text: "Many guests appreciate open-air celebrations that provide natural beauty and memorable experiences." },
+      {
+        type: "paragraph",
+        text: "Outdoor events continue to grow in popularity.",
+      },
+      {
+        type: "paragraph",
+        text: "Many guests appreciate open-air celebrations that provide natural beauty and memorable experiences.",
+      },
       { type: "paragraph", text: "Benefits of outdoor event spaces include:" },
-      { type: "list", items: ["Scenic surroundings", "Natural lighting", "Better photography opportunities", "Spacious guest movement", "Elegant event ambience"] },
-      { type: "paragraph", text: "Outdoor lawns are ideal for weddings, receptions, product launches, and evening celebrations." },
+      {
+        type: "list",
+        items: [
+          "Scenic surroundings",
+          "Natural lighting",
+          "Better photography opportunities",
+          "Spacious guest movement",
+          "Elegant event ambience",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Outdoor lawns are ideal for weddings, receptions, product launches, and evening celebrations.",
+      },
 
       { type: "heading", text: "Elegant Indoor Facilities" },
-      { type: "paragraph", text: "Weather conditions can sometimes affect outdoor events." },
-      { type: "paragraph", text: "That is why having elegant indoor facilities is equally important." },
+      {
+        type: "paragraph",
+        text: "Weather conditions can sometimes affect outdoor events.",
+      },
+      {
+        type: "paragraph",
+        text: "That is why having elegant indoor facilities is equally important.",
+      },
       { type: "paragraph", text: "Quality indoor spaces offer:" },
-      { type: "list", items: ["Climate-controlled comfort", "Modern interiors", "Flexible event layouts", "Professional presentation environments", "Year-round event support"] },
-      { type: "paragraph", text: "Indoor venues are ideal for conferences, meetings, exhibitions, and formal gatherings." },
+      {
+        type: "list",
+        items: [
+          "Climate-controlled comfort",
+          "Modern interiors",
+          "Flexible event layouts",
+          "Professional presentation environments",
+          "Year-round event support",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Indoor venues are ideal for conferences, meetings, exhibitions, and formal gatherings.",
+      },
 
       { type: "heading", text: "Ideal for Weddings and Receptions" },
-      { type: "paragraph", text: "Weddings require careful planning and the right venue." },
+      {
+        type: "paragraph",
+        text: "Weddings require careful planning and the right venue.",
+      },
       { type: "paragraph", text: "A luxury venue should support:" },
-      { type: "list", items: ["Engagement ceremonies", "Mehendi functions", "Haldi celebrations", "Wedding ceremonies", "Reception events"] },
-      { type: "paragraph", text: "Having multiple event spaces allows couples to host every function at a single location, creating convenience for guests and families." },
+      {
+        type: "list",
+        items: [
+          "Engagement ceremonies",
+          "Mehendi functions",
+          "Haldi celebrations",
+          "Wedding ceremonies",
+          "Reception events",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Having multiple event spaces allows couples to host every function at a single location, creating convenience for guests and families.",
+      },
 
       { type: "heading", text: "Perfect for Corporate Events" },
-      { type: "paragraph", text: "Modern businesses require professional event venues." },
+      {
+        type: "paragraph",
+        text: "Modern businesses require professional event venues.",
+      },
       { type: "paragraph", text: "Corporate gatherings often include:" },
-      { type: "list", items: ["Conferences", "Business meetings", "Product launches", "Training programs", "Networking events", "Team-building activities"] },
-      { type: "paragraph", text: "A professional venue helps create a positive impression while supporting event objectives." },
+      {
+        type: "list",
+        items: [
+          "Conferences",
+          "Business meetings",
+          "Product launches",
+          "Training programs",
+          "Networking events",
+          "Team-building activities",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A professional venue helps create a positive impression while supporting event objectives.",
+      },
 
       { type: "heading", text: "Suitable for Exhibitions and Fashion Shows" },
-      { type: "paragraph", text: "Exhibitions and fashion shows require spacious layouts and professional infrastructure." },
+      {
+        type: "paragraph",
+        text: "Exhibitions and fashion shows require spacious layouts and professional infrastructure.",
+      },
       { type: "paragraph", text: "Key venue features include:" },
-      { type: "list", items: ["Large open areas", "Stage setup options", "Vendor display spaces", "Audience seating arrangements", "Technical support facilities"] },
-      { type: "paragraph", text: "These features help event organizers deliver successful exhibitions and fashion events." },
+      {
+        type: "list",
+        items: [
+          "Large open areas",
+          "Stage setup options",
+          "Vendor display spaces",
+          "Audience seating arrangements",
+          "Technical support facilities",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These features help event organizers deliver successful exhibitions and fashion events.",
+      },
 
       { type: "heading", text: "Professional Event Infrastructure" },
-      { type: "paragraph", text: "Successful events depend on more than just attractive spaces." },
-      { type: "paragraph", text: "Professional infrastructure is equally important." },
+      {
+        type: "paragraph",
+        text: "Successful events depend on more than just attractive spaces.",
+      },
+      {
+        type: "paragraph",
+        text: "Professional infrastructure is equally important.",
+      },
       { type: "paragraph", text: "Look for venues that provide:" },
-      { type: "list", items: ["Audio systems", "Visual presentation equipment", "Lighting arrangements", "Power backup", "Wi-Fi connectivity", "Event coordination support"] },
-      { type: "paragraph", text: "Modern infrastructure helps ensure smooth event execution." },
+      {
+        type: "list",
+        items: [
+          "Audio systems",
+          "Visual presentation equipment",
+          "Lighting arrangements",
+          "Power backup",
+          "Wi-Fi connectivity",
+          "Event coordination support",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Modern infrastructure helps ensure smooth event execution.",
+      },
 
       { type: "heading", text: "Ample Parking Facilities" },
-      { type: "paragraph", text: "Parking is often overlooked during event planning." },
-      { type: "paragraph", text: "However, guest convenience depends heavily on easy parking access." },
+      {
+        type: "paragraph",
+        text: "Parking is often overlooked during event planning.",
+      },
+      {
+        type: "paragraph",
+        text: "However, guest convenience depends heavily on easy parking access.",
+      },
       { type: "paragraph", text: "A quality venue should provide:" },
-      { type: "list", items: ["Spacious parking areas", "Organized vehicle management", "Easy entry and exit points", "Guest convenience"] },
-      { type: "paragraph", text: "Adequate parking contributes to a better overall event experience." },
+      {
+        type: "list",
+        items: [
+          "Spacious parking areas",
+          "Organized vehicle management",
+          "Easy entry and exit points",
+          "Guest convenience",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Adequate parking contributes to a better overall event experience.",
+      },
 
       { type: "heading", text: "Luxury Accommodation Options" },
-      { type: "paragraph", text: "Destination events often require overnight stays." },
-      { type: "paragraph", text: "Accommodation facilities provide convenience for:" },
-      { type: "list", items: ["Wedding guests", "Corporate attendees", "Event organizers", "Family members"] },
-      { type: "paragraph", text: "On-site accommodation reduces travel stress and enhances guest comfort." },
+      {
+        type: "paragraph",
+        text: "Destination events often require overnight stays.",
+      },
+      {
+        type: "paragraph",
+        text: "Accommodation facilities provide convenience for:",
+      },
+      {
+        type: "list",
+        items: [
+          "Wedding guests",
+          "Corporate attendees",
+          "Event organizers",
+          "Family members",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "On-site accommodation reduces travel stress and enhances guest comfort.",
+      },
 
       { type: "heading", text: "Stunning Photography Opportunities" },
-      { type: "paragraph", text: "Photos help preserve memories for years to come." },
-      { type: "paragraph", text: "A luxury venue should provide beautiful backdrops for:" },
-      { type: "list", items: ["Wedding portraits", "Family photographs", "Corporate branding images", "Event documentation", "Social media content"] },
-      { type: "paragraph", text: "Attractive landscapes and elegant architecture create memorable visuals." },
+      {
+        type: "paragraph",
+        text: "Photos help preserve memories for years to come.",
+      },
+      {
+        type: "paragraph",
+        text: "A luxury venue should provide beautiful backdrops for:",
+      },
+      {
+        type: "list",
+        items: [
+          "Wedding portraits",
+          "Family photographs",
+          "Corporate branding images",
+          "Event documentation",
+          "Social media content",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Attractive landscapes and elegant architecture create memorable visuals.",
+      },
 
       { type: "heading", text: "Flexible Event Customization" },
       { type: "paragraph", text: "Every event has unique requirements." },
-      { type: "paragraph", text: "A flexible venue allows organizers to customize:" },
-      { type: "list", items: ["Seating arrangements", "Decor themes", "Entertainment setups", "Dining experiences", "Event schedules"] },
-      { type: "paragraph", text: "Customization helps create a personalized event experience." },
+      {
+        type: "paragraph",
+        text: "A flexible venue allows organizers to customize:",
+      },
+      {
+        type: "list",
+        items: [
+          "Seating arrangements",
+          "Decor themes",
+          "Entertainment setups",
+          "Dining experiences",
+          "Event schedules",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Customization helps create a personalized event experience.",
+      },
 
       { type: "heading", text: "Comfortable Guest Experience" },
-      { type: "paragraph", text: "Guest satisfaction remains one of the most important measures of event success." },
+      {
+        type: "paragraph",
+        text: "Guest satisfaction remains one of the most important measures of event success.",
+      },
       { type: "paragraph", text: "Comfortable event spaces should provide:" },
-      { type: "list", items: ["Clean facilities", "Proper seating", "Easy navigation", "Accessible amenities", "Professional support staff"] },
-      { type: "paragraph", text: "When guests feel comfortable, they enjoy the event more." },
+      {
+        type: "list",
+        items: [
+          "Clean facilities",
+          "Proper seating",
+          "Easy navigation",
+          "Accessible amenities",
+          "Professional support staff",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "When guests feel comfortable, they enjoy the event more.",
+      },
 
       { type: "heading", text: "Safe and Secure Environment" },
-      { type: "paragraph", text: "Security plays a vital role in event planning." },
+      {
+        type: "paragraph",
+        text: "Security plays a vital role in event planning.",
+      },
       { type: "paragraph", text: "A reliable venue should offer:" },
-      { type: "list", items: ["Security personnel", "Controlled access points", "Emergency support", "Guest safety measures"] },
-      { type: "paragraph", text: "These factors help ensure a worry-free event experience." },
+      {
+        type: "list",
+        items: [
+          "Security personnel",
+          "Controlled access points",
+          "Emergency support",
+          "Guest safety measures",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These factors help ensure a worry-free event experience.",
+      },
 
       { type: "heading", text: "Professional Event Support" },
       { type: "paragraph", text: "Planning a large event can be challenging." },
-      { type: "paragraph", text: "Professional event support helps simplify the process by assisting with:" },
-      { type: "list", items: ["Venue coordination", "Vendor management", "Event logistics", "Guest arrangements", "Setup planning"] },
-      { type: "paragraph", text: "Experienced support teams help ensure smooth event execution." },
+      {
+        type: "paragraph",
+        text: "Professional event support helps simplify the process by assisting with:",
+      },
+      {
+        type: "list",
+        items: [
+          "Venue coordination",
+          "Vendor management",
+          "Event logistics",
+          "Guest arrangements",
+          "Setup planning",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Experienced support teams help ensure smooth event execution.",
+      },
 
-      { type: "heading", text: "Why Luxury Events Continue to Grow in Bangalore" },
-      { type: "paragraph", text: "Bangalore has become a leading destination for premium events because of:" },
-      { type: "list", items: ["Excellent infrastructure", "Growing corporate sector", "Destination wedding demand", "International connectivity", "Premium event venues"] },
-      { type: "paragraph", text: "The city's modern facilities make it ideal for both personal and professional events." },
+      {
+        type: "heading",
+        text: "Why Luxury Events Continue to Grow in Bangalore",
+      },
+      {
+        type: "paragraph",
+        text: "Bangalore has become a leading destination for premium events because of:",
+      },
+      {
+        type: "list",
+        items: [
+          "Excellent infrastructure",
+          "Growing corporate sector",
+          "Destination wedding demand",
+          "International connectivity",
+          "Premium event venues",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The city's modern facilities make it ideal for both personal and professional events.",
+      },
 
-      { type: "heading", text: "How to Select the Right Luxury Event Venue in Bangalore" },
+      {
+        type: "heading",
+        text: "How to Select the Right Luxury Event Venue in Bangalore",
+      },
       { type: "paragraph", text: "Before booking any venue, consider:" },
       { type: "subheading", text: "Event Type" },
-      { type: "paragraph", text: "Choose a venue suited to your event requirements." },
+      {
+        type: "paragraph",
+        text: "Choose a venue suited to your event requirements.",
+      },
       { type: "subheading", text: "Guest Capacity" },
-      { type: "paragraph", text: "Ensure the venue comfortably accommodates attendees." },
+      {
+        type: "paragraph",
+        text: "Ensure the venue comfortably accommodates attendees.",
+      },
       { type: "subheading", text: "Location" },
       { type: "paragraph", text: "Prioritize accessibility and convenience." },
       { type: "subheading", text: "Facilities" },
-      { type: "paragraph", text: "Review available amenities and infrastructure." },
+      {
+        type: "paragraph",
+        text: "Review available amenities and infrastructure.",
+      },
       { type: "subheading", text: "Budget" },
-      { type: "paragraph", text: "Select a venue that aligns with your event budget." },
+      {
+        type: "paragraph",
+        text: "Select a venue that aligns with your event budget.",
+      },
       { type: "subheading", text: "Reviews" },
-      { type: "paragraph", text: "Research venue reputation and guest feedback." },
+      {
+        type: "paragraph",
+        text: "Research venue reputation and guest feedback.",
+      },
 
       {
         type: "faq",
@@ -211,10 +493,22 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Conclusion" },
-      { type: "paragraph", text: "Selecting the right venue is one of the most important decisions when planning a successful event. From weddings and receptions to corporate conferences and exhibitions, the venue influences guest experience, event flow, and overall success." },
-      { type: "paragraph", text: "For those seeking Best Event Services in Bangalore, choosing a venue that offers luxury, convenience, flexibility, and professional support can make all the difference. Crown Estate continues to attract hosts looking for premium event spaces designed to accommodate a wide range of celebrations and business gatherings." },
-      { type: "paragraph", text: "Whether you are planning an intimate gathering or a large-scale event, Crown Estate provides the facilities and atmosphere needed to create memorable experiences. Contact Crown Estate today to explore event options and discover how the right venue can elevate your next celebration." },
-      { type: "paragraph", text: "With thoughtful planning and the perfect location, every event can become a truly unforgettable experience." },
+      {
+        type: "paragraph",
+        text: "Selecting the right venue is one of the most important decisions when planning a successful event. From weddings and receptions to corporate conferences and exhibitions, the venue influences guest experience, event flow, and overall success.",
+      },
+      {
+        type: "paragraph",
+        text: "For those seeking Best Event Services in Bangalore, choosing a venue that offers luxury, convenience, flexibility, and professional support can make all the difference. Crown Estate continues to attract hosts looking for premium event spaces designed to accommodate a wide range of celebrations and business gatherings.",
+      },
+      {
+        type: "paragraph",
+        text: "Whether you are planning an intimate gathering or a large-scale event, Crown Estate provides the facilities and atmosphere needed to create memorable experiences. Contact Crown Estate today to explore event options and discover how the right venue can elevate your next celebration.",
+      },
+      {
+        type: "paragraph",
+        text: "With thoughtful planning and the perfect location, every event can become a truly unforgettable experience.",
+      },
     ],
   },
 
@@ -227,7 +521,7 @@ export const blogPosts = [
     eyebrow: "Corporate Events",
     date: "March 14, 2026",
     readTime: "9 min read",
-    image: "/eventimages/banner2.webp",
+    image: "/Blogimages/2.png",
     metaTitle: "How to Plan a Successful Corporate Event in Bangalore",
     metaDescription:
       "Learn how to plan a successful corporate event in Bangalore with expert tips from Crown Estate on venue selection, budgeting, logistics, and guest experience.",
@@ -254,7 +548,10 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Define Your Event Goals" },
-      { type: "paragraph", text: "Before selecting a venue or sending invitations, determine the purpose of your event." },
+      {
+        type: "paragraph",
+        text: "Before selecting a venue or sending invitations, determine the purpose of your event.",
+      },
       { type: "paragraph", text: "Ask yourself:" },
       {
         type: "list",
@@ -265,7 +562,10 @@ export const blogPosts = [
           "How will success be measured?",
         ],
       },
-      { type: "paragraph", text: "Clear goals help guide every decision throughout the planning process." },
+      {
+        type: "paragraph",
+        text: "Clear goals help guide every decision throughout the planning process.",
+      },
       { type: "paragraph", text: "Common corporate event objectives include:" },
       {
         type: "list",
@@ -281,7 +581,10 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Establish a Realistic Budget" },
-      { type: "paragraph", text: "A well-planned budget helps prevent unexpected expenses." },
+      {
+        type: "paragraph",
+        text: "A well-planned budget helps prevent unexpected expenses.",
+      },
       { type: "paragraph", text: "Your corporate event budget may include:" },
       {
         type: "list",
@@ -296,10 +599,19 @@ export const blogPosts = [
           "Photography and videography",
         ],
       },
-      { type: "paragraph", text: "Always include a contingency budget for unforeseen costs." },
+      {
+        type: "paragraph",
+        text: "Always include a contingency budget for unforeseen costs.",
+      },
 
-      { type: "heading", text: "Top Steps to Choose the Right Event Venue in Bangalore" },
-      { type: "paragraph", text: "The venue plays a major role in the success of any corporate gathering." },
+      {
+        type: "heading",
+        text: "Top Steps to Choose the Right Event Venue in Bangalore",
+      },
+      {
+        type: "paragraph",
+        text: "The venue plays a major role in the success of any corporate gathering.",
+      },
       { type: "paragraph", text: "When evaluating venues, consider:" },
       {
         type: "steps",
@@ -308,7 +620,12 @@ export const blogPosts = [
             title: "Location",
             text: "Choose a venue that is easily accessible for attendees.",
             note: "Factors to evaluate:",
-            items: ["Airport proximity", "Road connectivity", "Nearby hotels", "Parking facilities"],
+            items: [
+              "Airport proximity",
+              "Road connectivity",
+              "Nearby hotels",
+              "Parking facilities",
+            ],
           },
           {
             title: "Capacity",
@@ -318,92 +635,178 @@ export const blogPosts = [
           {
             title: "Facilities",
             text: "Look for venues offering:",
-            items: ["Meeting rooms", "Conference halls", "Projectors and screens", "Sound systems", "Wi-Fi access", "Generator backup"],
+            items: [
+              "Meeting rooms",
+              "Conference halls",
+              "Projectors and screens",
+              "Sound systems",
+              "Wi-Fi access",
+              "Generator backup",
+            ],
           },
         ],
       },
 
-      { type: "heading", text: "Essential Steps for a Successful Corporate Event in Bangalore" },
+      {
+        type: "heading",
+        text: "Essential Steps for a Successful Corporate Event in Bangalore",
+      },
       {
         type: "steps",
         items: [
           {
             title: "Understand Your Audience",
             text: "Knowing your audience helps create a more engaging experience. Consider:",
-            items: ["Employee demographics", "Client expectations", "Industry professionals", "Business partners", "Executives"],
+            items: [
+              "Employee demographics",
+              "Client expectations",
+              "Industry professionals",
+              "Business partners",
+              "Executives",
+            ],
             note: "The event format should match attendee preferences and expectations",
           },
           {
             title: "Select the Best Date and Time",
             text: "Timing can significantly impact attendance. Avoid:",
-            items: ["Public holidays", "Major festivals", "Industry events", "Long weekends"],
+            items: [
+              "Public holidays",
+              "Major festivals",
+              "Industry events",
+              "Long weekends",
+            ],
             note: "Choose dates that maximize participation and convenience.",
           },
           {
             title: "Create a Detailed Event Plan",
             text: "Successful events require detailed planning. Develop a timeline covering:",
-            items: ["Venue booking", "Vendor coordination", "Marketing activities", "Registration deadlines", "Event rehearsals", "Final setup"],
+            items: [
+              "Venue booking",
+              "Vendor coordination",
+              "Marketing activities",
+              "Registration deadlines",
+              "Event rehearsals",
+              "Final setup",
+            ],
             note: "A detailed schedule helps keep everything organized.",
           },
           {
             title: "Design an Engaging Event Agenda",
             text: "A well-structured agenda keeps participants interested. Include:",
-            items: ["Welcome sessions", "Keynote speeches", "Networking opportunities", "Interactive discussions", "Refreshment breaks", "Closing remarks"],
+            items: [
+              "Welcome sessions",
+              "Keynote speeches",
+              "Networking opportunities",
+              "Interactive discussions",
+              "Refreshment breaks",
+              "Closing remarks",
+            ],
             note: "Balanced scheduling improves attendee engagement.",
           },
           {
             title: "Arrange Professional Audio-Visual Equipment",
             text: "Technology is an essential part of modern corporate events, helping organizers deliver smooth and engaging experiences. Ensure availability of:",
-            items: ["LED displays", "Projection systems", "Microphones", "Speakers", "Live streaming equipment", "Presentation tools"],
+            items: [
+              "LED displays",
+              "Projection systems",
+              "Microphones",
+              "Speakers",
+              "Live streaming equipment",
+              "Presentation tools",
+            ],
             note: "Always test equipment before the event begins.",
           },
           {
             title: "Focus on Guest Experience",
             text: "A positive attendee experience creates lasting impressions. Ways to improve guest satisfaction:",
-            items: ["Easy registration", "Clear signage", "Comfortable seating", "Professional staff support", "Quality refreshments", "Smooth event flow"],
+            items: [
+              "Easy registration",
+              "Clear signage",
+              "Comfortable seating",
+              "Professional staff support",
+              "Quality refreshments",
+              "Smooth event flow",
+            ],
             note: "Guest comfort should remain a priority throughout the event.",
           },
           {
             title: "Plan Catering Carefully",
             text: "Food and beverages contribute significantly to event satisfaction. Consider:",
-            items: ["Buffet meals", "Snacks and refreshments", "Coffee stations", "Dietary preferences", "Vegetarian and vegan options"],
+            items: [
+              "Buffet meals",
+              "Snacks and refreshments",
+              "Coffee stations",
+              "Dietary preferences",
+              "Vegetarian and vegan options",
+            ],
             note: "Quality catering reflects positively on your organization.",
           },
           {
             title: "Promote Your Event Effectively",
             text: "Proper promotion increases attendance and engagement. Marketing channels include:",
-            items: ["Email campaigns", "Social media", "Business networks", "Company websites", "Industry communities"],
+            items: [
+              "Email campaigns",
+              "Social media",
+              "Business networks",
+              "Company websites",
+              "Industry communities",
+            ],
             note: "Provide clear event information and registration instructions.",
           },
           {
             title: "Coordinate Vendors Efficiently",
             text: "Many corporate events require multiple vendors. Examples include:",
-            items: ["Catering providers", "Decor teams", "Audio-visual technicians", "Security personnel", "Photographers"],
+            items: [
+              "Catering providers",
+              "Decor teams",
+              "Audio-visual technicians",
+              "Security personnel",
+              "Photographers",
+            ],
             note: "Maintain clear communication with all vendors before and during the event.",
           },
           {
             title: "Incorporate Networking Opportunities",
             text: "Many attendees participate in corporate events to build valuable professional connections and expand their networks. Encourage interaction through:",
-            items: ["Networking lounges", "Icebreaker sessions", "Group discussions", "Business introductions"],
+            items: [
+              "Networking lounges",
+              "Icebreaker sessions",
+              "Group discussions",
+              "Business introductions",
+            ],
             note: "Meaningful networking enhances event value.",
           },
           {
             title: "Prepare for Unexpected Situations",
             text: "Every event should include contingency planning. Potential issues include:",
-            items: ["Weather changes", "Technical failures", "Transportation delays", "Last-minute cancellations"],
+            items: [
+              "Weather changes",
+              "Technical failures",
+              "Transportation delays",
+              "Last-minute cancellations",
+            ],
             note: "Having backup plans reduces stress and disruptions.",
           },
           {
             title: "Measure Event Success",
             text: "After the event, evaluate performance against your original goals. Useful metrics include:",
-            items: ["Attendance rates", "Participant feedback", "Lead generation", "Social media engagement", "Business opportunities created"],
+            items: [
+              "Attendance rates",
+              "Participant feedback",
+              "Lead generation",
+              "Social media engagement",
+              "Business opportunities created",
+            ],
             note: "Post-event analysis helps improve future events.",
           },
         ],
       },
 
       { type: "heading", text: "Why Bangalore Is Ideal for Corporate Events" },
-      { type: "paragraph", text: "Bangalore continues to attract companies from across India due to its:" },
+      {
+        type: "paragraph",
+        text: "Bangalore continues to attract companies from across India due to its:",
+      },
       {
         type: "list",
         items: [
@@ -414,7 +817,10 @@ export const blogPosts = [
           "Skilled service providers",
         ],
       },
-      { type: "paragraph", text: "These advantages make the city an excellent choice for conferences, meetings, and corporate gatherings." },
+      {
+        type: "paragraph",
+        text: "These advantages make the city an excellent choice for conferences, meetings, and corporate gatherings.",
+      },
 
       {
         type: "faq",
@@ -444,10 +850,22 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Conclusion" },
-      { type: "paragraph", text: "Planning a successful corporate event in Bangalore requires strategic preparation, careful budgeting, venue selection, and a strong focus on attendee experience. From defining objectives to evaluating post-event performance, every step contributes to achieving business goals and creating memorable experiences." },
-      { type: "paragraph", text: "Organizations seeking Luxury Event Services in Bangalore should prioritize venues that offer convenience, professional facilities, and exceptional hospitality. Businesses looking for a dependable event destination often choose Crown Estate for its versatile event spaces and premium services." },
-      { type: "paragraph", text: "Whether you are planning a conference, networking event, seminar, or corporate celebration, selecting the right venue can make a significant difference. Contact Crown Estate today to explore event solutions designed to support successful corporate gatherings and professional events." },
-      { type: "paragraph", text: "With the right planning and venue support, your next corporate event can deliver meaningful results while creating a positive experience for every attendee." },
+      {
+        type: "paragraph",
+        text: "Planning a successful corporate event in Bangalore requires strategic preparation, careful budgeting, venue selection, and a strong focus on attendee experience. From defining objectives to evaluating post-event performance, every step contributes to achieving business goals and creating memorable experiences.",
+      },
+      {
+        type: "paragraph",
+        text: "Organizations seeking Luxury Event Services in Bangalore should prioritize venues that offer convenience, professional facilities, and exceptional hospitality. Businesses looking for a dependable event destination often choose Crown Estate for its versatile event spaces and premium services.",
+      },
+      {
+        type: "paragraph",
+        text: "Whether you are planning a conference, networking event, seminar, or corporate celebration, selecting the right venue can make a significant difference. Contact Crown Estate today to explore event solutions designed to support successful corporate gatherings and professional events.",
+      },
+      {
+        type: "paragraph",
+        text: "With the right planning and venue support, your next corporate event can deliver meaningful results while creating a positive experience for every attendee.",
+      },
     ],
   },
 
@@ -460,7 +878,7 @@ export const blogPosts = [
     eyebrow: "Wedding Planning",
     date: "February 18, 2026",
     readTime: "7 min read",
-    image: "/eventimages/wedding.webp",
+    image: "/Blogimages/3.png",
     metaTitle: "How to Choose the Best Wedding Venue in Bangalore",
     metaDescription:
       "Learn how to choose the best wedding venue in Bangalore with expert tips from Crown Estate on budget, location, guest capacity, amenities, and planning.",
@@ -476,12 +894,16 @@ export const blogPosts = [
       {
         type: "paragraph",
         segments: [
-          { text: "Whether you are planning an intimate ceremony, a grand reception, or a destination wedding, selecting the right location requires careful consideration. From guest capacity and location to amenities and budget, every detail matters. Couples looking for a " },
+          {
+            text: "Whether you are planning an intimate ceremony, a grand reception, or a destination wedding, selecting the right location requires careful consideration. From guest capacity and location to amenities and budget, every detail matters. Couples looking for a ",
+          },
           {
             text: "Luxury Destination Wedding Venue in Bangalore",
             href: "https://crownestate.in/services/destination-weddings-and-receptions",
           },
-          { text: " often prioritize beautiful surroundings, premium facilities, and exceptional service to make their dream wedding a reality." },
+          {
+            text: " often prioritize beautiful surroundings, premium facilities, and exceptional service to make their dream wedding a reality.",
+          },
         ],
       },
       {
@@ -490,7 +912,10 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Why Choosing the Right Wedding Venue Matters" },
-      { type: "paragraph", text: "Your wedding venue is more than just a place to host your celebration. It sets the tone for your special day, creates lasting memories for you and your guests, and serves as the foundation of your entire wedding experience." },
+      {
+        type: "paragraph",
+        text: "Your wedding venue is more than just a place to host your celebration. It sets the tone for your special day, creates lasting memories for you and your guests, and serves as the foundation of your entire wedding experience.",
+      },
       { type: "paragraph", text: "A well-chosen venue can:" },
       {
         type: "list",
@@ -502,9 +927,15 @@ export const blogPosts = [
           "Accommodate all wedding activities in one place",
         ],
       },
-      { type: "paragraph", text: "The right venue helps ensure that your wedding day runs smoothly while reflecting your personal style and vision." },
+      {
+        type: "paragraph",
+        text: "The right venue helps ensure that your wedding day runs smoothly while reflecting your personal style and vision.",
+      },
 
-      { type: "heading", text: "Top 10 Steps to Select Your Wedding Venue in Bangalore" },
+      {
+        type: "heading",
+        text: "Top 10 Steps to Select Your Wedding Venue in Bangalore",
+      },
       {
         type: "steps",
         items: [
@@ -632,8 +1063,14 @@ export const blogPosts = [
         ],
       },
 
-      { type: "heading", text: "Why Bangalore is a Popular Wedding Destination" },
-      { type: "paragraph", text: "Bangalore has emerged as one of India's most sought-after wedding destinations." },
+      {
+        type: "heading",
+        text: "Why Bangalore is a Popular Wedding Destination",
+      },
+      {
+        type: "paragraph",
+        text: "Bangalore has emerged as one of India's most sought-after wedding destinations.",
+      },
       { type: "paragraph", text: "The city offers:" },
       {
         type: "list",
@@ -649,8 +1086,13 @@ export const blogPosts = [
         type: "paragraph",
         segments: [
           { text: "Couples searching for the " },
-          { text: "best wedding venue in Bangalore", href: "https://crownestate.in/" },
-          { text: " often find a wide range of options suitable for every style and budget." },
+          {
+            text: "best wedding venue in Bangalore",
+            href: "https://crownestate.in/",
+          },
+          {
+            text: " often find a wide range of options suitable for every style and budget.",
+          },
         ],
       },
 
@@ -682,14 +1124,27 @@ export const blogPosts = [
       },
 
       { type: "heading", text: "Conclusion" },
-      { type: "paragraph", text: "Choosing the best wedding venue in Bangalore requires thoughtful planning and careful evaluation of your needs. By considering factors such as budget, guest capacity, location, amenities, accommodation, and ambience, you can confidently select a venue that creates unforgettable memories." },
-      { type: "paragraph", text: "For couples seeking elegance, comfort, and exceptional event experiences, Crown Estate offers everything needed for a memorable celebration. From beautiful event spaces to premium hospitality, it continues to be recognized as a Luxury Destination Wedding Venue in Bangalore for modern couples." },
+      {
+        type: "paragraph",
+        text: "Choosing the best wedding venue in Bangalore requires thoughtful planning and careful evaluation of your needs. By considering factors such as budget, guest capacity, location, amenities, accommodation, and ambience, you can confidently select a venue that creates unforgettable memories.",
+      },
+      {
+        type: "paragraph",
+        text: "For couples seeking elegance, comfort, and exceptional event experiences, Crown Estate offers everything needed for a memorable celebration. From beautiful event spaces to premium hospitality, it continues to be recognized as a Luxury Destination Wedding Venue in Bangalore for modern couples.",
+      },
       {
         type: "paragraph",
         segments: [
-          { text: "If you are planning your upcoming wedding and want a venue that combines luxury with convenience, " },
-          { text: "Contact Crown Estate", href: "https://crownestate.in/contact" },
-          { text: " today to explore your options. Crown Estate - Best Wedding Venue in Bangalore can help turn your dream wedding into reality." },
+          {
+            text: "If you are planning your upcoming wedding and want a venue that combines luxury with convenience, ",
+          },
+          {
+            text: "Contact Crown Estate",
+            href: "https://crownestate.in/contact",
+          },
+          {
+            text: " today to explore your options. Crown Estate - Best Wedding Venue in Bangalore can help turn your dream wedding into reality.",
+          },
         ],
       },
     ],

@@ -42,7 +42,7 @@ export default function ContactPage() {
 
     if (Object.keys(formErrors).length === 0) {
       try {
-        const response = await fetch("https://crownestate.in/forms/contact.php", {
+        const response = await fetch("http://localhost/crown/contact.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
