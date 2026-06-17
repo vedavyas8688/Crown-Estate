@@ -39,7 +39,7 @@ export const blogPosts = [
     slug: "top-reasons-to-choose-crown-estate-for-luxury-events-in-bangalore",
     title: "Top Reasons to Choose Crown Estate for Luxury Events in Bangalore",
     eyebrow: "Luxury Events",
-    date: "June 15, 2026",
+    date: "June 12, 2026",
     readTime: "10 min read",
     image: "/Blogimages/1.png",
     metaTitle:
@@ -519,7 +519,7 @@ export const blogPosts = [
     slug: "how-to-plan-a-successful-corporate-event-in-bangalore",
     title: "How to Plan a Successful Corporate Event in Bangalore",
     eyebrow: "Corporate Events",
-     date: "June 16, 2026",
+     date: "June 15, 2026",
     readTime: "9 min read",
     image: "/Blogimages/2.png",
     metaTitle: "How to Plan a Successful Corporate Event in Bangalore",
