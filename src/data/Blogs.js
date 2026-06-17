@@ -41,7 +41,7 @@ export const blogPosts = [
     eyebrow: "Luxury Events",
     date: "June 15, 2026",
     readTime: "10 min read",
-    image: "/Blogimages/1.png",
+    image: "/Blogimages/1.jpg",
     metaTitle:
       "Top Reasons to Choose Crown Estate for Luxury Events in Bangalore",
     metaDescription:
@@ -521,7 +521,7 @@ export const blogPosts = [
     eyebrow: "Corporate Events",
      date: "June 16, 2026",
     readTime: "9 min read",
-    image: "/Blogimages/2.png",
+    image: "/Blogimages/2.jpg",
     metaTitle: "How to Plan a Successful Corporate Event in Bangalore",
     metaDescription:
       "Learn how to plan a successful corporate event in Bangalore with expert tips from Crown Estate on venue selection, budgeting, logistics, and guest experience.",
@@ -878,7 +878,7 @@ export const blogPosts = [
     eyebrow: "Wedding Planning",
      date: "June 17, 2026",
     readTime: "7 min read",
-    image: "/Blogimages/3.png",
+    image: "/Blogimages/3.jpg",
     metaTitle: "How to Choose the Best Wedding Venue in Bangalore",
     metaDescription:
       "Learn how to choose the best wedding venue in Bangalore with expert tips from Crown Estate on budget, location, guest capacity, amenities, and planning.",

@@ -299,8 +299,8 @@ export default function BlogDetailPage() {
         .bd-section { padding: clamp(56px, 8vw, 100px) 24px; }
         .bd-body { max-width: 800px; margin: 0 auto; }
         .bd-body > *:first-child { margin-top: 0; }
-        .bd-lead { font-family: 'Montserrat', sans-serif; font-size: clamp(18px, 2.4vw, 21px);
-          line-height: 1.7; color: var(--heading); margin: 0 0 30px 0; }
+        .bd-lead { font-family: 'Montserrat', sans-serif; font-size: 17px;
+          line-height: 1.7; color: var(--paragraphs); margin: 0 0 26px 0; }
         .bd-p { font-family: 'Montserrat', sans-serif; font-size: 17px; line-height: 1.85;
           color: var(--paragraphs); margin: 0 0 26px 0; }
         .bd-h2 { font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(26px, 3.2vw, 32px);
