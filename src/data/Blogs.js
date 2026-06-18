@@ -59,9 +59,20 @@ export const blogPosts = [
         type: "paragraph",
         text: "Bangalore has become one of India's leading destinations for premium events, offering world-class venues and modern event facilities. People searching for Best Event Services in Bangalore often look for venues that provide beautiful event spaces, excellent hospitality, and seamless event execution.",
       },
-      {
+         {
         type: "paragraph",
-        text: "Among the many options available, Crown Estate - Luxury Events in Bangalore stands out as a preferred destination for hosting grand celebrations and professional events. From spacious outdoor lawns to elegant indoor venues, it offers an ideal setting for various occasions.",
+        segments: [
+          {
+            text: "Among the many options available, Crown Estate - ",
+          },
+          {
+            text: "Luxury Events in Bangalore ",
+            href: "https://crownestate.in",
+          },
+          {
+            text: "  stands out as a preferred destination for hosting grand celebrations and professional events. From spacious outdoor lawns to elegant indoor venues, it offers an ideal setting for various occasions."
+          }
+        ],
       },
       {
         type: "paragraph",
@@ -534,13 +545,35 @@ export const blogPosts = [
         type: "lead",
         text: "Planning a corporate event requires careful organization, attention to detail, and a clear understanding of your business objectives. Whether you are hosting a conference, product launch, annual meeting, networking event, team-building session, or corporate celebration, every aspect of the event contributes to its success.",
       },
-      {
+         {
         type: "paragraph",
-        text: "Bangalore has become one of India's leading destinations for business events, offering excellent connectivity, modern infrastructure, and premium venues. Companies looking for Luxury Event Services in Bangalore often seek venues that provide professional facilities, convenient access, and exceptional guest experiences.",
+        segments: [
+          {
+            text: "Bangalore has become one of India's leading destinations for business events, offering excellent connectivity, modern infrastructure, and premium venues. Companies looking for",
+          },
+          {
+            text: "  Luxury Event Services in Bangalore ",
+            href: "https://crownestate.in/services/",
+          },
+          {
+            text: " often seek venues that provide professional facilities, convenient access, and exceptional guest experiences."
+          }
+        ],
       },
-      {
+         {
         type: "paragraph",
-        text: "Choosing the right venue is one of the most important decisions in the planning process. Many organizations searching for a reliable location consider Crown Estate - Best Corporate Event Venue in Bangalore because of its spacious event areas, professional atmosphere, and premium event facilities.",
+        segments: [
+          {
+            text: "Choosing the right venue is one of the most important decisions in the planning process. Many organizations searching for a reliable location consider Crown Estate -",
+          },
+          {
+            text: " Best Corporate Event Venue in Bangalore",
+            href: "https://crownestate.in/",
+          },
+          {
+            text: "  because of its spacious event areas, professional atmosphere, and premium event facilities."
+          }
+        ],
       },
       {
         type: "paragraph",
