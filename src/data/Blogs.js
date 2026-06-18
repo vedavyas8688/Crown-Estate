@@ -508,13 +508,35 @@ export const blogPosts = [
         type: "paragraph",
         text: "Selecting the right venue is one of the most important decisions when planning a successful event. From weddings and receptions to corporate conferences and exhibitions, the venue influences guest experience, event flow, and overall success.",
       },
-      {
+       {
         type: "paragraph",
-        text: "For those seeking Best Event Services in Bangalore, choosing a venue that offers luxury, convenience, flexibility, and professional support can make all the difference. Crown Estate continues to attract hosts looking for premium event spaces designed to accommodate a wide range of celebrations and business gatherings.",
+        segments: [
+          {
+            text: "For those seeking ",
+          },
+          {
+            text: " Best Event Services in Bangalore",
+            href: "https://crownestate.in/services",
+          },
+          {
+            text: " choosing a venue that offers luxury, convenience, flexibility, and professional support can make all the difference. Crown Estate continues to attract hosts looking for premium event spaces designed to accommodate a wide range of celebrations and business gatherings.",
+          },
+        ],
       },
       {
         type: "paragraph",
-        text: "Whether you are planning an intimate gathering or a large-scale event, Crown Estate provides the facilities and atmosphere needed to create memorable experiences. Contact Crown Estate today to explore event options and discover how the right venue can elevate your next celebration.",
+        segments: [
+          {
+            text: "Whether you are planning an intimate gathering or a large-scale event, Crown Estate provides the facilities and atmosphere needed to create memorable experiences. ",
+          },
+          {
+            text: "Contact Crown Estate",
+            href: "https://crownestate.in/contact",
+          },
+          {
+            text: " today to explore event options and discover how the right venue can elevate your next celebration.",
+          },
+        ],
       },
       {
         type: "paragraph",
@@ -891,9 +913,20 @@ export const blogPosts = [
         type: "paragraph",
         text: "Organizations seeking Luxury Event Services in Bangalore should prioritize venues that offer convenience, professional facilities, and exceptional hospitality. Businesses looking for a dependable event destination often choose Crown Estate for its versatile event spaces and premium services.",
       },
-      {
+         {
         type: "paragraph",
-        text: "Whether you are planning a conference, networking event, seminar, or corporate celebration, selecting the right venue can make a significant difference. Contact Crown Estate today to explore event solutions designed to support successful corporate gatherings and professional events.",
+        segments: [
+          {
+            text: "  Whether you are planning a conference, networking event, seminar, or corporate celebration, selecting the right venue can make a significant difference. ",
+          },
+          {
+            text: "  Contact Crown Estate",
+            href: "https://crownestate.in/contact",
+          },
+          {
+            text: " today to explore event solutions designed to support successful corporate gatherings and professional events."
+          }
+        ],
       },
       {
         type: "paragraph",
